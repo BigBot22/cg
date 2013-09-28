@@ -19,3 +19,6 @@ target_link_libraries(contour_contains_point visualization ${GMP_LIBRARIES})
 
 add_executable(ccw_convex_contains_point ccw_convex_contains_point.cpp)
 target_link_libraries(ccw_convex_contains_point visualization ${GMP_LIBRARIES})
+
+add_executable(first_problem first_problem.cpp)
+target_link_libraries(first_problem visualization ${GMP_LIBRARIES})

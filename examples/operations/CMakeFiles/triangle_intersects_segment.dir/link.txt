@@ -1,0 +1,1 @@
+/usr/bin/c++    -pthread -std=c++11 -Wall    CMakeFiles/triangle_intersects_segment.dir/triangle_intersects_segment.cpp.o  -o triangle_intersects_segment -rdynamic ../../src/libvisualization.a -lgmp -lQtOpenGL -lQtGui -lQtCore -lGLU -lGL -lSM -lICE -lX11 -lXext 

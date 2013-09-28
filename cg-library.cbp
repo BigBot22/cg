@@ -1,0 +1,1131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="cg-library" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;CMake Files\CMake\;CMake Files\CMake\Modules\;CMake Files\include\;CMake Files\src\;CMake Files\tests\;CMake Files\examples\;CMake Files\examples\viewer\;CMake Files\examples\operations\;CMake Files\examples\orientation\;CMake Files\examples\convex_hull\;CMake Files\examples\convex\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/bigbot/cg" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/home/bigbot/cg" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="visualization_headers">
+         <Option working_dir="/home/bigbot/cg/include" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/include/Makefile&quot;  VERBOSE=1 visualization_headers" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/include/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/include/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/include/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="visualization">
+         <Option output="/home/bigbot/cg/src/libvisualization.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/src" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/home/bigbot/cg/src/." />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/src/Makefile&quot;  VERBOSE=1 visualization" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/src/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/src/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="visualization/fast">
+         <Option output="/home/bigbot/cg/src/libvisualization.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/src" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/home/bigbot/cg/src/." />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/src/Makefile&quot;  VERBOSE=1 visualization/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/src/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/src/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="cg-test">
+         <Option output="/home/bigbot/cg/tests/cg-test" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/tests" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/tests/Makefile&quot;  VERBOSE=1 cg-test" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="cg-test/fast">
+         <Option output="/home/bigbot/cg/tests/cg-test" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/tests" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/tests/Makefile&quot;  VERBOSE=1 cg-test/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="cg_test_headers">
+         <Option working_dir="/home/bigbot/cg/tests" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/tests/Makefile&quot;  VERBOSE=1 cg_test_headers" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="viewer-example">
+         <Option output="/home/bigbot/cg/examples/viewer/viewer-example" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/viewer" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/viewer/Makefile&quot;  VERBOSE=1 viewer-example" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/viewer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/viewer/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/viewer/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="viewer-example/fast">
+         <Option output="/home/bigbot/cg/examples/viewer/viewer-example" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/viewer" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/viewer/Makefile&quot;  VERBOSE=1 viewer-example/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/viewer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/viewer/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/viewer/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="ccw_convex_contains_point">
+         <Option output="/home/bigbot/cg/examples/operations/ccw_convex_contains_point" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/operations" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 ccw_convex_contains_point" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="ccw_convex_contains_point/fast">
+         <Option output="/home/bigbot/cg/examples/operations/ccw_convex_contains_point" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/operations" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 ccw_convex_contains_point/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="contour_contains_point">
+         <Option output="/home/bigbot/cg/examples/operations/contour_contains_point" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/operations" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 contour_contains_point" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="contour_contains_point/fast">
+         <Option output="/home/bigbot/cg/examples/operations/contour_contains_point" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/operations" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 contour_contains_point/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="first_problem">
+         <Option output="/home/bigbot/cg/examples/operations/first_problem" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/operations" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 first_problem" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="first_problem/fast">
+         <Option output="/home/bigbot/cg/examples/operations/first_problem" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/operations" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 first_problem/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rectangle_intersects_segment">
+         <Option output="/home/bigbot/cg/examples/operations/rectangle_intersects_segment" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/operations" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 rectangle_intersects_segment" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rectangle_intersects_segment/fast">
+         <Option output="/home/bigbot/cg/examples/operations/rectangle_intersects_segment" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/operations" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 rectangle_intersects_segment/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="segments_intersect">
+         <Option output="/home/bigbot/cg/examples/operations/segments_intersect" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/operations" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 segments_intersect" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="segments_intersect/fast">
+         <Option output="/home/bigbot/cg/examples/operations/segments_intersect" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/operations" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 segments_intersect/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="triangle_contains_point">
+         <Option output="/home/bigbot/cg/examples/operations/triangle_contains_point" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/operations" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 triangle_contains_point" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="triangle_contains_point/fast">
+         <Option output="/home/bigbot/cg/examples/operations/triangle_contains_point" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/operations" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 triangle_contains_point/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="triangle_intersects_segment">
+         <Option output="/home/bigbot/cg/examples/operations/triangle_intersects_segment" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/operations" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 triangle_intersects_segment" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="triangle_intersects_segment/fast">
+         <Option output="/home/bigbot/cg/examples/operations/triangle_intersects_segment" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/operations" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 triangle_intersects_segment/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="orientation_contour_ccw">
+         <Option output="/home/bigbot/cg/examples/orientation/orientation_contour_ccw" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/orientation" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/orientation/Makefile&quot;  VERBOSE=1 orientation_contour_ccw" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/orientation/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/orientation/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/orientation/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="orientation_contour_ccw/fast">
+         <Option output="/home/bigbot/cg/examples/orientation/orientation_contour_ccw" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/orientation" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/orientation/Makefile&quot;  VERBOSE=1 orientation_contour_ccw/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/orientation/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/orientation/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/orientation/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="convex_hull">
+         <Option output="/home/bigbot/cg/examples/convex_hull/convex_hull" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/convex_hull" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/convex_hull/Makefile&quot;  VERBOSE=1 convex_hull" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/convex_hull/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/convex_hull/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/convex_hull/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="convex_hull/fast">
+         <Option output="/home/bigbot/cg/examples/convex_hull/convex_hull" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/convex_hull" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/convex_hull/Makefile&quot;  VERBOSE=1 convex_hull/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/convex_hull/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/convex_hull/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/convex_hull/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="dynamic_convex_hull">
+         <Option output="/home/bigbot/cg/examples/convex_hull/dynamic_convex_hull" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/convex_hull" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/convex_hull/Makefile&quot;  VERBOSE=1 dynamic_convex_hull" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/convex_hull/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/convex_hull/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/convex_hull/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="dynamic_convex_hull/fast">
+         <Option output="/home/bigbot/cg/examples/convex_hull/dynamic_convex_hull" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/convex_hull" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/convex_hull/Makefile&quot;  VERBOSE=1 dynamic_convex_hull/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/convex_hull/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/convex_hull/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/convex_hull/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="ccw_contour_convex">
+         <Option output="/home/bigbot/cg/examples/convex/ccw_contour_convex" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/convex" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/convex/Makefile&quot;  VERBOSE=1 ccw_contour_convex" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/convex/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/convex/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/convex/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="ccw_contour_convex/fast">
+         <Option output="/home/bigbot/cg/examples/convex/ccw_contour_convex" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/convex" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/convex/Makefile&quot;  VERBOSE=1 ccw_contour_convex/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/convex/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/convex/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/convex/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/bigbot/cg/examples/convex/ccw_contour_convex.cpp">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/convex_hull/convex_hull.cpp">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/convex_hull/dynamic_convex_hull.cpp">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/operations/ccw_convex_contains_point.cpp">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/operations/contour_contains_point.cpp">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/operations/first_problem.cpp">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/operations/rectangle_intersects_segment.cpp">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/operations/segments_intersect.cpp">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/operations/triangle_contains_point.cpp">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/operations/triangle_intersects_segment.cpp">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/orientation/orientation_contour_ccw.cpp">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/viewer/viewer.cpp">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/src/visualization/draw_util.cpp">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/src/visualization/drawer_impl.cpp">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/src/visualization/main_window.cpp">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/src/visualization/printer_impl.cpp">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/src/visualization/visualization.cpp">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/tests/contains.cpp">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/tests/convex.cpp">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/tests/convex_hull.cpp">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/tests/dynamic_convex_hull.cpp">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/tests/first_problem.cpp">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/tests/has_intersection.cpp">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/tests/orientation.cpp">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/cg/common/range.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/cg/convex_hull/andrew.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/cg/convex_hull/graham.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/cg/convex_hull/jarvis.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/cg/convex_hull/naive_dynamic.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/cg/convex_hull/quick_hull.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/cg/io/io_utils.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/cg/io/point.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/cg/io/range.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/cg/io/rectangle.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/cg/io/segment.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/cg/io/triangle.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/cg/io/vector.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/cg/operations/contains/contour_point.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/cg/operations/contains/segment_point.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/cg/operations/contains/triangle_point.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/cg/operations/convex.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/cg/operations/first_problem.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/cg/operations/has_intersection/rectangle_segment.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/cg/operations/has_intersection/segment_segment.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/cg/operations/has_intersection/triangle_segment.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/cg/operations/orientation.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/cg/primitives/contour.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/cg/primitives/point.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/cg/primitives/range.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/cg/primitives/rectangle.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/cg/primitives/segment.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/cg/primitives/triangle.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/cg/primitives/vector.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/cg/visualization/draw_util.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/cg/visualization/viewer.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/cg/visualization/viewer_adapter.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/misc/random_utils.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/misc/utils.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/src/visualization/drawer_impl.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/src/visualization/main_window.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/src/visualization/printer_impl.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/tests/random_utils.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/CMake/Modules/FindGMP.cmake">
+          <Option virtualFolder="CMake Files\CMake\Modules\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/CMake/Modules/FindGMP.cmake">
+          <Option virtualFolder="CMake Files\CMake\Modules\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/CMake/Modules/FindGMP.cmake">
+          <Option virtualFolder="CMake Files\CMake\Modules\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\include\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/src/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/tests/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\tests\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/tests/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\tests\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\examples\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/viewer/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\examples\viewer\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/viewer/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\examples\viewer\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/operations/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\examples\operations\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/operations/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\examples\operations\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/orientation/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\examples\orientation\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/orientation/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\examples\orientation\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/convex_hull/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\examples\convex_hull\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/convex_hull/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\examples\convex_hull\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/convex/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\examples\convex\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/convex/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\examples\convex\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>
