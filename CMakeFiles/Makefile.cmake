@@ -15,6 +15,8 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "examples/CMakeLists.txt"
   "examples/convex/CMakeLists.txt"
   "examples/convex_hull/CMakeLists.txt"
+  "examples/duglas_pecher/CMakeLists.txt"
+  "examples/new_task/CMakeLists.txt"
   "examples/operations/CMakeLists.txt"
   "examples/orientation/CMakeLists.txt"
   "examples/viewer/CMakeLists.txt"
@@ -73,6 +75,8 @@ SET(CMAKE_MAKEFILE_PRODUCTS
   "examples/orientation/CMakeFiles/CMakeDirectoryInformation.cmake"
   "examples/convex_hull/CMakeFiles/CMakeDirectoryInformation.cmake"
   "examples/convex/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "examples/duglas_pecher/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "examples/new_task/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -93,4 +97,6 @@ SET(CMAKE_DEPEND_INFO_FILES
   "examples/convex_hull/CMakeFiles/convex_hull.dir/DependInfo.cmake"
   "examples/convex_hull/CMakeFiles/dynamic_convex_hull.dir/DependInfo.cmake"
   "examples/convex/CMakeFiles/ccw_contour_convex.dir/DependInfo.cmake"
+  "examples/duglas_pecher/CMakeFiles/duglas_pecher.dir/DependInfo.cmake"
+  "examples/new_task/CMakeFiles/new_task.dir/DependInfo.cmake"
   )

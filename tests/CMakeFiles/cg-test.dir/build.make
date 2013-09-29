@@ -213,6 +213,52 @@ tests/CMakeFiles/cg-test.dir/first_problem.cpp.o.provides: tests/CMakeFiles/cg-t
 
 tests/CMakeFiles/cg-test.dir/first_problem.cpp.o.provides.build: tests/CMakeFiles/cg-test.dir/first_problem.cpp.o
 
+tests/CMakeFiles/cg-test.dir/duglas_pecher.cpp.o: tests/CMakeFiles/cg-test.dir/flags.make
+tests/CMakeFiles/cg-test.dir/duglas_pecher.cpp.o: tests/duglas_pecher.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tests/CMakeFiles/cg-test.dir/duglas_pecher.cpp.o"
+	cd /home/bigbot/cg/tests && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cg-test.dir/duglas_pecher.cpp.o -c /home/bigbot/cg/tests/duglas_pecher.cpp
+
+tests/CMakeFiles/cg-test.dir/duglas_pecher.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cg-test.dir/duglas_pecher.cpp.i"
+	cd /home/bigbot/cg/tests && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/bigbot/cg/tests/duglas_pecher.cpp > CMakeFiles/cg-test.dir/duglas_pecher.cpp.i
+
+tests/CMakeFiles/cg-test.dir/duglas_pecher.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cg-test.dir/duglas_pecher.cpp.s"
+	cd /home/bigbot/cg/tests && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/bigbot/cg/tests/duglas_pecher.cpp -o CMakeFiles/cg-test.dir/duglas_pecher.cpp.s
+
+tests/CMakeFiles/cg-test.dir/duglas_pecher.cpp.o.requires:
+.PHONY : tests/CMakeFiles/cg-test.dir/duglas_pecher.cpp.o.requires
+
+tests/CMakeFiles/cg-test.dir/duglas_pecher.cpp.o.provides: tests/CMakeFiles/cg-test.dir/duglas_pecher.cpp.o.requires
+	$(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/duglas_pecher.cpp.o.provides.build
+.PHONY : tests/CMakeFiles/cg-test.dir/duglas_pecher.cpp.o.provides
+
+tests/CMakeFiles/cg-test.dir/duglas_pecher.cpp.o.provides.build: tests/CMakeFiles/cg-test.dir/duglas_pecher.cpp.o
+
+tests/CMakeFiles/cg-test.dir/new_task.cpp.o: tests/CMakeFiles/cg-test.dir/flags.make
+tests/CMakeFiles/cg-test.dir/new_task.cpp.o: tests/new_task.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tests/CMakeFiles/cg-test.dir/new_task.cpp.o"
+	cd /home/bigbot/cg/tests && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cg-test.dir/new_task.cpp.o -c /home/bigbot/cg/tests/new_task.cpp
+
+tests/CMakeFiles/cg-test.dir/new_task.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cg-test.dir/new_task.cpp.i"
+	cd /home/bigbot/cg/tests && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/bigbot/cg/tests/new_task.cpp > CMakeFiles/cg-test.dir/new_task.cpp.i
+
+tests/CMakeFiles/cg-test.dir/new_task.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cg-test.dir/new_task.cpp.s"
+	cd /home/bigbot/cg/tests && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/bigbot/cg/tests/new_task.cpp -o CMakeFiles/cg-test.dir/new_task.cpp.s
+
+tests/CMakeFiles/cg-test.dir/new_task.cpp.o.requires:
+.PHONY : tests/CMakeFiles/cg-test.dir/new_task.cpp.o.requires
+
+tests/CMakeFiles/cg-test.dir/new_task.cpp.o.provides: tests/CMakeFiles/cg-test.dir/new_task.cpp.o.requires
+	$(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/new_task.cpp.o.provides.build
+.PHONY : tests/CMakeFiles/cg-test.dir/new_task.cpp.o.provides
+
+tests/CMakeFiles/cg-test.dir/new_task.cpp.o.provides.build: tests/CMakeFiles/cg-test.dir/new_task.cpp.o
+
 # Object files for target cg-test
 cg__test_OBJECTS = \
 "CMakeFiles/cg-test.dir/orientation.cpp.o" \
@@ -221,7 +267,9 @@ cg__test_OBJECTS = \
 "CMakeFiles/cg-test.dir/convex_hull.cpp.o" \
 "CMakeFiles/cg-test.dir/dynamic_convex_hull.cpp.o" \
 "CMakeFiles/cg-test.dir/convex.cpp.o" \
-"CMakeFiles/cg-test.dir/first_problem.cpp.o"
+"CMakeFiles/cg-test.dir/first_problem.cpp.o" \
+"CMakeFiles/cg-test.dir/duglas_pecher.cpp.o" \
+"CMakeFiles/cg-test.dir/new_task.cpp.o"
 
 # External object files for target cg-test
 cg__test_EXTERNAL_OBJECTS =
@@ -233,6 +281,8 @@ tests/cg-test: tests/CMakeFiles/cg-test.dir/convex_hull.cpp.o
 tests/cg-test: tests/CMakeFiles/cg-test.dir/dynamic_convex_hull.cpp.o
 tests/cg-test: tests/CMakeFiles/cg-test.dir/convex.cpp.o
 tests/cg-test: tests/CMakeFiles/cg-test.dir/first_problem.cpp.o
+tests/cg-test: tests/CMakeFiles/cg-test.dir/duglas_pecher.cpp.o
+tests/cg-test: tests/CMakeFiles/cg-test.dir/new_task.cpp.o
 tests/cg-test: tests/CMakeFiles/cg-test.dir/build.make
 tests/cg-test: /usr/lib/libgtest.a
 tests/cg-test: /usr/lib/libgtest_main.a
@@ -252,6 +302,8 @@ tests/CMakeFiles/cg-test.dir/requires: tests/CMakeFiles/cg-test.dir/convex_hull.
 tests/CMakeFiles/cg-test.dir/requires: tests/CMakeFiles/cg-test.dir/dynamic_convex_hull.cpp.o.requires
 tests/CMakeFiles/cg-test.dir/requires: tests/CMakeFiles/cg-test.dir/convex.cpp.o.requires
 tests/CMakeFiles/cg-test.dir/requires: tests/CMakeFiles/cg-test.dir/first_problem.cpp.o.requires
+tests/CMakeFiles/cg-test.dir/requires: tests/CMakeFiles/cg-test.dir/duglas_pecher.cpp.o.requires
+tests/CMakeFiles/cg-test.dir/requires: tests/CMakeFiles/cg-test.dir/new_task.cpp.o.requires
 .PHONY : tests/CMakeFiles/cg-test.dir/requires
 
 tests/CMakeFiles/cg-test.dir/clean:

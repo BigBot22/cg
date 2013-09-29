@@ -47,6 +47,14 @@ tests/CMakeFiles/cg-test.dir/convex_hull.cpp.o: include/cg/primitives/segment.h
 tests/CMakeFiles/cg-test.dir/convex_hull.cpp.o: include/cg/primitives/vector.h
 tests/CMakeFiles/cg-test.dir/convex_hull.cpp.o: include/misc/random_utils.h
 
+tests/CMakeFiles/cg-test.dir/duglas_pecher.cpp.o: tests/duglas_pecher.cpp
+tests/CMakeFiles/cg-test.dir/duglas_pecher.cpp.o: tests/random_utils.h
+tests/CMakeFiles/cg-test.dir/duglas_pecher.cpp.o: include/cg/duglas_pecher/duglas_pecher.h
+tests/CMakeFiles/cg-test.dir/duglas_pecher.cpp.o: include/cg/primitives/point.h
+tests/CMakeFiles/cg-test.dir/duglas_pecher.cpp.o: include/cg/primitives/range.h
+tests/CMakeFiles/cg-test.dir/duglas_pecher.cpp.o: include/cg/primitives/vector.h
+tests/CMakeFiles/cg-test.dir/duglas_pecher.cpp.o: include/misc/random_utils.h
+
 tests/CMakeFiles/cg-test.dir/dynamic_convex_hull.cpp.o: tests/dynamic_convex_hull.cpp
 tests/CMakeFiles/cg-test.dir/dynamic_convex_hull.cpp.o: tests/random_utils.h
 tests/CMakeFiles/cg-test.dir/dynamic_convex_hull.cpp.o: include/cg/common/range.h
@@ -82,6 +90,9 @@ tests/CMakeFiles/cg-test.dir/has_intersection.cpp.o: include/cg/primitives/recta
 tests/CMakeFiles/cg-test.dir/has_intersection.cpp.o: include/cg/primitives/segment.h
 tests/CMakeFiles/cg-test.dir/has_intersection.cpp.o: include/cg/primitives/triangle.h
 tests/CMakeFiles/cg-test.dir/has_intersection.cpp.o: include/cg/primitives/vector.h
+
+tests/CMakeFiles/cg-test.dir/new_task.cpp.o: tests/new_task.cpp
+tests/CMakeFiles/cg-test.dir/new_task.cpp.o: include/cg/new_task/new_task.h
 
 tests/CMakeFiles/cg-test.dir/orientation.cpp.o: tests/orientation.cpp
 tests/CMakeFiles/cg-test.dir/orientation.cpp.o: tests/random_utils.h

@@ -6,6 +6,8 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/cg-test.dir/dynamic_convex_hull.cpp.o"
   "CMakeFiles/cg-test.dir/convex.cpp.o"
   "CMakeFiles/cg-test.dir/first_problem.cpp.o"
+  "CMakeFiles/cg-test.dir/duglas_pecher.cpp.o"
+  "CMakeFiles/cg-test.dir/new_task.cpp.o"
   "cg-test.pdb"
   "cg-test"
 )

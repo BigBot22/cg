@@ -6,10 +6,10 @@
 
 #IncludeRegexTransform: 
 
-/home/bigbot/cg/tests/first_problem.cpp
+/home/bigbot/cg/tests/duglas_pecher.cpp
 gtest/gtest.h
 -
-cg/operations/first_problem.h
+cg/duglas_pecher/duglas_pecher.h
 -
 random_utils.h
 /home/bigbot/cg/tests/random_utils.h
@@ -22,7 +22,9 @@ cg/primitives/point.h
 misc/random_utils.h
 -
 
-include/cg/operations/first_problem.h
+include/cg/duglas_pecher/duglas_pecher.h
+cg/primitives/point.h
+-
 
 include/cg/primitives/point.h
 vector.h

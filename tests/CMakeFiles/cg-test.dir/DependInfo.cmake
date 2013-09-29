@@ -7,9 +7,11 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/bigbot/cg/tests/contains.cpp" "/home/bigbot/cg/tests/CMakeFiles/cg-test.dir/contains.cpp.o"
   "/home/bigbot/cg/tests/convex.cpp" "/home/bigbot/cg/tests/CMakeFiles/cg-test.dir/convex.cpp.o"
   "/home/bigbot/cg/tests/convex_hull.cpp" "/home/bigbot/cg/tests/CMakeFiles/cg-test.dir/convex_hull.cpp.o"
+  "/home/bigbot/cg/tests/duglas_pecher.cpp" "/home/bigbot/cg/tests/CMakeFiles/cg-test.dir/duglas_pecher.cpp.o"
   "/home/bigbot/cg/tests/dynamic_convex_hull.cpp" "/home/bigbot/cg/tests/CMakeFiles/cg-test.dir/dynamic_convex_hull.cpp.o"
   "/home/bigbot/cg/tests/first_problem.cpp" "/home/bigbot/cg/tests/CMakeFiles/cg-test.dir/first_problem.cpp.o"
   "/home/bigbot/cg/tests/has_intersection.cpp" "/home/bigbot/cg/tests/CMakeFiles/cg-test.dir/has_intersection.cpp.o"
+  "/home/bigbot/cg/tests/new_task.cpp" "/home/bigbot/cg/tests/CMakeFiles/cg-test.dir/new_task.cpp.o"
   "/home/bigbot/cg/tests/orientation.cpp" "/home/bigbot/cg/tests/CMakeFiles/cg-test.dir/orientation.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")

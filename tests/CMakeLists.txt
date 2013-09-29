@@ -19,7 +19,9 @@ set(SOURCES
    convex_hull.cpp
    dynamic_convex_hull.cpp
    convex.cpp
-    first_problem.cpp
+   first_problem.cpp
+   duglas_pecher.cpp
+   new_task.cpp
 )
 
 add_executable(cg-test ${SOURCES})

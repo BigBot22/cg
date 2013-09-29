@@ -309,6 +309,32 @@ ccw_contour_convex/fast:
 	$(MAKE) -f examples/convex/CMakeFiles/ccw_contour_convex.dir/build.make examples/convex/CMakeFiles/ccw_contour_convex.dir/build
 .PHONY : ccw_contour_convex/fast
 
+#=============================================================================
+# Target rules for targets named duglas_pecher
+
+# Build rule for target.
+duglas_pecher: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 duglas_pecher
+.PHONY : duglas_pecher
+
+# fast build rule for target.
+duglas_pecher/fast:
+	$(MAKE) -f examples/duglas_pecher/CMakeFiles/duglas_pecher.dir/build.make examples/duglas_pecher/CMakeFiles/duglas_pecher.dir/build
+.PHONY : duglas_pecher/fast
+
+#=============================================================================
+# Target rules for targets named new_task
+
+# Build rule for target.
+new_task: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 new_task
+.PHONY : new_task
+
+# fast build rule for target.
+new_task/fast:
+	$(MAKE) -f examples/new_task/CMakeFiles/new_task.dir/build.make examples/new_task/CMakeFiles/new_task.dir/build
+.PHONY : new_task/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -333,6 +359,8 @@ help:
 	@echo "... convex_hull"
 	@echo "... dynamic_convex_hull"
 	@echo "... ccw_contour_convex"
+	@echo "... duglas_pecher"
+	@echo "... new_task"
 .PHONY : help
 
 

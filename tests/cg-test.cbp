@@ -5,7 +5,7 @@
       <Option title="cg-test" />
       <Option makefile_is_custom="1" />
       <Option compiler="gcc" />
-      <Option virtualFolders="CMake Files\;CMake Files\CMake\;CMake Files\CMake\Modules\;CMake Files\include\;CMake Files\src\;CMake Files\tests\;CMake Files\examples\;CMake Files\examples\viewer\;CMake Files\examples\operations\;CMake Files\examples\orientation\;CMake Files\examples\convex_hull\;CMake Files\examples\convex\;" />
+      <Option virtualFolders="CMake Files\;CMake Files\CMake\;CMake Files\CMake\Modules\;CMake Files\include\;CMake Files\src\;CMake Files\tests\;CMake Files\examples\;CMake Files\examples\viewer\;CMake Files\examples\operations\;CMake Files\examples\orientation\;CMake Files\examples\convex_hull\;CMake Files\examples\convex\;CMake Files\examples\duglas_pecher\;CMake Files\examples\new_task\;" />
       <Build>
       <Target title="all">
          <Option working_dir="/home/bigbot/cg/tests" />
@@ -98,11 +98,15 @@
       </Unit>
       <Unit filename="/home/bigbot/cg/tests/convex_hull.cpp">
       </Unit>
+      <Unit filename="/home/bigbot/cg/tests/duglas_pecher.cpp">
+      </Unit>
       <Unit filename="/home/bigbot/cg/tests/dynamic_convex_hull.cpp">
       </Unit>
       <Unit filename="/home/bigbot/cg/tests/first_problem.cpp">
       </Unit>
       <Unit filename="/home/bigbot/cg/tests/has_intersection.cpp">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/tests/new_task.cpp">
       </Unit>
       <Unit filename="/home/bigbot/cg/tests/orientation.cpp">
       </Unit>
@@ -164,6 +168,18 @@
       </Unit>
       <Unit filename="/home/bigbot/cg/examples/convex/CMakeLists.txt">
           <Option virtualFolder="CMake Files\examples\convex\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/duglas_pecher/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\examples\duglas_pecher\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/duglas_pecher/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\examples\duglas_pecher\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/new_task/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\examples\new_task\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/new_task/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\examples\new_task\" />
       </Unit>
    </Project>
 </CodeBlocks_project_file>

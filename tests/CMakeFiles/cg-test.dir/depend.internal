@@ -47,6 +47,14 @@ tests/CMakeFiles/cg-test.dir/convex_hull.cpp.o
  include/cg/primitives/segment.h
  include/cg/primitives/vector.h
  include/misc/random_utils.h
+tests/CMakeFiles/cg-test.dir/duglas_pecher.cpp.o
+ /home/bigbot/cg/tests/duglas_pecher.cpp
+ /home/bigbot/cg/tests/random_utils.h
+ include/cg/duglas_pecher/duglas_pecher.h
+ include/cg/primitives/point.h
+ include/cg/primitives/range.h
+ include/cg/primitives/vector.h
+ include/misc/random_utils.h
 tests/CMakeFiles/cg-test.dir/dynamic_convex_hull.cpp.o
  /home/bigbot/cg/tests/dynamic_convex_hull.cpp
  /home/bigbot/cg/tests/random_utils.h
@@ -83,6 +91,9 @@ tests/CMakeFiles/cg-test.dir/has_intersection.cpp.o
  include/cg/primitives/segment.h
  include/cg/primitives/triangle.h
  include/cg/primitives/vector.h
+tests/CMakeFiles/cg-test.dir/new_task.cpp.o
+ /home/bigbot/cg/tests/new_task.cpp
+ include/cg/new_task/new_task.h
 tests/CMakeFiles/cg-test.dir/orientation.cpp.o
  /home/bigbot/cg/tests/orientation.cpp
  /home/bigbot/cg/tests/random_utils.h

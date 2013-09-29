@@ -201,6 +201,30 @@ convex_hull.cpp.s:
 	cd /home/bigbot/cg && $(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/convex_hull.cpp.s
 .PHONY : convex_hull.cpp.s
 
+duglas_pecher.o: duglas_pecher.cpp.o
+.PHONY : duglas_pecher.o
+
+# target to build an object file
+duglas_pecher.cpp.o:
+	cd /home/bigbot/cg && $(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/duglas_pecher.cpp.o
+.PHONY : duglas_pecher.cpp.o
+
+duglas_pecher.i: duglas_pecher.cpp.i
+.PHONY : duglas_pecher.i
+
+# target to preprocess a source file
+duglas_pecher.cpp.i:
+	cd /home/bigbot/cg && $(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/duglas_pecher.cpp.i
+.PHONY : duglas_pecher.cpp.i
+
+duglas_pecher.s: duglas_pecher.cpp.s
+.PHONY : duglas_pecher.s
+
+# target to generate assembly for a file
+duglas_pecher.cpp.s:
+	cd /home/bigbot/cg && $(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/duglas_pecher.cpp.s
+.PHONY : duglas_pecher.cpp.s
+
 dynamic_convex_hull.o: dynamic_convex_hull.cpp.o
 .PHONY : dynamic_convex_hull.o
 
@@ -273,6 +297,30 @@ has_intersection.cpp.s:
 	cd /home/bigbot/cg && $(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/has_intersection.cpp.s
 .PHONY : has_intersection.cpp.s
 
+new_task.o: new_task.cpp.o
+.PHONY : new_task.o
+
+# target to build an object file
+new_task.cpp.o:
+	cd /home/bigbot/cg && $(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/new_task.cpp.o
+.PHONY : new_task.cpp.o
+
+new_task.i: new_task.cpp.i
+.PHONY : new_task.i
+
+# target to preprocess a source file
+new_task.cpp.i:
+	cd /home/bigbot/cg && $(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/new_task.cpp.i
+.PHONY : new_task.cpp.i
+
+new_task.s: new_task.cpp.s
+.PHONY : new_task.s
+
+# target to generate assembly for a file
+new_task.cpp.s:
+	cd /home/bigbot/cg && $(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/new_task.cpp.s
+.PHONY : new_task.cpp.s
+
 orientation.o: orientation.cpp.o
 .PHONY : orientation.o
 
@@ -316,6 +364,9 @@ help:
 	@echo "... convex_hull.o"
 	@echo "... convex_hull.i"
 	@echo "... convex_hull.s"
+	@echo "... duglas_pecher.o"
+	@echo "... duglas_pecher.i"
+	@echo "... duglas_pecher.s"
 	@echo "... dynamic_convex_hull.o"
 	@echo "... dynamic_convex_hull.i"
 	@echo "... dynamic_convex_hull.s"
@@ -325,6 +376,9 @@ help:
 	@echo "... has_intersection.o"
 	@echo "... has_intersection.i"
 	@echo "... has_intersection.s"
+	@echo "... new_task.o"
+	@echo "... new_task.i"
+	@echo "... new_task.s"
 	@echo "... orientation.o"
 	@echo "... orientation.i"
 	@echo "... orientation.s"

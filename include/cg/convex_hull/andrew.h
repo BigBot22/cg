@@ -5,6 +5,7 @@
 
 #include "graham.h"
 
+
 namespace cg
 {
    template <class RandIter>

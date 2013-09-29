@@ -1008,6 +1008,18 @@ convex-hull-example_BINARY_DIR:STATIC=/home/bigbot/cg/examples/convex_hull
 convex-hull-example_SOURCE_DIR:STATIC=/home/bigbot/cg/examples/convex_hull
 
 //Value Computed by CMake
+duglas_pecher-example_BINARY_DIR:STATIC=/home/bigbot/cg/examples/duglas_pecher
+
+//Value Computed by CMake
+duglas_pecher-example_SOURCE_DIR:STATIC=/home/bigbot/cg/examples/duglas_pecher
+
+//Value Computed by CMake
+new_task-example_BINARY_DIR:STATIC=/home/bigbot/cg/examples/new_task
+
+//Value Computed by CMake
+new_task-example_SOURCE_DIR:STATIC=/home/bigbot/cg/examples/new_task
+
+//Value Computed by CMake
 operations-example_BINARY_DIR:STATIC=/home/bigbot/cg/examples/convex
 
 //Value Computed by CMake
@@ -1149,7 +1161,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=10
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=12
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

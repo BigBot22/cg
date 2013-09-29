@@ -5,7 +5,7 @@
       <Option title="cg-library" />
       <Option makefile_is_custom="1" />
       <Option compiler="gcc" />
-      <Option virtualFolders="CMake Files\;CMake Files\CMake\;CMake Files\CMake\Modules\;CMake Files\include\;CMake Files\src\;CMake Files\tests\;CMake Files\examples\;CMake Files\examples\viewer\;CMake Files\examples\operations\;CMake Files\examples\orientation\;CMake Files\examples\convex_hull\;CMake Files\examples\convex\;" />
+      <Option virtualFolders="CMake Files\;CMake Files\CMake\;CMake Files\CMake\Modules\;CMake Files\include\;CMake Files\src\;CMake Files\tests\;CMake Files\examples\;CMake Files\examples\viewer\;CMake Files\examples\operations\;CMake Files\examples\orientation\;CMake Files\examples\convex_hull\;CMake Files\examples\convex\;CMake Files\examples\duglas_pecher\;CMake Files\examples\new_task\;" />
       <Build>
       <Target title="all">
          <Option working_dir="/home/bigbot/cg" />
@@ -945,12 +945,144 @@
             <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/convex/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
+      <Target title="duglas_pecher">
+         <Option output="/home/bigbot/cg/examples/duglas_pecher/duglas_pecher" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/duglas_pecher" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/duglas_pecher/Makefile&quot;  VERBOSE=1 duglas_pecher" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/duglas_pecher/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/duglas_pecher/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/duglas_pecher/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="duglas_pecher/fast">
+         <Option output="/home/bigbot/cg/examples/duglas_pecher/duglas_pecher" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/duglas_pecher" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/duglas_pecher/Makefile&quot;  VERBOSE=1 duglas_pecher/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/duglas_pecher/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/duglas_pecher/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/duglas_pecher/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="new_task">
+         <Option output="/home/bigbot/cg/examples/new_task/new_task" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/new_task" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/new_task/Makefile&quot;  VERBOSE=1 new_task" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/new_task/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/new_task/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/new_task/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="new_task/fast">
+         <Option output="/home/bigbot/cg/examples/new_task/new_task" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/new_task" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/new_task/Makefile&quot;  VERBOSE=1 new_task/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/new_task/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/new_task/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/new_task/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
       </Build>
       <Unit filename="/home/bigbot/cg/examples/convex/ccw_contour_convex.cpp">
       </Unit>
       <Unit filename="/home/bigbot/cg/examples/convex_hull/convex_hull.cpp">
       </Unit>
       <Unit filename="/home/bigbot/cg/examples/convex_hull/dynamic_convex_hull.cpp">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/duglas_pecher/duglas_pecher.cpp">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/new_task/new_task.cpp">
       </Unit>
       <Unit filename="/home/bigbot/cg/examples/operations/ccw_convex_contains_point.cpp">
       </Unit>
@@ -986,11 +1118,15 @@
       </Unit>
       <Unit filename="/home/bigbot/cg/tests/convex_hull.cpp">
       </Unit>
+      <Unit filename="/home/bigbot/cg/tests/duglas_pecher.cpp">
+      </Unit>
       <Unit filename="/home/bigbot/cg/tests/dynamic_convex_hull.cpp">
       </Unit>
       <Unit filename="/home/bigbot/cg/tests/first_problem.cpp">
       </Unit>
       <Unit filename="/home/bigbot/cg/tests/has_intersection.cpp">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/tests/new_task.cpp">
       </Unit>
       <Unit filename="/home/bigbot/cg/tests/orientation.cpp">
       </Unit>
@@ -1006,6 +1142,8 @@
       </Unit>
       <Unit filename="/home/bigbot/cg/include/cg/convex_hull/quick_hull.h">
       </Unit>
+      <Unit filename="/home/bigbot/cg/include/cg/duglas_pecher/duglas_pecher.h">
+      </Unit>
       <Unit filename="/home/bigbot/cg/include/cg/io/io_utils.h">
       </Unit>
       <Unit filename="/home/bigbot/cg/include/cg/io/point.h">
@@ -1019,6 +1157,8 @@
       <Unit filename="/home/bigbot/cg/include/cg/io/triangle.h">
       </Unit>
       <Unit filename="/home/bigbot/cg/include/cg/io/vector.h">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/include/cg/new_task/new_task.h">
       </Unit>
       <Unit filename="/home/bigbot/cg/include/cg/operations/contains/contour_point.h">
       </Unit>
@@ -1126,6 +1266,18 @@
       </Unit>
       <Unit filename="/home/bigbot/cg/examples/convex/CMakeLists.txt">
           <Option virtualFolder="CMake Files\examples\convex\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/duglas_pecher/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\examples\duglas_pecher\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/duglas_pecher/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\examples\duglas_pecher\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/new_task/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\examples\new_task\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/new_task/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\examples\new_task\" />
       </Unit>
    </Project>
 </CodeBlocks_project_file>

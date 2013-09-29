@@ -4,8 +4,10 @@
 /home/bigbot/cg/tests/CMakeFiles/cg_test_headers.dir
 /home/bigbot/cg/examples/operations/CMakeFiles/contour_contains_point.dir
 /home/bigbot/cg/examples/convex_hull/CMakeFiles/convex_hull.dir
+/home/bigbot/cg/examples/duglas_pecher/CMakeFiles/duglas_pecher.dir
 /home/bigbot/cg/examples/convex_hull/CMakeFiles/dynamic_convex_hull.dir
 /home/bigbot/cg/examples/operations/CMakeFiles/first_problem.dir
+/home/bigbot/cg/examples/new_task/CMakeFiles/new_task.dir
 /home/bigbot/cg/examples/orientation/CMakeFiles/orientation_contour_ccw.dir
 /home/bigbot/cg/examples/operations/CMakeFiles/rectangle_intersects_segment.dir
 /home/bigbot/cg/examples/operations/CMakeFiles/segments_intersect.dir

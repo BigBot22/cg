@@ -39,6 +39,8 @@ IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   INCLUDE("/home/bigbot/cg/examples/orientation/cmake_install.cmake")
   INCLUDE("/home/bigbot/cg/examples/convex_hull/cmake_install.cmake")
   INCLUDE("/home/bigbot/cg/examples/convex/cmake_install.cmake")
+  INCLUDE("/home/bigbot/cg/examples/duglas_pecher/cmake_install.cmake")
+  INCLUDE("/home/bigbot/cg/examples/new_task/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 
