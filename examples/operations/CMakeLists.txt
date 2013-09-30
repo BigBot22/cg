@@ -22,3 +22,6 @@ target_link_libraries(ccw_convex_contains_point visualization ${GMP_LIBRARIES})
 
 add_executable(first_problem first_problem.cpp)
 target_link_libraries(first_problem visualization ${GMP_LIBRARIES})
+
+add_executable(diametr_of_set diametr_of_set.cpp)
+target_link_libraries(diametr_of_set visualization ${GMP_LIBRARIES})

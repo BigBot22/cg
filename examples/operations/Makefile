@@ -130,6 +130,20 @@ contour_contains_point/fast:
 .PHONY : contour_contains_point/fast
 
 # Convenience name for target.
+examples/operations/CMakeFiles/diametr_of_set.dir/rule:
+	cd /home/bigbot/cg && $(MAKE) -f CMakeFiles/Makefile2 examples/operations/CMakeFiles/diametr_of_set.dir/rule
+.PHONY : examples/operations/CMakeFiles/diametr_of_set.dir/rule
+
+# Convenience name for target.
+diametr_of_set: examples/operations/CMakeFiles/diametr_of_set.dir/rule
+.PHONY : diametr_of_set
+
+# fast build rule for target.
+diametr_of_set/fast:
+	cd /home/bigbot/cg && $(MAKE) -f examples/operations/CMakeFiles/diametr_of_set.dir/build.make examples/operations/CMakeFiles/diametr_of_set.dir/build
+.PHONY : diametr_of_set/fast
+
+# Convenience name for target.
 examples/operations/CMakeFiles/first_problem.dir/rule:
 	cd /home/bigbot/cg && $(MAKE) -f CMakeFiles/Makefile2 examples/operations/CMakeFiles/first_problem.dir/rule
 .PHONY : examples/operations/CMakeFiles/first_problem.dir/rule
@@ -246,6 +260,30 @@ contour_contains_point.s: contour_contains_point.cpp.s
 contour_contains_point.cpp.s:
 	cd /home/bigbot/cg && $(MAKE) -f examples/operations/CMakeFiles/contour_contains_point.dir/build.make examples/operations/CMakeFiles/contour_contains_point.dir/contour_contains_point.cpp.s
 .PHONY : contour_contains_point.cpp.s
+
+diametr_of_set.o: diametr_of_set.cpp.o
+.PHONY : diametr_of_set.o
+
+# target to build an object file
+diametr_of_set.cpp.o:
+	cd /home/bigbot/cg && $(MAKE) -f examples/operations/CMakeFiles/diametr_of_set.dir/build.make examples/operations/CMakeFiles/diametr_of_set.dir/diametr_of_set.cpp.o
+.PHONY : diametr_of_set.cpp.o
+
+diametr_of_set.i: diametr_of_set.cpp.i
+.PHONY : diametr_of_set.i
+
+# target to preprocess a source file
+diametr_of_set.cpp.i:
+	cd /home/bigbot/cg && $(MAKE) -f examples/operations/CMakeFiles/diametr_of_set.dir/build.make examples/operations/CMakeFiles/diametr_of_set.dir/diametr_of_set.cpp.i
+.PHONY : diametr_of_set.cpp.i
+
+diametr_of_set.s: diametr_of_set.cpp.s
+.PHONY : diametr_of_set.s
+
+# target to generate assembly for a file
+diametr_of_set.cpp.s:
+	cd /home/bigbot/cg && $(MAKE) -f examples/operations/CMakeFiles/diametr_of_set.dir/build.make examples/operations/CMakeFiles/diametr_of_set.dir/diametr_of_set.cpp.s
+.PHONY : diametr_of_set.cpp.s
 
 first_problem.o: first_problem.cpp.o
 .PHONY : first_problem.o
@@ -375,6 +413,7 @@ help:
 	@echo "... depend"
 	@echo "... ccw_convex_contains_point"
 	@echo "... contour_contains_point"
+	@echo "... diametr_of_set"
 	@echo "... edit_cache"
 	@echo "... first_problem"
 	@echo "... rebuild_cache"
@@ -388,6 +427,9 @@ help:
 	@echo "... contour_contains_point.o"
 	@echo "... contour_contains_point.i"
 	@echo "... contour_contains_point.s"
+	@echo "... diametr_of_set.o"
+	@echo "... diametr_of_set.i"
+	@echo "... diametr_of_set.s"
 	@echo "... first_problem.o"
 	@echo "... first_problem.i"
 	@echo "... first_problem.s"

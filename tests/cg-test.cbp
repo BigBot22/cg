@@ -92,11 +92,17 @@
          </MakeCommands>
       </Target>
       </Build>
+      <Unit filename="/home/bigbot/cg/tests/common.cpp">
+      </Unit>
       <Unit filename="/home/bigbot/cg/tests/contains.cpp">
       </Unit>
       <Unit filename="/home/bigbot/cg/tests/convex.cpp">
       </Unit>
       <Unit filename="/home/bigbot/cg/tests/convex_hull.cpp">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/tests/diametr_of_set.cpp">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/tests/distance.cpp">
       </Unit>
       <Unit filename="/home/bigbot/cg/tests/duglas_pecher.cpp">
       </Unit>

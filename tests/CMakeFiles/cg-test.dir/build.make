@@ -259,6 +259,75 @@ tests/CMakeFiles/cg-test.dir/new_task.cpp.o.provides: tests/CMakeFiles/cg-test.d
 
 tests/CMakeFiles/cg-test.dir/new_task.cpp.o.provides.build: tests/CMakeFiles/cg-test.dir/new_task.cpp.o
 
+tests/CMakeFiles/cg-test.dir/diametr_of_set.cpp.o: tests/CMakeFiles/cg-test.dir/flags.make
+tests/CMakeFiles/cg-test.dir/diametr_of_set.cpp.o: tests/diametr_of_set.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_10)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tests/CMakeFiles/cg-test.dir/diametr_of_set.cpp.o"
+	cd /home/bigbot/cg/tests && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cg-test.dir/diametr_of_set.cpp.o -c /home/bigbot/cg/tests/diametr_of_set.cpp
+
+tests/CMakeFiles/cg-test.dir/diametr_of_set.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cg-test.dir/diametr_of_set.cpp.i"
+	cd /home/bigbot/cg/tests && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/bigbot/cg/tests/diametr_of_set.cpp > CMakeFiles/cg-test.dir/diametr_of_set.cpp.i
+
+tests/CMakeFiles/cg-test.dir/diametr_of_set.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cg-test.dir/diametr_of_set.cpp.s"
+	cd /home/bigbot/cg/tests && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/bigbot/cg/tests/diametr_of_set.cpp -o CMakeFiles/cg-test.dir/diametr_of_set.cpp.s
+
+tests/CMakeFiles/cg-test.dir/diametr_of_set.cpp.o.requires:
+.PHONY : tests/CMakeFiles/cg-test.dir/diametr_of_set.cpp.o.requires
+
+tests/CMakeFiles/cg-test.dir/diametr_of_set.cpp.o.provides: tests/CMakeFiles/cg-test.dir/diametr_of_set.cpp.o.requires
+	$(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/diametr_of_set.cpp.o.provides.build
+.PHONY : tests/CMakeFiles/cg-test.dir/diametr_of_set.cpp.o.provides
+
+tests/CMakeFiles/cg-test.dir/diametr_of_set.cpp.o.provides.build: tests/CMakeFiles/cg-test.dir/diametr_of_set.cpp.o
+
+tests/CMakeFiles/cg-test.dir/common.cpp.o: tests/CMakeFiles/cg-test.dir/flags.make
+tests/CMakeFiles/cg-test.dir/common.cpp.o: tests/common.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_11)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tests/CMakeFiles/cg-test.dir/common.cpp.o"
+	cd /home/bigbot/cg/tests && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cg-test.dir/common.cpp.o -c /home/bigbot/cg/tests/common.cpp
+
+tests/CMakeFiles/cg-test.dir/common.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cg-test.dir/common.cpp.i"
+	cd /home/bigbot/cg/tests && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/bigbot/cg/tests/common.cpp > CMakeFiles/cg-test.dir/common.cpp.i
+
+tests/CMakeFiles/cg-test.dir/common.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cg-test.dir/common.cpp.s"
+	cd /home/bigbot/cg/tests && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/bigbot/cg/tests/common.cpp -o CMakeFiles/cg-test.dir/common.cpp.s
+
+tests/CMakeFiles/cg-test.dir/common.cpp.o.requires:
+.PHONY : tests/CMakeFiles/cg-test.dir/common.cpp.o.requires
+
+tests/CMakeFiles/cg-test.dir/common.cpp.o.provides: tests/CMakeFiles/cg-test.dir/common.cpp.o.requires
+	$(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/common.cpp.o.provides.build
+.PHONY : tests/CMakeFiles/cg-test.dir/common.cpp.o.provides
+
+tests/CMakeFiles/cg-test.dir/common.cpp.o.provides.build: tests/CMakeFiles/cg-test.dir/common.cpp.o
+
+tests/CMakeFiles/cg-test.dir/distance.cpp.o: tests/CMakeFiles/cg-test.dir/flags.make
+tests/CMakeFiles/cg-test.dir/distance.cpp.o: tests/distance.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_12)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tests/CMakeFiles/cg-test.dir/distance.cpp.o"
+	cd /home/bigbot/cg/tests && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cg-test.dir/distance.cpp.o -c /home/bigbot/cg/tests/distance.cpp
+
+tests/CMakeFiles/cg-test.dir/distance.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cg-test.dir/distance.cpp.i"
+	cd /home/bigbot/cg/tests && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/bigbot/cg/tests/distance.cpp > CMakeFiles/cg-test.dir/distance.cpp.i
+
+tests/CMakeFiles/cg-test.dir/distance.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cg-test.dir/distance.cpp.s"
+	cd /home/bigbot/cg/tests && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/bigbot/cg/tests/distance.cpp -o CMakeFiles/cg-test.dir/distance.cpp.s
+
+tests/CMakeFiles/cg-test.dir/distance.cpp.o.requires:
+.PHONY : tests/CMakeFiles/cg-test.dir/distance.cpp.o.requires
+
+tests/CMakeFiles/cg-test.dir/distance.cpp.o.provides: tests/CMakeFiles/cg-test.dir/distance.cpp.o.requires
+	$(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/distance.cpp.o.provides.build
+.PHONY : tests/CMakeFiles/cg-test.dir/distance.cpp.o.provides
+
+tests/CMakeFiles/cg-test.dir/distance.cpp.o.provides.build: tests/CMakeFiles/cg-test.dir/distance.cpp.o
+
 # Object files for target cg-test
 cg__test_OBJECTS = \
 "CMakeFiles/cg-test.dir/orientation.cpp.o" \
@@ -269,7 +338,10 @@ cg__test_OBJECTS = \
 "CMakeFiles/cg-test.dir/convex.cpp.o" \
 "CMakeFiles/cg-test.dir/first_problem.cpp.o" \
 "CMakeFiles/cg-test.dir/duglas_pecher.cpp.o" \
-"CMakeFiles/cg-test.dir/new_task.cpp.o"
+"CMakeFiles/cg-test.dir/new_task.cpp.o" \
+"CMakeFiles/cg-test.dir/diametr_of_set.cpp.o" \
+"CMakeFiles/cg-test.dir/common.cpp.o" \
+"CMakeFiles/cg-test.dir/distance.cpp.o"
 
 # External object files for target cg-test
 cg__test_EXTERNAL_OBJECTS =
@@ -283,6 +355,9 @@ tests/cg-test: tests/CMakeFiles/cg-test.dir/convex.cpp.o
 tests/cg-test: tests/CMakeFiles/cg-test.dir/first_problem.cpp.o
 tests/cg-test: tests/CMakeFiles/cg-test.dir/duglas_pecher.cpp.o
 tests/cg-test: tests/CMakeFiles/cg-test.dir/new_task.cpp.o
+tests/cg-test: tests/CMakeFiles/cg-test.dir/diametr_of_set.cpp.o
+tests/cg-test: tests/CMakeFiles/cg-test.dir/common.cpp.o
+tests/cg-test: tests/CMakeFiles/cg-test.dir/distance.cpp.o
 tests/cg-test: tests/CMakeFiles/cg-test.dir/build.make
 tests/cg-test: /usr/lib/libgtest.a
 tests/cg-test: /usr/lib/libgtest_main.a
@@ -304,6 +379,9 @@ tests/CMakeFiles/cg-test.dir/requires: tests/CMakeFiles/cg-test.dir/convex.cpp.o
 tests/CMakeFiles/cg-test.dir/requires: tests/CMakeFiles/cg-test.dir/first_problem.cpp.o.requires
 tests/CMakeFiles/cg-test.dir/requires: tests/CMakeFiles/cg-test.dir/duglas_pecher.cpp.o.requires
 tests/CMakeFiles/cg-test.dir/requires: tests/CMakeFiles/cg-test.dir/new_task.cpp.o.requires
+tests/CMakeFiles/cg-test.dir/requires: tests/CMakeFiles/cg-test.dir/diametr_of_set.cpp.o.requires
+tests/CMakeFiles/cg-test.dir/requires: tests/CMakeFiles/cg-test.dir/common.cpp.o.requires
+tests/CMakeFiles/cg-test.dir/requires: tests/CMakeFiles/cg-test.dir/distance.cpp.o.requires
 .PHONY : tests/CMakeFiles/cg-test.dir/requires
 
 tests/CMakeFiles/cg-test.dir/clean:

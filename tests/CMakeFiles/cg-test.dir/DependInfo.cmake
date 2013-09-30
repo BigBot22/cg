@@ -4,9 +4,12 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
+  "/home/bigbot/cg/tests/common.cpp" "/home/bigbot/cg/tests/CMakeFiles/cg-test.dir/common.cpp.o"
   "/home/bigbot/cg/tests/contains.cpp" "/home/bigbot/cg/tests/CMakeFiles/cg-test.dir/contains.cpp.o"
   "/home/bigbot/cg/tests/convex.cpp" "/home/bigbot/cg/tests/CMakeFiles/cg-test.dir/convex.cpp.o"
   "/home/bigbot/cg/tests/convex_hull.cpp" "/home/bigbot/cg/tests/CMakeFiles/cg-test.dir/convex_hull.cpp.o"
+  "/home/bigbot/cg/tests/diametr_of_set.cpp" "/home/bigbot/cg/tests/CMakeFiles/cg-test.dir/diametr_of_set.cpp.o"
+  "/home/bigbot/cg/tests/distance.cpp" "/home/bigbot/cg/tests/CMakeFiles/cg-test.dir/distance.cpp.o"
   "/home/bigbot/cg/tests/duglas_pecher.cpp" "/home/bigbot/cg/tests/CMakeFiles/cg-test.dir/duglas_pecher.cpp.o"
   "/home/bigbot/cg/tests/dynamic_convex_hull.cpp" "/home/bigbot/cg/tests/CMakeFiles/cg-test.dir/dynamic_convex_hull.cpp.o"
   "/home/bigbot/cg/tests/first_problem.cpp" "/home/bigbot/cg/tests/CMakeFiles/cg-test.dir/first_problem.cpp.o"

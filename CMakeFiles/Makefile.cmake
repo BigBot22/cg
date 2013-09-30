@@ -88,6 +88,7 @@ SET(CMAKE_DEPEND_INFO_FILES
   "examples/viewer/CMakeFiles/viewer-example.dir/DependInfo.cmake"
   "examples/operations/CMakeFiles/ccw_convex_contains_point.dir/DependInfo.cmake"
   "examples/operations/CMakeFiles/contour_contains_point.dir/DependInfo.cmake"
+  "examples/operations/CMakeFiles/diametr_of_set.dir/DependInfo.cmake"
   "examples/operations/CMakeFiles/first_problem.dir/DependInfo.cmake"
   "examples/operations/CMakeFiles/rectangle_intersects_segment.dir/DependInfo.cmake"
   "examples/operations/CMakeFiles/segments_intersect.dir/DependInfo.cmake"

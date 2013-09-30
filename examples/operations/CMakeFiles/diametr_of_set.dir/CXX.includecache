@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/bigbot/cg/examples/duglas_pecher/duglas_pecher.cpp
+/home/bigbot/cg/examples/operations/diametr_of_set.cpp
 vector
 -
 stack
@@ -18,15 +18,13 @@ QApplication
 boost/optional.hpp
 -
 cg/visualization/viewer_adapter.h
-/home/bigbot/cg/examples/duglas_pecher/cg/visualization/viewer_adapter.h
+/home/bigbot/cg/examples/operations/cg/visualization/viewer_adapter.h
 cg/visualization/draw_util.h
-/home/bigbot/cg/examples/duglas_pecher/cg/visualization/draw_util.h
+/home/bigbot/cg/examples/operations/cg/visualization/draw_util.h
 cg/operations/orientation.h
 -
-cg/duglas_pecher/duglas_pecher.h
+cg/operations/diametr_of_set.h
 -
-cg/io/point.h
-/home/bigbot/cg/examples/duglas_pecher/cg/io/point.h
 
 /usr/include/qt4/Qt3Support/q3cstring.h
 QtCore/qbytearray.h
@@ -900,27 +898,39 @@ QtCore/qglobal.h
 QtGui/qmatrix.h
 -
 
+include/cg/common/common.h
+
 include/cg/common/range.h
 iterator
 -
 boost/range/iterator.hpp
 -
 
-include/cg/duglas_pecher/duglas_pecher.h
-cg/primitives/point.h
+include/cg/convex_hull/graham.h
+algorithm
+-
+cg/operations/orientation.h
+-
+
+include/cg/operations/diametr_of_set.h
+gmpxx.h
+-
+cg/primitives/segment.h
+-
+cg/convex_hull/graham.h
+-
+iterator
+-
+algorithm
+-
+boost/utility.hpp
+-
+boost/numeric/interval.hpp
+-
+cg/common/common.h
 -
 cg/operations/distance.h
 -
-
-include/cg/io/io_utils.h
-iostream
--
-
-include/cg/io/point.h
-io_utils.h
-include/cg/io/io_utils.h
-cg/primitives/point.h
-include/cg/io/cg/primitives/point.h
 
 include/cg/operations/distance.h
 cg/primitives/point.h

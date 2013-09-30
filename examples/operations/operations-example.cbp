@@ -145,6 +145,70 @@
             <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
+      <Target title="diametr_of_set">
+         <Option output="/home/bigbot/cg/examples/operations/diametr_of_set" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/operations" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 diametr_of_set" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="diametr_of_set/fast">
+         <Option output="/home/bigbot/cg/examples/operations/diametr_of_set" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/operations" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 diametr_of_set/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
       <Target title="first_problem">
          <Option output="/home/bigbot/cg/examples/operations/first_problem" prefix_auto="0" extension_auto="0" />
          <Option working_dir="/home/bigbot/cg/examples/operations" />
@@ -599,6 +663,8 @@
       <Unit filename="/home/bigbot/cg/examples/operations/ccw_convex_contains_point.cpp">
       </Unit>
       <Unit filename="/home/bigbot/cg/examples/operations/contour_contains_point.cpp">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/operations/diametr_of_set.cpp">
       </Unit>
       <Unit filename="/home/bigbot/cg/examples/operations/first_problem.cpp">
       </Unit>

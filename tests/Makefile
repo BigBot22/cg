@@ -129,6 +129,30 @@ cg_test_headers/fast:
 	cd /home/bigbot/cg && $(MAKE) -f tests/CMakeFiles/cg_test_headers.dir/build.make tests/CMakeFiles/cg_test_headers.dir/build
 .PHONY : cg_test_headers/fast
 
+common.o: common.cpp.o
+.PHONY : common.o
+
+# target to build an object file
+common.cpp.o:
+	cd /home/bigbot/cg && $(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/common.cpp.o
+.PHONY : common.cpp.o
+
+common.i: common.cpp.i
+.PHONY : common.i
+
+# target to preprocess a source file
+common.cpp.i:
+	cd /home/bigbot/cg && $(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/common.cpp.i
+.PHONY : common.cpp.i
+
+common.s: common.cpp.s
+.PHONY : common.s
+
+# target to generate assembly for a file
+common.cpp.s:
+	cd /home/bigbot/cg && $(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/common.cpp.s
+.PHONY : common.cpp.s
+
 contains.o: contains.cpp.o
 .PHONY : contains.o
 
@@ -200,6 +224,54 @@ convex_hull.s: convex_hull.cpp.s
 convex_hull.cpp.s:
 	cd /home/bigbot/cg && $(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/convex_hull.cpp.s
 .PHONY : convex_hull.cpp.s
+
+diametr_of_set.o: diametr_of_set.cpp.o
+.PHONY : diametr_of_set.o
+
+# target to build an object file
+diametr_of_set.cpp.o:
+	cd /home/bigbot/cg && $(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/diametr_of_set.cpp.o
+.PHONY : diametr_of_set.cpp.o
+
+diametr_of_set.i: diametr_of_set.cpp.i
+.PHONY : diametr_of_set.i
+
+# target to preprocess a source file
+diametr_of_set.cpp.i:
+	cd /home/bigbot/cg && $(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/diametr_of_set.cpp.i
+.PHONY : diametr_of_set.cpp.i
+
+diametr_of_set.s: diametr_of_set.cpp.s
+.PHONY : diametr_of_set.s
+
+# target to generate assembly for a file
+diametr_of_set.cpp.s:
+	cd /home/bigbot/cg && $(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/diametr_of_set.cpp.s
+.PHONY : diametr_of_set.cpp.s
+
+distance.o: distance.cpp.o
+.PHONY : distance.o
+
+# target to build an object file
+distance.cpp.o:
+	cd /home/bigbot/cg && $(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/distance.cpp.o
+.PHONY : distance.cpp.o
+
+distance.i: distance.cpp.i
+.PHONY : distance.i
+
+# target to preprocess a source file
+distance.cpp.i:
+	cd /home/bigbot/cg && $(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/distance.cpp.i
+.PHONY : distance.cpp.i
+
+distance.s: distance.cpp.s
+.PHONY : distance.s
+
+# target to generate assembly for a file
+distance.cpp.s:
+	cd /home/bigbot/cg && $(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/distance.cpp.s
+.PHONY : distance.cpp.s
 
 duglas_pecher.o: duglas_pecher.cpp.o
 .PHONY : duglas_pecher.o
@@ -355,6 +427,9 @@ help:
 	@echo "... cg_test_headers"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... common.o"
+	@echo "... common.i"
+	@echo "... common.s"
 	@echo "... contains.o"
 	@echo "... contains.i"
 	@echo "... contains.s"
@@ -364,6 +439,12 @@ help:
 	@echo "... convex_hull.o"
 	@echo "... convex_hull.i"
 	@echo "... convex_hull.s"
+	@echo "... diametr_of_set.o"
+	@echo "... diametr_of_set.i"
+	@echo "... diametr_of_set.s"
+	@echo "... distance.o"
+	@echo "... distance.i"
+	@echo "... distance.s"
 	@echo "... duglas_pecher.o"
 	@echo "... duglas_pecher.i"
 	@echo "... duglas_pecher.s"

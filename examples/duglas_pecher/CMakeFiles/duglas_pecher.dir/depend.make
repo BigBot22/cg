@@ -114,6 +114,7 @@ examples/duglas_pecher/CMakeFiles/duglas_pecher.dir/duglas_pecher.cpp.o: include
 examples/duglas_pecher/CMakeFiles/duglas_pecher.dir/duglas_pecher.cpp.o: include/cg/duglas_pecher/duglas_pecher.h
 examples/duglas_pecher/CMakeFiles/duglas_pecher.dir/duglas_pecher.cpp.o: include/cg/io/io_utils.h
 examples/duglas_pecher/CMakeFiles/duglas_pecher.dir/duglas_pecher.cpp.o: include/cg/io/point.h
+examples/duglas_pecher/CMakeFiles/duglas_pecher.dir/duglas_pecher.cpp.o: include/cg/operations/distance.h
 examples/duglas_pecher/CMakeFiles/duglas_pecher.dir/duglas_pecher.cpp.o: include/cg/operations/orientation.h
 examples/duglas_pecher/CMakeFiles/duglas_pecher.dir/duglas_pecher.cpp.o: include/cg/primitives/contour.h
 examples/duglas_pecher/CMakeFiles/duglas_pecher.dir/duglas_pecher.cpp.o: include/cg/primitives/point.h

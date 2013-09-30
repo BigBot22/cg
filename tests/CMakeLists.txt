@@ -22,6 +22,9 @@ set(SOURCES
    first_problem.cpp
    duglas_pecher.cpp
    new_task.cpp
+   diametr_of_set.cpp
+   common.cpp
+    distance.cpp
 )
 
 add_executable(cg-test ${SOURCES})

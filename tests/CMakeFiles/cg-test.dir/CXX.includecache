@@ -25,6 +25,16 @@ misc/random_utils.h
 include/cg/duglas_pecher/duglas_pecher.h
 cg/primitives/point.h
 -
+cg/operations/distance.h
+-
+
+include/cg/operations/distance.h
+cg/primitives/point.h
+-
+cg/primitives/segment.h
+-
+cmath
+-
 
 include/cg/primitives/point.h
 vector.h
@@ -35,6 +45,12 @@ limits
 -
 algorithm
 -
+
+include/cg/primitives/segment.h
+boost/array.hpp
+-
+point.h
+include/cg/primitives/point.h
 
 include/cg/primitives/vector.h
 range.h

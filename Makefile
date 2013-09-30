@@ -193,6 +193,19 @@ contour_contains_point/fast:
 .PHONY : contour_contains_point/fast
 
 #=============================================================================
+# Target rules for targets named diametr_of_set
+
+# Build rule for target.
+diametr_of_set: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 diametr_of_set
+.PHONY : diametr_of_set
+
+# fast build rule for target.
+diametr_of_set/fast:
+	$(MAKE) -f examples/operations/CMakeFiles/diametr_of_set.dir/build.make examples/operations/CMakeFiles/diametr_of_set.dir/build
+.PHONY : diametr_of_set/fast
+
+#=============================================================================
 # Target rules for targets named first_problem
 
 # Build rule for target.
@@ -350,6 +363,7 @@ help:
 	@echo "... viewer-example"
 	@echo "... ccw_convex_contains_point"
 	@echo "... contour_contains_point"
+	@echo "... diametr_of_set"
 	@echo "... first_problem"
 	@echo "... rectangle_intersects_segment"
 	@echo "... segments_intersect"
