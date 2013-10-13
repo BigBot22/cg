@@ -5,7 +5,7 @@
       <Option title="cg-library" />
       <Option makefile_is_custom="1" />
       <Option compiler="gcc" />
-      <Option virtualFolders="CMake Files\;CMake Files\CMake\;CMake Files\CMake\Modules\;CMake Files\include\;CMake Files\src\;CMake Files\tests\;CMake Files\examples\;CMake Files\examples\viewer\;CMake Files\examples\operations\;CMake Files\examples\orientation\;CMake Files\examples\convex_hull\;CMake Files\examples\convex\;CMake Files\examples\duglas_pecher\;CMake Files\examples\new_task\;" />
+      <Option virtualFolders="CMake Files\;CMake Files\CMake\;CMake Files\CMake\Modules\;CMake Files\include\;CMake Files\src\;CMake Files\tests\;CMake Files\examples\;CMake Files\examples\viewer\;CMake Files\examples\operations\;CMake Files\examples\orientation\;CMake Files\examples\convex_hull\;CMake Files\examples\convex\;CMake Files\examples\duglas_pecher\;CMake Files\examples\new_task\;CMake Files\examples\visibility_graph\;" />
       <Build>
       <Target title="all">
          <Option working_dir="/home/bigbot/cg" />
@@ -1137,6 +1137,70 @@
             <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/new_task/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
+      <Target title="visibility_graph">
+         <Option output="/home/bigbot/cg/examples/visibility_graph/visibility_graph" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/visibility_graph" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/visibility_graph/Makefile&quot;  VERBOSE=1 visibility_graph" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/visibility_graph/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/visibility_graph/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/visibility_graph/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="visibility_graph/fast">
+         <Option output="/home/bigbot/cg/examples/visibility_graph/visibility_graph" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/visibility_graph" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/visibility_graph/Makefile&quot;  VERBOSE=1 visibility_graph/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/visibility_graph/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/visibility_graph/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/visibility_graph/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
       </Build>
       <Unit filename="/home/bigbot/cg/examples/convex/ccw_contour_convex.cpp">
       </Unit>
@@ -1167,6 +1231,8 @@
       <Unit filename="/home/bigbot/cg/examples/orientation/orientation_contour_ccw.cpp">
       </Unit>
       <Unit filename="/home/bigbot/cg/examples/viewer/viewer.cpp">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/visibility_graph/visibility_graph.cpp">
       </Unit>
       <Unit filename="/home/bigbot/cg/src/visualization/draw_util.cpp">
       </Unit>
@@ -1356,6 +1422,12 @@
       </Unit>
       <Unit filename="/home/bigbot/cg/examples/new_task/CMakeLists.txt">
           <Option virtualFolder="CMake Files\examples\new_task\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/visibility_graph/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\examples\visibility_graph\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/visibility_graph/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\examples\visibility_graph\" />
       </Unit>
    </Project>
 </CodeBlocks_project_file>

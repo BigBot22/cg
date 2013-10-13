@@ -348,6 +348,19 @@ new_task/fast:
 	$(MAKE) -f examples/new_task/CMakeFiles/new_task.dir/build.make examples/new_task/CMakeFiles/new_task.dir/build
 .PHONY : new_task/fast
 
+#=============================================================================
+# Target rules for targets named visibility_graph
+
+# Build rule for target.
+visibility_graph: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 visibility_graph
+.PHONY : visibility_graph
+
+# fast build rule for target.
+visibility_graph/fast:
+	$(MAKE) -f examples/visibility_graph/CMakeFiles/visibility_graph.dir/build.make examples/visibility_graph/CMakeFiles/visibility_graph.dir/build
+.PHONY : visibility_graph/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -375,6 +388,7 @@ help:
 	@echo "... ccw_contour_convex"
 	@echo "... duglas_pecher"
 	@echo "... new_task"
+	@echo "... visibility_graph"
 .PHONY : help
 
 

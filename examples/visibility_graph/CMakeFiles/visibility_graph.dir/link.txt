@@ -1,0 +1,1 @@
+/usr/bin/c++    -pthread -std=c++11 -Wall    CMakeFiles/visibility_graph.dir/visibility_graph.cpp.o  -o visibility_graph -rdynamic ../../src/libvisualization.a -lgmp -lQtOpenGL -lQtGui -lQtCore -lGLU -lGL -lSM -lICE -lX11 -lXext 

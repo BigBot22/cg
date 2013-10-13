@@ -24,7 +24,8 @@ set(SOURCES
    new_task.cpp
    diametr_of_set.cpp
    common.cpp
-    distance.cpp
+   distance.cpp
+   #visibility_graph.cpp
 )
 
 add_executable(cg-test ${SOURCES})

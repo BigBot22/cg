@@ -1031,6 +1031,12 @@ viewer-example_BINARY_DIR:STATIC=/home/bigbot/cg/examples/viewer
 //Value Computed by CMake
 viewer-example_SOURCE_DIR:STATIC=/home/bigbot/cg/examples/viewer
 
+//Value Computed by CMake
+visibility_graph-example_BINARY_DIR:STATIC=/home/bigbot/cg/examples/visibility_graph
+
+//Value Computed by CMake
+visibility_graph-example_SOURCE_DIR:STATIC=/home/bigbot/cg/examples/visibility_graph
+
 //Dependencies for the target
 visualization_LIB_DEPENDS:STATIC=general;/usr/lib/x86_64-linux-gnu/libQtOpenGL.so;general;/usr/lib/x86_64-linux-gnu/libQtGui.so;general;/usr/lib/x86_64-linux-gnu/libQtCore.so;general;/usr/lib/x86_64-linux-gnu/libGLU.so;general;/usr/lib/x86_64-linux-gnu/libGL.so;general;/usr/lib/x86_64-linux-gnu/libSM.so;general;/usr/lib/x86_64-linux-gnu/libICE.so;general;/usr/lib/x86_64-linux-gnu/libX11.so;general;/usr/lib/x86_64-linux-gnu/libXext.so;
 
@@ -1161,7 +1167,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=12
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=13
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

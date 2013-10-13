@@ -123,7 +123,7 @@ src/preinstall:
 src/CMakeFiles/visualization.dir/all:
 	$(MAKE) -f src/CMakeFiles/visualization.dir/build.make src/CMakeFiles/visualization.dir/depend
 	$(MAKE) -f src/CMakeFiles/visualization.dir/build.make src/CMakeFiles/visualization.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  28 29 30 31 32
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  29 30 31 32 33
 	@echo "Built target visualization"
 .PHONY : src/CMakeFiles/visualization.dir/all
 
@@ -244,6 +244,7 @@ examples/all: examples/convex_hull/all
 examples/all: examples/convex/all
 examples/all: examples/duglas_pecher/all
 examples/all: examples/new_task/all
+examples/all: examples/visibility_graph/all
 .PHONY : examples/all
 
 # Convenience name for "clean" pass in the directory.
@@ -254,6 +255,7 @@ examples/clean: examples/convex_hull/clean
 examples/clean: examples/convex/clean
 examples/clean: examples/duglas_pecher/clean
 examples/clean: examples/new_task/clean
+examples/clean: examples/visibility_graph/clean
 .PHONY : examples/clean
 
 # Convenience name for "preinstall" pass in the directory.
@@ -264,6 +266,7 @@ examples/preinstall: examples/convex_hull/preinstall
 examples/preinstall: examples/convex/preinstall
 examples/preinstall: examples/duglas_pecher/preinstall
 examples/preinstall: examples/new_task/preinstall
+examples/preinstall: examples/visibility_graph/preinstall
 .PHONY : examples/preinstall
 
 #=============================================================================
@@ -910,6 +913,56 @@ examples/new_task/CMakeFiles/new_task.dir/clean:
 
 # clean rule for target.
 clean: examples/new_task/CMakeFiles/new_task.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory examples/visibility_graph
+
+# Convenience name for "all" pass in the directory.
+examples/visibility_graph/all: examples/visibility_graph/CMakeFiles/visibility_graph.dir/all
+.PHONY : examples/visibility_graph/all
+
+# Convenience name for "clean" pass in the directory.
+examples/visibility_graph/clean: examples/visibility_graph/CMakeFiles/visibility_graph.dir/clean
+.PHONY : examples/visibility_graph/clean
+
+# Convenience name for "preinstall" pass in the directory.
+examples/visibility_graph/preinstall:
+.PHONY : examples/visibility_graph/preinstall
+
+#=============================================================================
+# Target rules for target examples/visibility_graph/CMakeFiles/visibility_graph.dir
+
+# All Build rule for target.
+examples/visibility_graph/CMakeFiles/visibility_graph.dir/all: src/CMakeFiles/visualization.dir/all
+	$(MAKE) -f examples/visibility_graph/CMakeFiles/visibility_graph.dir/build.make examples/visibility_graph/CMakeFiles/visibility_graph.dir/depend
+	$(MAKE) -f examples/visibility_graph/CMakeFiles/visibility_graph.dir/build.make examples/visibility_graph/CMakeFiles/visibility_graph.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  28
+	@echo "Built target visibility_graph"
+.PHONY : examples/visibility_graph/CMakeFiles/visibility_graph.dir/all
+
+# Include target in all.
+all: examples/visibility_graph/CMakeFiles/visibility_graph.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+examples/visibility_graph/CMakeFiles/visibility_graph.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bigbot/cg/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 examples/visibility_graph/CMakeFiles/visibility_graph.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bigbot/cg/CMakeFiles 0
+.PHONY : examples/visibility_graph/CMakeFiles/visibility_graph.dir/rule
+
+# Convenience name for target.
+visibility_graph: examples/visibility_graph/CMakeFiles/visibility_graph.dir/rule
+.PHONY : visibility_graph
+
+# clean rule for target.
+examples/visibility_graph/CMakeFiles/visibility_graph.dir/clean:
+	$(MAKE) -f examples/visibility_graph/CMakeFiles/visibility_graph.dir/build.make examples/visibility_graph/CMakeFiles/visibility_graph.dir/clean
+.PHONY : examples/visibility_graph/CMakeFiles/visibility_graph.dir/clean
+
+# clean rule for target.
+clean: examples/visibility_graph/CMakeFiles/visibility_graph.dir/clean
 .PHONY : clean
 
 #=============================================================================

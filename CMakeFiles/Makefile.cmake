@@ -20,6 +20,7 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "examples/operations/CMakeLists.txt"
   "examples/orientation/CMakeLists.txt"
   "examples/viewer/CMakeLists.txt"
+  "examples/visibility_graph/CMakeLists.txt"
   "include/CMakeLists.txt"
   "src/CMakeLists.txt"
   "tests/CMakeLists.txt"
@@ -77,6 +78,7 @@ SET(CMAKE_MAKEFILE_PRODUCTS
   "examples/convex/CMakeFiles/CMakeDirectoryInformation.cmake"
   "examples/duglas_pecher/CMakeFiles/CMakeDirectoryInformation.cmake"
   "examples/new_task/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "examples/visibility_graph/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -100,4 +102,5 @@ SET(CMAKE_DEPEND_INFO_FILES
   "examples/convex/CMakeFiles/ccw_contour_convex.dir/DependInfo.cmake"
   "examples/duglas_pecher/CMakeFiles/duglas_pecher.dir/DependInfo.cmake"
   "examples/new_task/CMakeFiles/new_task.dir/DependInfo.cmake"
+  "examples/visibility_graph/CMakeFiles/visibility_graph.dir/DependInfo.cmake"
   )
