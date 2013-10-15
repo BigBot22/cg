@@ -195,36 +195,33 @@ void visibility_graph(std::vector<std::vector<point_2>> set_of_points_,std::vect
    //graph.shrink_to_fit();
    for (size_t i = 0; i < set_of_points_.size() - 1; ++i)
    {
-      for (size_t j = 0; j < set_of_points_[i].size(); ++j)
+      for (size_t j = 0; j < set_of_points_[i].size() - 1; ++j)
       {
          point_2 a = set_of_points_[i][j];
 
          for (size_t k = i + 1 ; k < set_of_points_.size(); ++k)
          {
-            for (size_t z = 0; z < set_of_points_[k].size(); ++z)
+            for (size_t z = 0; z < set_of_points_[k].size() - 1; ++z)
             {
                point_2 b = set_of_points_[k][z];
 
                //
                if (a == b) continue;
-               assert(a != b);
+               //assert(a != b);
                if(no_intersect(a, b) == true )
                {
-                  point_2 a_next;
-                  if(j == set_of_points_[i].size() - 1) a_next = set_of_points_[i][0];
-                  else a_next = set_of_points_[i][j + 1];
+
+                  point_2 a_next = set_of_points_[i][j + 1];
 
                   point_2 a_prev;
-                  if(j == 0) a_prev = set_of_points_[i][set_of_points_[i].size() - 1];
+                  if(j == 0) a_prev = set_of_points_[i][set_of_points_[i].size() - 2];
                   else a_prev = set_of_points_[i][j - 1];
 
-                  point_2 b_next;
-                  if(j == set_of_points_[i].size() - 1) b_next = set_of_points_[i][0];
-                  else b_next = set_of_points_[i][j + 1];
+                  point_2 b_next = set_of_points_[k][z + 1];
 
                   point_2 b_prev;
-                  if(j == 0) b_prev = set_of_points_[i][set_of_points_[i].size() - 1];
-                  else b_prev = set_of_points_[i][j - 1];
+                  if(z == 0) b_prev = set_of_points_[k][set_of_points_[k].size() - 2];
+                  else b_prev = set_of_points_[k][z - 1];
 
 
                   if ( ((cg::orientation(a_prev, a, b) == cg::CG_LEFT) || (cg::orientation(a_next, a, b) == cg::CG_RIGHT)) )
