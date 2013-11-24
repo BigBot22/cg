@@ -116,6 +116,8 @@
       </Unit>
       <Unit filename="/home/bigbot/cg/tests/orientation.cpp">
       </Unit>
+      <Unit filename="/home/bigbot/cg/tests/triangulation_delone.cpp">
+      </Unit>
       <Unit filename="/home/bigbot/cg/tests/random_utils.h">
       </Unit>
       <Unit filename="/home/bigbot/cg/CMakeLists.txt">

@@ -529,6 +529,70 @@
             <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
+      <Target title="triangulation_delone">
+         <Option output="/home/bigbot/cg/examples/operations/triangulation_delone" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/operations" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 triangulation_delone" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="triangulation_delone/fast">
+         <Option output="/home/bigbot/cg/examples/operations/triangulation_delone" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/operations" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 triangulation_delone/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/operations/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
       <Target title="orientation_contour_ccw">
          <Option output="/home/bigbot/cg/examples/orientation/orientation_contour_ccw" prefix_auto="0" extension_auto="0" />
          <Option working_dir="/home/bigbot/cg/examples/orientation" />
@@ -675,6 +739,8 @@
       <Unit filename="/home/bigbot/cg/examples/operations/triangle_contains_point.cpp">
       </Unit>
       <Unit filename="/home/bigbot/cg/examples/operations/triangle_intersects_segment.cpp">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/operations/triangulation_delone.cpp">
       </Unit>
       <Unit filename="/home/bigbot/cg/examples/orientation/orientation_contour_ccw.cpp">
       </Unit>

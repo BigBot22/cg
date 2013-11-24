@@ -11,6 +11,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/cg-test.dir/diametr_of_set.cpp.o"
   "CMakeFiles/cg-test.dir/common.cpp.o"
   "CMakeFiles/cg-test.dir/distance.cpp.o"
+  "CMakeFiles/cg-test.dir/triangulation_delone.cpp.o"
   "cg-test.pdb"
   "cg-test"
 )

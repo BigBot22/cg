@@ -25,3 +25,6 @@ target_link_libraries(first_problem visualization ${GMP_LIBRARIES})
 
 add_executable(diametr_of_set diametr_of_set.cpp)
 target_link_libraries(diametr_of_set visualization ${GMP_LIBRARIES})
+
+add_executable(triangulation_delone triangulation_delone.cpp)
+target_link_libraries(triangulation_delone visualization ${GMP_LIBRARIES})

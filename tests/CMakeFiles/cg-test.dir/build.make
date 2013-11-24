@@ -328,6 +328,29 @@ tests/CMakeFiles/cg-test.dir/distance.cpp.o.provides: tests/CMakeFiles/cg-test.d
 
 tests/CMakeFiles/cg-test.dir/distance.cpp.o.provides.build: tests/CMakeFiles/cg-test.dir/distance.cpp.o
 
+tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.o: tests/CMakeFiles/cg-test.dir/flags.make
+tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.o: tests/triangulation_delone.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_13)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.o"
+	cd /home/bigbot/cg/tests && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cg-test.dir/triangulation_delone.cpp.o -c /home/bigbot/cg/tests/triangulation_delone.cpp
+
+tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cg-test.dir/triangulation_delone.cpp.i"
+	cd /home/bigbot/cg/tests && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/bigbot/cg/tests/triangulation_delone.cpp > CMakeFiles/cg-test.dir/triangulation_delone.cpp.i
+
+tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cg-test.dir/triangulation_delone.cpp.s"
+	cd /home/bigbot/cg/tests && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/bigbot/cg/tests/triangulation_delone.cpp -o CMakeFiles/cg-test.dir/triangulation_delone.cpp.s
+
+tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.o.requires:
+.PHONY : tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.o.requires
+
+tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.o.provides: tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.o.requires
+	$(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.o.provides.build
+.PHONY : tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.o.provides
+
+tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.o.provides.build: tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.o
+
 # Object files for target cg-test
 cg__test_OBJECTS = \
 "CMakeFiles/cg-test.dir/orientation.cpp.o" \
@@ -341,7 +364,8 @@ cg__test_OBJECTS = \
 "CMakeFiles/cg-test.dir/new_task.cpp.o" \
 "CMakeFiles/cg-test.dir/diametr_of_set.cpp.o" \
 "CMakeFiles/cg-test.dir/common.cpp.o" \
-"CMakeFiles/cg-test.dir/distance.cpp.o"
+"CMakeFiles/cg-test.dir/distance.cpp.o" \
+"CMakeFiles/cg-test.dir/triangulation_delone.cpp.o"
 
 # External object files for target cg-test
 cg__test_EXTERNAL_OBJECTS =
@@ -358,6 +382,7 @@ tests/cg-test: tests/CMakeFiles/cg-test.dir/new_task.cpp.o
 tests/cg-test: tests/CMakeFiles/cg-test.dir/diametr_of_set.cpp.o
 tests/cg-test: tests/CMakeFiles/cg-test.dir/common.cpp.o
 tests/cg-test: tests/CMakeFiles/cg-test.dir/distance.cpp.o
+tests/cg-test: tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.o
 tests/cg-test: tests/CMakeFiles/cg-test.dir/build.make
 tests/cg-test: /usr/lib/libgtest.a
 tests/cg-test: /usr/lib/libgtest_main.a
@@ -382,6 +407,7 @@ tests/CMakeFiles/cg-test.dir/requires: tests/CMakeFiles/cg-test.dir/new_task.cpp
 tests/CMakeFiles/cg-test.dir/requires: tests/CMakeFiles/cg-test.dir/diametr_of_set.cpp.o.requires
 tests/CMakeFiles/cg-test.dir/requires: tests/CMakeFiles/cg-test.dir/common.cpp.o.requires
 tests/CMakeFiles/cg-test.dir/requires: tests/CMakeFiles/cg-test.dir/distance.cpp.o.requires
+tests/CMakeFiles/cg-test.dir/requires: tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.o.requires
 .PHONY : tests/CMakeFiles/cg-test.dir/requires
 
 tests/CMakeFiles/cg-test.dir/clean:

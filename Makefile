@@ -271,6 +271,19 @@ triangle_intersects_segment/fast:
 .PHONY : triangle_intersects_segment/fast
 
 #=============================================================================
+# Target rules for targets named triangulation_delone
+
+# Build rule for target.
+triangulation_delone: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 triangulation_delone
+.PHONY : triangulation_delone
+
+# fast build rule for target.
+triangulation_delone/fast:
+	$(MAKE) -f examples/operations/CMakeFiles/triangulation_delone.dir/build.make examples/operations/CMakeFiles/triangulation_delone.dir/build
+.PHONY : triangulation_delone/fast
+
+#=============================================================================
 # Target rules for targets named orientation_contour_ccw
 
 # Build rule for target.
@@ -382,6 +395,7 @@ help:
 	@echo "... segments_intersect"
 	@echo "... triangle_contains_point"
 	@echo "... triangle_intersects_segment"
+	@echo "... triangulation_delone"
 	@echo "... orientation_contour_ccw"
 	@echo "... convex_hull"
 	@echo "... dynamic_convex_hull"

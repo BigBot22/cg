@@ -31,6 +31,8 @@ cg/duglas_pecher/duglas_pecher.h
 -
 cg/io/point.h
 /home/bigbot/cg/examples/visibility_graph/cg/io/point.h
+map
+-
 
 /usr/include/qt4/Qt3Support/q3cstring.h
 QtCore/qbytearray.h

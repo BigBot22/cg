@@ -116,3 +116,15 @@ tests/CMakeFiles/cg-test.dir/orientation.cpp.o
  include/cg/primitives/range.h
  include/cg/primitives/vector.h
  include/misc/random_utils.h
+tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.o
+ /home/bigbot/cg/tests/triangulation_delone.cpp
+ include/cg/common/range.h
+ include/cg/io/segment.h
+ include/cg/operations/orientation.h
+ include/cg/operations/triangulation_delone.h
+ include/cg/primitives/contour.h
+ include/cg/primitives/point.h
+ include/cg/primitives/range.h
+ include/cg/primitives/segment.h
+ include/cg/primitives/triangle.h
+ include/cg/primitives/vector.h

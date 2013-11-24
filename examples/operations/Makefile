@@ -213,6 +213,20 @@ triangle_intersects_segment/fast:
 	cd /home/bigbot/cg && $(MAKE) -f examples/operations/CMakeFiles/triangle_intersects_segment.dir/build.make examples/operations/CMakeFiles/triangle_intersects_segment.dir/build
 .PHONY : triangle_intersects_segment/fast
 
+# Convenience name for target.
+examples/operations/CMakeFiles/triangulation_delone.dir/rule:
+	cd /home/bigbot/cg && $(MAKE) -f CMakeFiles/Makefile2 examples/operations/CMakeFiles/triangulation_delone.dir/rule
+.PHONY : examples/operations/CMakeFiles/triangulation_delone.dir/rule
+
+# Convenience name for target.
+triangulation_delone: examples/operations/CMakeFiles/triangulation_delone.dir/rule
+.PHONY : triangulation_delone
+
+# fast build rule for target.
+triangulation_delone/fast:
+	cd /home/bigbot/cg && $(MAKE) -f examples/operations/CMakeFiles/triangulation_delone.dir/build.make examples/operations/CMakeFiles/triangulation_delone.dir/build
+.PHONY : triangulation_delone/fast
+
 ccw_convex_contains_point.o: ccw_convex_contains_point.cpp.o
 .PHONY : ccw_convex_contains_point.o
 
@@ -405,6 +419,30 @@ triangle_intersects_segment.cpp.s:
 	cd /home/bigbot/cg && $(MAKE) -f examples/operations/CMakeFiles/triangle_intersects_segment.dir/build.make examples/operations/CMakeFiles/triangle_intersects_segment.dir/triangle_intersects_segment.cpp.s
 .PHONY : triangle_intersects_segment.cpp.s
 
+triangulation_delone.o: triangulation_delone.cpp.o
+.PHONY : triangulation_delone.o
+
+# target to build an object file
+triangulation_delone.cpp.o:
+	cd /home/bigbot/cg && $(MAKE) -f examples/operations/CMakeFiles/triangulation_delone.dir/build.make examples/operations/CMakeFiles/triangulation_delone.dir/triangulation_delone.cpp.o
+.PHONY : triangulation_delone.cpp.o
+
+triangulation_delone.i: triangulation_delone.cpp.i
+.PHONY : triangulation_delone.i
+
+# target to preprocess a source file
+triangulation_delone.cpp.i:
+	cd /home/bigbot/cg && $(MAKE) -f examples/operations/CMakeFiles/triangulation_delone.dir/build.make examples/operations/CMakeFiles/triangulation_delone.dir/triangulation_delone.cpp.i
+.PHONY : triangulation_delone.cpp.i
+
+triangulation_delone.s: triangulation_delone.cpp.s
+.PHONY : triangulation_delone.s
+
+# target to generate assembly for a file
+triangulation_delone.cpp.s:
+	cd /home/bigbot/cg && $(MAKE) -f examples/operations/CMakeFiles/triangulation_delone.dir/build.make examples/operations/CMakeFiles/triangulation_delone.dir/triangulation_delone.cpp.s
+.PHONY : triangulation_delone.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -421,6 +459,7 @@ help:
 	@echo "... segments_intersect"
 	@echo "... triangle_contains_point"
 	@echo "... triangle_intersects_segment"
+	@echo "... triangulation_delone"
 	@echo "... ccw_convex_contains_point.o"
 	@echo "... ccw_convex_contains_point.i"
 	@echo "... ccw_convex_contains_point.s"
@@ -445,6 +484,9 @@ help:
 	@echo "... triangle_intersects_segment.o"
 	@echo "... triangle_intersects_segment.i"
 	@echo "... triangle_intersects_segment.s"
+	@echo "... triangulation_delone.o"
+	@echo "... triangulation_delone.i"
+	@echo "... triangulation_delone.s"
 .PHONY : help
 
 

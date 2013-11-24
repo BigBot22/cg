@@ -123,7 +123,7 @@ src/preinstall:
 src/CMakeFiles/visualization.dir/all:
 	$(MAKE) -f src/CMakeFiles/visualization.dir/build.make src/CMakeFiles/visualization.dir/depend
 	$(MAKE) -f src/CMakeFiles/visualization.dir/build.make src/CMakeFiles/visualization.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  29 30 31 32 33
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  31 32 33 34 35
 	@echo "Built target visualization"
 .PHONY : src/CMakeFiles/visualization.dir/all
 
@@ -174,7 +174,7 @@ tests/preinstall:
 tests/CMakeFiles/cg-test.dir/all:
 	$(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/depend
 	$(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  3 4 5 6 7 8 9 10 11 12 13 14
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  3 4 5 6 7 8 9 10 11 12 13 14 15
 	@echo "Built target cg-test"
 .PHONY : tests/CMakeFiles/cg-test.dir/all
 
@@ -184,7 +184,7 @@ all: tests/CMakeFiles/cg-test.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/cg-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bigbot/cg/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bigbot/cg/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/cg-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bigbot/cg/CMakeFiles 0
 .PHONY : tests/CMakeFiles/cg-test.dir/rule
@@ -291,7 +291,7 @@ examples/viewer/preinstall:
 examples/viewer/CMakeFiles/viewer-example.dir/all: src/CMakeFiles/visualization.dir/all
 	$(MAKE) -f examples/viewer/CMakeFiles/viewer-example.dir/build.make examples/viewer/CMakeFiles/viewer-example.dir/depend
 	$(MAKE) -f examples/viewer/CMakeFiles/viewer-example.dir/build.make examples/viewer/CMakeFiles/viewer-example.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  27
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  29
 	@echo "Built target viewer-example"
 .PHONY : examples/viewer/CMakeFiles/viewer-example.dir/all
 
@@ -331,6 +331,7 @@ examples/operations/all: examples/operations/CMakeFiles/rectangle_intersects_seg
 examples/operations/all: examples/operations/CMakeFiles/segments_intersect.dir/all
 examples/operations/all: examples/operations/CMakeFiles/triangle_contains_point.dir/all
 examples/operations/all: examples/operations/CMakeFiles/triangle_intersects_segment.dir/all
+examples/operations/all: examples/operations/CMakeFiles/triangulation_delone.dir/all
 .PHONY : examples/operations/all
 
 # Convenience name for "clean" pass in the directory.
@@ -342,6 +343,7 @@ examples/operations/clean: examples/operations/CMakeFiles/rectangle_intersects_s
 examples/operations/clean: examples/operations/CMakeFiles/segments_intersect.dir/clean
 examples/operations/clean: examples/operations/CMakeFiles/triangle_contains_point.dir/clean
 examples/operations/clean: examples/operations/CMakeFiles/triangle_intersects_segment.dir/clean
+examples/operations/clean: examples/operations/CMakeFiles/triangulation_delone.dir/clean
 .PHONY : examples/operations/clean
 
 # Convenience name for "preinstall" pass in the directory.
@@ -390,7 +392,7 @@ clean: examples/operations/CMakeFiles/ccw_convex_contains_point.dir/clean
 examples/operations/CMakeFiles/contour_contains_point.dir/all: src/CMakeFiles/visualization.dir/all
 	$(MAKE) -f examples/operations/CMakeFiles/contour_contains_point.dir/build.make examples/operations/CMakeFiles/contour_contains_point.dir/depend
 	$(MAKE) -f examples/operations/CMakeFiles/contour_contains_point.dir/build.make examples/operations/CMakeFiles/contour_contains_point.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  15
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  16
 	@echo "Built target contour_contains_point"
 .PHONY : examples/operations/CMakeFiles/contour_contains_point.dir/all
 
@@ -425,7 +427,7 @@ clean: examples/operations/CMakeFiles/contour_contains_point.dir/clean
 examples/operations/CMakeFiles/diametr_of_set.dir/all: src/CMakeFiles/visualization.dir/all
 	$(MAKE) -f examples/operations/CMakeFiles/diametr_of_set.dir/build.make examples/operations/CMakeFiles/diametr_of_set.dir/depend
 	$(MAKE) -f examples/operations/CMakeFiles/diametr_of_set.dir/build.make examples/operations/CMakeFiles/diametr_of_set.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  17
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  18
 	@echo "Built target diametr_of_set"
 .PHONY : examples/operations/CMakeFiles/diametr_of_set.dir/all
 
@@ -460,7 +462,7 @@ clean: examples/operations/CMakeFiles/diametr_of_set.dir/clean
 examples/operations/CMakeFiles/first_problem.dir/all: src/CMakeFiles/visualization.dir/all
 	$(MAKE) -f examples/operations/CMakeFiles/first_problem.dir/build.make examples/operations/CMakeFiles/first_problem.dir/depend
 	$(MAKE) -f examples/operations/CMakeFiles/first_problem.dir/build.make examples/operations/CMakeFiles/first_problem.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  20
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  21
 	@echo "Built target first_problem"
 .PHONY : examples/operations/CMakeFiles/first_problem.dir/all
 
@@ -495,7 +497,7 @@ clean: examples/operations/CMakeFiles/first_problem.dir/clean
 examples/operations/CMakeFiles/rectangle_intersects_segment.dir/all: src/CMakeFiles/visualization.dir/all
 	$(MAKE) -f examples/operations/CMakeFiles/rectangle_intersects_segment.dir/build.make examples/operations/CMakeFiles/rectangle_intersects_segment.dir/depend
 	$(MAKE) -f examples/operations/CMakeFiles/rectangle_intersects_segment.dir/build.make examples/operations/CMakeFiles/rectangle_intersects_segment.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  23
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  24
 	@echo "Built target rectangle_intersects_segment"
 .PHONY : examples/operations/CMakeFiles/rectangle_intersects_segment.dir/all
 
@@ -530,7 +532,7 @@ clean: examples/operations/CMakeFiles/rectangle_intersects_segment.dir/clean
 examples/operations/CMakeFiles/segments_intersect.dir/all: src/CMakeFiles/visualization.dir/all
 	$(MAKE) -f examples/operations/CMakeFiles/segments_intersect.dir/build.make examples/operations/CMakeFiles/segments_intersect.dir/depend
 	$(MAKE) -f examples/operations/CMakeFiles/segments_intersect.dir/build.make examples/operations/CMakeFiles/segments_intersect.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  24
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  25
 	@echo "Built target segments_intersect"
 .PHONY : examples/operations/CMakeFiles/segments_intersect.dir/all
 
@@ -565,7 +567,7 @@ clean: examples/operations/CMakeFiles/segments_intersect.dir/clean
 examples/operations/CMakeFiles/triangle_contains_point.dir/all: src/CMakeFiles/visualization.dir/all
 	$(MAKE) -f examples/operations/CMakeFiles/triangle_contains_point.dir/build.make examples/operations/CMakeFiles/triangle_contains_point.dir/depend
 	$(MAKE) -f examples/operations/CMakeFiles/triangle_contains_point.dir/build.make examples/operations/CMakeFiles/triangle_contains_point.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  25
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  26
 	@echo "Built target triangle_contains_point"
 .PHONY : examples/operations/CMakeFiles/triangle_contains_point.dir/all
 
@@ -600,7 +602,7 @@ clean: examples/operations/CMakeFiles/triangle_contains_point.dir/clean
 examples/operations/CMakeFiles/triangle_intersects_segment.dir/all: src/CMakeFiles/visualization.dir/all
 	$(MAKE) -f examples/operations/CMakeFiles/triangle_intersects_segment.dir/build.make examples/operations/CMakeFiles/triangle_intersects_segment.dir/depend
 	$(MAKE) -f examples/operations/CMakeFiles/triangle_intersects_segment.dir/build.make examples/operations/CMakeFiles/triangle_intersects_segment.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  26
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  27
 	@echo "Built target triangle_intersects_segment"
 .PHONY : examples/operations/CMakeFiles/triangle_intersects_segment.dir/all
 
@@ -629,6 +631,41 @@ clean: examples/operations/CMakeFiles/triangle_intersects_segment.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target examples/operations/CMakeFiles/triangulation_delone.dir
+
+# All Build rule for target.
+examples/operations/CMakeFiles/triangulation_delone.dir/all: src/CMakeFiles/visualization.dir/all
+	$(MAKE) -f examples/operations/CMakeFiles/triangulation_delone.dir/build.make examples/operations/CMakeFiles/triangulation_delone.dir/depend
+	$(MAKE) -f examples/operations/CMakeFiles/triangulation_delone.dir/build.make examples/operations/CMakeFiles/triangulation_delone.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  28
+	@echo "Built target triangulation_delone"
+.PHONY : examples/operations/CMakeFiles/triangulation_delone.dir/all
+
+# Include target in all.
+all: examples/operations/CMakeFiles/triangulation_delone.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+examples/operations/CMakeFiles/triangulation_delone.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bigbot/cg/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 examples/operations/CMakeFiles/triangulation_delone.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bigbot/cg/CMakeFiles 0
+.PHONY : examples/operations/CMakeFiles/triangulation_delone.dir/rule
+
+# Convenience name for target.
+triangulation_delone: examples/operations/CMakeFiles/triangulation_delone.dir/rule
+.PHONY : triangulation_delone
+
+# clean rule for target.
+examples/operations/CMakeFiles/triangulation_delone.dir/clean:
+	$(MAKE) -f examples/operations/CMakeFiles/triangulation_delone.dir/build.make examples/operations/CMakeFiles/triangulation_delone.dir/clean
+.PHONY : examples/operations/CMakeFiles/triangulation_delone.dir/clean
+
+# clean rule for target.
+clean: examples/operations/CMakeFiles/triangulation_delone.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory examples/orientation
 
 # Convenience name for "all" pass in the directory.
@@ -650,7 +687,7 @@ examples/orientation/preinstall:
 examples/orientation/CMakeFiles/orientation_contour_ccw.dir/all: src/CMakeFiles/visualization.dir/all
 	$(MAKE) -f examples/orientation/CMakeFiles/orientation_contour_ccw.dir/build.make examples/orientation/CMakeFiles/orientation_contour_ccw.dir/depend
 	$(MAKE) -f examples/orientation/CMakeFiles/orientation_contour_ccw.dir/build.make examples/orientation/CMakeFiles/orientation_contour_ccw.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  22
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  23
 	@echo "Built target orientation_contour_ccw"
 .PHONY : examples/orientation/CMakeFiles/orientation_contour_ccw.dir/all
 
@@ -702,7 +739,7 @@ examples/convex_hull/preinstall:
 examples/convex_hull/CMakeFiles/convex_hull.dir/all: src/CMakeFiles/visualization.dir/all
 	$(MAKE) -f examples/convex_hull/CMakeFiles/convex_hull.dir/build.make examples/convex_hull/CMakeFiles/convex_hull.dir/depend
 	$(MAKE) -f examples/convex_hull/CMakeFiles/convex_hull.dir/build.make examples/convex_hull/CMakeFiles/convex_hull.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  16
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  17
 	@echo "Built target convex_hull"
 .PHONY : examples/convex_hull/CMakeFiles/convex_hull.dir/all
 
@@ -737,7 +774,7 @@ clean: examples/convex_hull/CMakeFiles/convex_hull.dir/clean
 examples/convex_hull/CMakeFiles/dynamic_convex_hull.dir/all: src/CMakeFiles/visualization.dir/all
 	$(MAKE) -f examples/convex_hull/CMakeFiles/dynamic_convex_hull.dir/build.make examples/convex_hull/CMakeFiles/dynamic_convex_hull.dir/depend
 	$(MAKE) -f examples/convex_hull/CMakeFiles/dynamic_convex_hull.dir/build.make examples/convex_hull/CMakeFiles/dynamic_convex_hull.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  19
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  20
 	@echo "Built target dynamic_convex_hull"
 .PHONY : examples/convex_hull/CMakeFiles/dynamic_convex_hull.dir/all
 
@@ -837,7 +874,7 @@ examples/duglas_pecher/preinstall:
 examples/duglas_pecher/CMakeFiles/duglas_pecher.dir/all: src/CMakeFiles/visualization.dir/all
 	$(MAKE) -f examples/duglas_pecher/CMakeFiles/duglas_pecher.dir/build.make examples/duglas_pecher/CMakeFiles/duglas_pecher.dir/depend
 	$(MAKE) -f examples/duglas_pecher/CMakeFiles/duglas_pecher.dir/build.make examples/duglas_pecher/CMakeFiles/duglas_pecher.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  18
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  19
 	@echo "Built target duglas_pecher"
 .PHONY : examples/duglas_pecher/CMakeFiles/duglas_pecher.dir/all
 
@@ -887,7 +924,7 @@ examples/new_task/preinstall:
 examples/new_task/CMakeFiles/new_task.dir/all: src/CMakeFiles/visualization.dir/all
 	$(MAKE) -f examples/new_task/CMakeFiles/new_task.dir/build.make examples/new_task/CMakeFiles/new_task.dir/depend
 	$(MAKE) -f examples/new_task/CMakeFiles/new_task.dir/build.make examples/new_task/CMakeFiles/new_task.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  21
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  22
 	@echo "Built target new_task"
 .PHONY : examples/new_task/CMakeFiles/new_task.dir/all
 
@@ -937,7 +974,7 @@ examples/visibility_graph/preinstall:
 examples/visibility_graph/CMakeFiles/visibility_graph.dir/all: src/CMakeFiles/visualization.dir/all
 	$(MAKE) -f examples/visibility_graph/CMakeFiles/visibility_graph.dir/build.make examples/visibility_graph/CMakeFiles/visibility_graph.dir/depend
 	$(MAKE) -f examples/visibility_graph/CMakeFiles/visibility_graph.dir/build.make examples/visibility_graph/CMakeFiles/visibility_graph.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  28
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  30
 	@echo "Built target visibility_graph"
 .PHONY : examples/visibility_graph/CMakeFiles/visibility_graph.dir/all
 

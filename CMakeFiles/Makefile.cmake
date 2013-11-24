@@ -96,6 +96,7 @@ SET(CMAKE_DEPEND_INFO_FILES
   "examples/operations/CMakeFiles/segments_intersect.dir/DependInfo.cmake"
   "examples/operations/CMakeFiles/triangle_contains_point.dir/DependInfo.cmake"
   "examples/operations/CMakeFiles/triangle_intersects_segment.dir/DependInfo.cmake"
+  "examples/operations/CMakeFiles/triangulation_delone.dir/DependInfo.cmake"
   "examples/orientation/CMakeFiles/orientation_contour_ccw.dir/DependInfo.cmake"
   "examples/convex_hull/CMakeFiles/convex_hull.dir/DependInfo.cmake"
   "examples/convex_hull/CMakeFiles/dynamic_convex_hull.dir/DependInfo.cmake"

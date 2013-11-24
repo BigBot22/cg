@@ -16,6 +16,7 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/bigbot/cg/tests/has_intersection.cpp" "/home/bigbot/cg/tests/CMakeFiles/cg-test.dir/has_intersection.cpp.o"
   "/home/bigbot/cg/tests/new_task.cpp" "/home/bigbot/cg/tests/CMakeFiles/cg-test.dir/new_task.cpp.o"
   "/home/bigbot/cg/tests/orientation.cpp" "/home/bigbot/cg/tests/CMakeFiles/cg-test.dir/orientation.cpp.o"
+  "/home/bigbot/cg/tests/triangulation_delone.cpp" "/home/bigbot/cg/tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
