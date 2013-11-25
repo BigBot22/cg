@@ -1,1 +1,1 @@
-/usr/bin/c++    -pthread -std=c++11 -Wall    CMakeFiles/triangle_contains_point.dir/triangle_contains_point.cpp.o  -o triangle_contains_point -rdynamic ../../src/libvisualization.a -lgmp -lQtOpenGL -lQtGui -lQtCore -lGLU -lGL -lSM -lICE -lX11 -lXext 
+/usr/bin/c++    -pthread -std=c++11 -Wall -pthread    CMakeFiles/triangle_contains_point.dir/triangle_contains_point.cpp.o  -o triangle_contains_point -rdynamic ../../src/libvisualization.a -lgmp -lQtOpenGL -lQtGui -lQtCore -lGLU -lGL -lSM -lICE -lX11 -lXext 

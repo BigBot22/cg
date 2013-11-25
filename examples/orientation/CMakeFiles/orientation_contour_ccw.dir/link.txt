@@ -1,1 +1,1 @@
-/usr/bin/c++    -pthread -std=c++11 -Wall    CMakeFiles/orientation_contour_ccw.dir/orientation_contour_ccw.cpp.o  -o orientation_contour_ccw -rdynamic ../../src/libvisualization.a -lgmp -lQtOpenGL -lQtGui -lQtCore -lGLU -lGL -lSM -lICE -lX11 -lXext 
+/usr/bin/c++    -pthread -std=c++11 -Wall -pthread    CMakeFiles/orientation_contour_ccw.dir/orientation_contour_ccw.cpp.o  -o orientation_contour_ccw -rdynamic ../../src/libvisualization.a -lgmp -lQtOpenGL -lQtGui -lQtCore -lGLU -lGL -lSM -lICE -lX11 -lXext 

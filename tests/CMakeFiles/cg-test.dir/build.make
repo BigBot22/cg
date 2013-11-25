@@ -52,9 +52,32 @@ include tests/CMakeFiles/cg-test.dir/progress.make
 # Include the compile flags for this target's objects.
 include tests/CMakeFiles/cg-test.dir/flags.make
 
+tests/CMakeFiles/cg-test.dir/triangulation.cpp.o: tests/CMakeFiles/cg-test.dir/flags.make
+tests/CMakeFiles/cg-test.dir/triangulation.cpp.o: tests/triangulation.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tests/CMakeFiles/cg-test.dir/triangulation.cpp.o"
+	cd /home/bigbot/cg/tests && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cg-test.dir/triangulation.cpp.o -c /home/bigbot/cg/tests/triangulation.cpp
+
+tests/CMakeFiles/cg-test.dir/triangulation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cg-test.dir/triangulation.cpp.i"
+	cd /home/bigbot/cg/tests && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/bigbot/cg/tests/triangulation.cpp > CMakeFiles/cg-test.dir/triangulation.cpp.i
+
+tests/CMakeFiles/cg-test.dir/triangulation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cg-test.dir/triangulation.cpp.s"
+	cd /home/bigbot/cg/tests && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/bigbot/cg/tests/triangulation.cpp -o CMakeFiles/cg-test.dir/triangulation.cpp.s
+
+tests/CMakeFiles/cg-test.dir/triangulation.cpp.o.requires:
+.PHONY : tests/CMakeFiles/cg-test.dir/triangulation.cpp.o.requires
+
+tests/CMakeFiles/cg-test.dir/triangulation.cpp.o.provides: tests/CMakeFiles/cg-test.dir/triangulation.cpp.o.requires
+	$(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/triangulation.cpp.o.provides.build
+.PHONY : tests/CMakeFiles/cg-test.dir/triangulation.cpp.o.provides
+
+tests/CMakeFiles/cg-test.dir/triangulation.cpp.o.provides.build: tests/CMakeFiles/cg-test.dir/triangulation.cpp.o
+
 tests/CMakeFiles/cg-test.dir/orientation.cpp.o: tests/CMakeFiles/cg-test.dir/flags.make
 tests/CMakeFiles/cg-test.dir/orientation.cpp.o: tests/orientation.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tests/CMakeFiles/cg-test.dir/orientation.cpp.o"
 	cd /home/bigbot/cg/tests && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cg-test.dir/orientation.cpp.o -c /home/bigbot/cg/tests/orientation.cpp
 
@@ -77,7 +100,7 @@ tests/CMakeFiles/cg-test.dir/orientation.cpp.o.provides.build: tests/CMakeFiles/
 
 tests/CMakeFiles/cg-test.dir/has_intersection.cpp.o: tests/CMakeFiles/cg-test.dir/flags.make
 tests/CMakeFiles/cg-test.dir/has_intersection.cpp.o: tests/has_intersection.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tests/CMakeFiles/cg-test.dir/has_intersection.cpp.o"
 	cd /home/bigbot/cg/tests && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cg-test.dir/has_intersection.cpp.o -c /home/bigbot/cg/tests/has_intersection.cpp
 
@@ -100,7 +123,7 @@ tests/CMakeFiles/cg-test.dir/has_intersection.cpp.o.provides.build: tests/CMakeF
 
 tests/CMakeFiles/cg-test.dir/contains.cpp.o: tests/CMakeFiles/cg-test.dir/flags.make
 tests/CMakeFiles/cg-test.dir/contains.cpp.o: tests/contains.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tests/CMakeFiles/cg-test.dir/contains.cpp.o"
 	cd /home/bigbot/cg/tests && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cg-test.dir/contains.cpp.o -c /home/bigbot/cg/tests/contains.cpp
 
@@ -123,7 +146,7 @@ tests/CMakeFiles/cg-test.dir/contains.cpp.o.provides.build: tests/CMakeFiles/cg-
 
 tests/CMakeFiles/cg-test.dir/convex_hull.cpp.o: tests/CMakeFiles/cg-test.dir/flags.make
 tests/CMakeFiles/cg-test.dir/convex_hull.cpp.o: tests/convex_hull.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tests/CMakeFiles/cg-test.dir/convex_hull.cpp.o"
 	cd /home/bigbot/cg/tests && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cg-test.dir/convex_hull.cpp.o -c /home/bigbot/cg/tests/convex_hull.cpp
 
@@ -146,7 +169,7 @@ tests/CMakeFiles/cg-test.dir/convex_hull.cpp.o.provides.build: tests/CMakeFiles/
 
 tests/CMakeFiles/cg-test.dir/dynamic_convex_hull.cpp.o: tests/CMakeFiles/cg-test.dir/flags.make
 tests/CMakeFiles/cg-test.dir/dynamic_convex_hull.cpp.o: tests/dynamic_convex_hull.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tests/CMakeFiles/cg-test.dir/dynamic_convex_hull.cpp.o"
 	cd /home/bigbot/cg/tests && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cg-test.dir/dynamic_convex_hull.cpp.o -c /home/bigbot/cg/tests/dynamic_convex_hull.cpp
 
@@ -169,7 +192,7 @@ tests/CMakeFiles/cg-test.dir/dynamic_convex_hull.cpp.o.provides.build: tests/CMa
 
 tests/CMakeFiles/cg-test.dir/convex.cpp.o: tests/CMakeFiles/cg-test.dir/flags.make
 tests/CMakeFiles/cg-test.dir/convex.cpp.o: tests/convex.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tests/CMakeFiles/cg-test.dir/convex.cpp.o"
 	cd /home/bigbot/cg/tests && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cg-test.dir/convex.cpp.o -c /home/bigbot/cg/tests/convex.cpp
 
@@ -192,7 +215,7 @@ tests/CMakeFiles/cg-test.dir/convex.cpp.o.provides.build: tests/CMakeFiles/cg-te
 
 tests/CMakeFiles/cg-test.dir/first_problem.cpp.o: tests/CMakeFiles/cg-test.dir/flags.make
 tests/CMakeFiles/cg-test.dir/first_problem.cpp.o: tests/first_problem.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tests/CMakeFiles/cg-test.dir/first_problem.cpp.o"
 	cd /home/bigbot/cg/tests && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cg-test.dir/first_problem.cpp.o -c /home/bigbot/cg/tests/first_problem.cpp
 
@@ -215,7 +238,7 @@ tests/CMakeFiles/cg-test.dir/first_problem.cpp.o.provides.build: tests/CMakeFile
 
 tests/CMakeFiles/cg-test.dir/duglas_pecher.cpp.o: tests/CMakeFiles/cg-test.dir/flags.make
 tests/CMakeFiles/cg-test.dir/duglas_pecher.cpp.o: tests/duglas_pecher.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tests/CMakeFiles/cg-test.dir/duglas_pecher.cpp.o"
 	cd /home/bigbot/cg/tests && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cg-test.dir/duglas_pecher.cpp.o -c /home/bigbot/cg/tests/duglas_pecher.cpp
 
@@ -238,7 +261,7 @@ tests/CMakeFiles/cg-test.dir/duglas_pecher.cpp.o.provides.build: tests/CMakeFile
 
 tests/CMakeFiles/cg-test.dir/new_task.cpp.o: tests/CMakeFiles/cg-test.dir/flags.make
 tests/CMakeFiles/cg-test.dir/new_task.cpp.o: tests/new_task.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tests/CMakeFiles/cg-test.dir/new_task.cpp.o"
 	cd /home/bigbot/cg/tests && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cg-test.dir/new_task.cpp.o -c /home/bigbot/cg/tests/new_task.cpp
 
@@ -261,7 +284,7 @@ tests/CMakeFiles/cg-test.dir/new_task.cpp.o.provides.build: tests/CMakeFiles/cg-
 
 tests/CMakeFiles/cg-test.dir/diametr_of_set.cpp.o: tests/CMakeFiles/cg-test.dir/flags.make
 tests/CMakeFiles/cg-test.dir/diametr_of_set.cpp.o: tests/diametr_of_set.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tests/CMakeFiles/cg-test.dir/diametr_of_set.cpp.o"
 	cd /home/bigbot/cg/tests && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cg-test.dir/diametr_of_set.cpp.o -c /home/bigbot/cg/tests/diametr_of_set.cpp
 
@@ -284,7 +307,7 @@ tests/CMakeFiles/cg-test.dir/diametr_of_set.cpp.o.provides.build: tests/CMakeFil
 
 tests/CMakeFiles/cg-test.dir/common.cpp.o: tests/CMakeFiles/cg-test.dir/flags.make
 tests/CMakeFiles/cg-test.dir/common.cpp.o: tests/common.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tests/CMakeFiles/cg-test.dir/common.cpp.o"
 	cd /home/bigbot/cg/tests && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cg-test.dir/common.cpp.o -c /home/bigbot/cg/tests/common.cpp
 
@@ -307,7 +330,7 @@ tests/CMakeFiles/cg-test.dir/common.cpp.o.provides.build: tests/CMakeFiles/cg-te
 
 tests/CMakeFiles/cg-test.dir/distance.cpp.o: tests/CMakeFiles/cg-test.dir/flags.make
 tests/CMakeFiles/cg-test.dir/distance.cpp.o: tests/distance.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tests/CMakeFiles/cg-test.dir/distance.cpp.o"
 	cd /home/bigbot/cg/tests && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cg-test.dir/distance.cpp.o -c /home/bigbot/cg/tests/distance.cpp
 
@@ -330,7 +353,7 @@ tests/CMakeFiles/cg-test.dir/distance.cpp.o.provides.build: tests/CMakeFiles/cg-
 
 tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.o: tests/CMakeFiles/cg-test.dir/flags.make
 tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.o: tests/triangulation_delone.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.o"
 	cd /home/bigbot/cg/tests && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cg-test.dir/triangulation_delone.cpp.o -c /home/bigbot/cg/tests/triangulation_delone.cpp
 
@@ -353,6 +376,7 @@ tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.o.provides.build: tests/CM
 
 # Object files for target cg-test
 cg__test_OBJECTS = \
+"CMakeFiles/cg-test.dir/triangulation.cpp.o" \
 "CMakeFiles/cg-test.dir/orientation.cpp.o" \
 "CMakeFiles/cg-test.dir/has_intersection.cpp.o" \
 "CMakeFiles/cg-test.dir/contains.cpp.o" \
@@ -370,6 +394,7 @@ cg__test_OBJECTS = \
 # External object files for target cg-test
 cg__test_EXTERNAL_OBJECTS =
 
+tests/cg-test: tests/CMakeFiles/cg-test.dir/triangulation.cpp.o
 tests/cg-test: tests/CMakeFiles/cg-test.dir/orientation.cpp.o
 tests/cg-test: tests/CMakeFiles/cg-test.dir/has_intersection.cpp.o
 tests/cg-test: tests/CMakeFiles/cg-test.dir/contains.cpp.o
@@ -395,6 +420,7 @@ tests/cg-test: tests/CMakeFiles/cg-test.dir/link.txt
 tests/CMakeFiles/cg-test.dir/build: tests/cg-test
 .PHONY : tests/CMakeFiles/cg-test.dir/build
 
+tests/CMakeFiles/cg-test.dir/requires: tests/CMakeFiles/cg-test.dir/triangulation.cpp.o.requires
 tests/CMakeFiles/cg-test.dir/requires: tests/CMakeFiles/cg-test.dir/orientation.cpp.o.requires
 tests/CMakeFiles/cg-test.dir/requires: tests/CMakeFiles/cg-test.dir/has_intersection.cpp.o.requires
 tests/CMakeFiles/cg-test.dir/requires: tests/CMakeFiles/cg-test.dir/contains.cpp.o.requires

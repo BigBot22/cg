@@ -417,6 +417,30 @@ orientation.cpp.s:
 	cd /home/bigbot/cg && $(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/orientation.cpp.s
 .PHONY : orientation.cpp.s
 
+triangulation.o: triangulation.cpp.o
+.PHONY : triangulation.o
+
+# target to build an object file
+triangulation.cpp.o:
+	cd /home/bigbot/cg && $(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/triangulation.cpp.o
+.PHONY : triangulation.cpp.o
+
+triangulation.i: triangulation.cpp.i
+.PHONY : triangulation.i
+
+# target to preprocess a source file
+triangulation.cpp.i:
+	cd /home/bigbot/cg && $(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/triangulation.cpp.i
+.PHONY : triangulation.cpp.i
+
+triangulation.s: triangulation.cpp.s
+.PHONY : triangulation.s
+
+# target to generate assembly for a file
+triangulation.cpp.s:
+	cd /home/bigbot/cg && $(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/triangulation.cpp.s
+.PHONY : triangulation.cpp.s
+
 triangulation_delone.o: triangulation_delone.cpp.o
 .PHONY : triangulation_delone.o
 
@@ -487,6 +511,9 @@ help:
 	@echo "... orientation.o"
 	@echo "... orientation.i"
 	@echo "... orientation.s"
+	@echo "... triangulation.o"
+	@echo "... triangulation.i"
+	@echo "... triangulation.s"
 	@echo "... triangulation_delone.o"
 	@echo "... triangulation_delone.i"
 	@echo "... triangulation_delone.s"

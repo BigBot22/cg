@@ -1,1 +1,1 @@
-/usr/bin/c++    -pthread -std=c++11 -Wall    CMakeFiles/contour_contains_point.dir/contour_contains_point.cpp.o  -o contour_contains_point -rdynamic ../../src/libvisualization.a -lgmp -lQtOpenGL -lQtGui -lQtCore -lGLU -lGL -lSM -lICE -lX11 -lXext 
+/usr/bin/c++    -pthread -std=c++11 -Wall -pthread    CMakeFiles/contour_contains_point.dir/contour_contains_point.cpp.o  -o contour_contains_point -rdynamic ../../src/libvisualization.a -lgmp -lQtOpenGL -lQtGui -lQtCore -lGLU -lGL -lSM -lICE -lX11 -lXext 

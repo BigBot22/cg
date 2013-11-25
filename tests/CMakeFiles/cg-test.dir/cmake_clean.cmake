@@ -1,4 +1,5 @@
 FILE(REMOVE_RECURSE
+  "CMakeFiles/cg-test.dir/triangulation.cpp.o"
   "CMakeFiles/cg-test.dir/orientation.cpp.o"
   "CMakeFiles/cg-test.dir/has_intersection.cpp.o"
   "CMakeFiles/cg-test.dir/contains.cpp.o"

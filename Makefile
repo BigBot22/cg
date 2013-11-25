@@ -297,6 +297,19 @@ orientation_contour_ccw/fast:
 .PHONY : orientation_contour_ccw/fast
 
 #=============================================================================
+# Target rules for targets named triangulation
+
+# Build rule for target.
+triangulation: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 triangulation
+.PHONY : triangulation
+
+# fast build rule for target.
+triangulation/fast:
+	$(MAKE) -f examples/triangulation/CMakeFiles/triangulation.dir/build.make examples/triangulation/CMakeFiles/triangulation.dir/build
+.PHONY : triangulation/fast
+
+#=============================================================================
 # Target rules for targets named convex_hull
 
 # Build rule for target.
@@ -397,6 +410,7 @@ help:
 	@echo "... triangle_intersects_segment"
 	@echo "... triangulation_delone"
 	@echo "... orientation_contour_ccw"
+	@echo "... triangulation"
 	@echo "... convex_hull"
 	@echo "... dynamic_convex_hull"
 	@echo "... ccw_contour_convex"

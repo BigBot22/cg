@@ -2,24 +2,24 @@
 <CodeBlocks_project_file>
    <FileVersion major="1" minor="6" />
    <Project>
-      <Option title="viewer-example" />
+      <Option title="triangulation-example" />
       <Option makefile_is_custom="1" />
       <Option compiler="gcc" />
       <Option virtualFolders="CMake Files\;CMake Files\CMake\;CMake Files\CMake\Modules\;CMake Files\include\;CMake Files\src\;CMake Files\tests\;CMake Files\examples\;CMake Files\examples\viewer\;CMake Files\examples\operations\;CMake Files\examples\orientation\;CMake Files\examples\triangulation\;CMake Files\examples\convex_hull\;CMake Files\examples\convex\;CMake Files\examples\duglas_pecher\;CMake Files\examples\new_task\;CMake Files\examples\visibility_graph\;" />
       <Build>
       <Target title="all">
-         <Option working_dir="/home/bigbot/cg/examples/viewer" />
+         <Option working_dir="/home/bigbot/cg/examples/triangulation" />
          <Option type="4" />
          <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/viewer/Makefile&quot;  VERBOSE=1 all" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/viewer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/viewer/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/viewer/Makefile&quot;  VERBOSE=1 clean" />
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/triangulation/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/triangulation/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/triangulation/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/triangulation/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
-      <Target title="viewer-example">
-         <Option output="/home/bigbot/cg/examples/viewer/viewer-example" prefix_auto="0" extension_auto="0" />
-         <Option working_dir="/home/bigbot/cg/examples/viewer" />
+      <Target title="triangulation">
+         <Option output="/home/bigbot/cg/examples/triangulation/triangulation" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/triangulation" />
          <Option object_output="./" />
          <Option type="1" />
          <Option compiler="gcc" />
@@ -43,15 +43,15 @@
             <Add directory="/usr/local/include" />
          </Compiler>
          <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/viewer/Makefile&quot;  VERBOSE=1 viewer-example" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/viewer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/viewer/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/viewer/Makefile&quot;  VERBOSE=1 clean" />
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/triangulation/Makefile&quot;  VERBOSE=1 triangulation" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/triangulation/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/triangulation/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/triangulation/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
-      <Target title="viewer-example/fast">
-         <Option output="/home/bigbot/cg/examples/viewer/viewer-example" prefix_auto="0" extension_auto="0" />
-         <Option working_dir="/home/bigbot/cg/examples/viewer" />
+      <Target title="triangulation/fast">
+         <Option output="/home/bigbot/cg/examples/triangulation/triangulation" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/triangulation" />
          <Option object_output="./" />
          <Option type="1" />
          <Option compiler="gcc" />
@@ -75,14 +75,14 @@
             <Add directory="/usr/local/include" />
          </Compiler>
          <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/viewer/Makefile&quot;  VERBOSE=1 viewer-example/fast" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/viewer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/viewer/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/viewer/Makefile&quot;  VERBOSE=1 clean" />
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/triangulation/Makefile&quot;  VERBOSE=1 triangulation/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/triangulation/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/triangulation/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/triangulation/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
       </Build>
-      <Unit filename="/home/bigbot/cg/examples/viewer/viewer.cpp">
+      <Unit filename="/home/bigbot/cg/examples/triangulation/triangulation.cpp">
       </Unit>
       <Unit filename="/home/bigbot/cg/CMakeLists.txt">
           <Option virtualFolder="CMake Files\" />

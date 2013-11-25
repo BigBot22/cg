@@ -5,7 +5,7 @@
       <Option title="cg-library" />
       <Option makefile_is_custom="1" />
       <Option compiler="gcc" />
-      <Option virtualFolders="CMake Files\;CMake Files\CMake\;CMake Files\CMake\Modules\;CMake Files\include\;CMake Files\src\;CMake Files\tests\;CMake Files\examples\;CMake Files\examples\viewer\;CMake Files\examples\operations\;CMake Files\examples\orientation\;CMake Files\examples\convex_hull\;CMake Files\examples\convex\;CMake Files\examples\duglas_pecher\;CMake Files\examples\new_task\;CMake Files\examples\visibility_graph\;" />
+      <Option virtualFolders="CMake Files\;CMake Files\CMake\;CMake Files\CMake\Modules\;CMake Files\include\;CMake Files\src\;CMake Files\tests\;CMake Files\examples\;CMake Files\examples\viewer\;CMake Files\examples\operations\;CMake Files\examples\orientation\;CMake Files\examples\triangulation\;CMake Files\examples\convex_hull\;CMake Files\examples\convex\;CMake Files\examples\duglas_pecher\;CMake Files\examples\new_task\;CMake Files\examples\visibility_graph\;" />
       <Build>
       <Target title="all">
          <Option working_dir="/home/bigbot/cg" />
@@ -881,6 +881,70 @@
             <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/orientation/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
+      <Target title="triangulation">
+         <Option output="/home/bigbot/cg/examples/triangulation/triangulation" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/triangulation" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/triangulation/Makefile&quot;  VERBOSE=1 triangulation" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/triangulation/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/triangulation/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/triangulation/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="triangulation/fast">
+         <Option output="/home/bigbot/cg/examples/triangulation/triangulation" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bigbot/cg/examples/triangulation" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_OPENGL_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/bigbot/cg/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.7/." />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/triangulation/Makefile&quot;  VERBOSE=1 triangulation/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/triangulation/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/triangulation/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bigbot/cg/examples/triangulation/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
       <Target title="convex_hull">
          <Option output="/home/bigbot/cg/examples/convex_hull/convex_hull" prefix_auto="0" extension_auto="0" />
          <Option working_dir="/home/bigbot/cg/examples/convex_hull" />
@@ -1296,6 +1360,8 @@
       </Unit>
       <Unit filename="/home/bigbot/cg/examples/orientation/orientation_contour_ccw.cpp">
       </Unit>
+      <Unit filename="/home/bigbot/cg/examples/triangulation/triangulation.cpp">
+      </Unit>
       <Unit filename="/home/bigbot/cg/examples/viewer/viewer.cpp">
       </Unit>
       <Unit filename="/home/bigbot/cg/examples/visibility_graph/visibility_graph.cpp">
@@ -1333,6 +1399,8 @@
       <Unit filename="/home/bigbot/cg/tests/new_task.cpp">
       </Unit>
       <Unit filename="/home/bigbot/cg/tests/orientation.cpp">
+      </Unit>
+      <Unit filename="/home/bigbot/cg/tests/triangulation.cpp">
       </Unit>
       <Unit filename="/home/bigbot/cg/tests/triangulation_delone.cpp">
       </Unit>
@@ -1410,6 +1478,8 @@
       </Unit>
       <Unit filename="/home/bigbot/cg/include/cg/primitives/vector.h">
       </Unit>
+      <Unit filename="/home/bigbot/cg/include/cg/triangulation/triangulation.h">
+      </Unit>
       <Unit filename="/home/bigbot/cg/include/cg/visualization/draw_util.h">
       </Unit>
       <Unit filename="/home/bigbot/cg/include/cg/visualization/viewer.h">
@@ -1472,6 +1542,12 @@
       </Unit>
       <Unit filename="/home/bigbot/cg/examples/orientation/CMakeLists.txt">
           <Option virtualFolder="CMake Files\examples\orientation\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/triangulation/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\examples\triangulation\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/triangulation/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\examples\triangulation\" />
       </Unit>
       <Unit filename="/home/bigbot/cg/examples/convex_hull/CMakeLists.txt">
           <Option virtualFolder="CMake Files\examples\convex_hull\" />

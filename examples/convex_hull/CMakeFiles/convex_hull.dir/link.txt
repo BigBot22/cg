@@ -1,1 +1,1 @@
-/usr/bin/c++    -pthread -std=c++11 -Wall    CMakeFiles/convex_hull.dir/convex_hull.cpp.o  -o convex_hull -rdynamic ../../src/libvisualization.a -lgmp -lQtOpenGL -lQtGui -lQtCore -lGLU -lGL -lSM -lICE -lX11 -lXext 
+/usr/bin/c++    -pthread -std=c++11 -Wall -pthread    CMakeFiles/convex_hull.dir/convex_hull.cpp.o  -o convex_hull -rdynamic ../../src/libvisualization.a -lgmp -lQtOpenGL -lQtGui -lQtCore -lGLU -lGL -lSM -lICE -lX11 -lXext 

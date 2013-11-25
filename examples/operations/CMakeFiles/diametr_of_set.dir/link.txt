@@ -1,1 +1,1 @@
-/usr/bin/c++    -pthread -std=c++11 -Wall    CMakeFiles/diametr_of_set.dir/diametr_of_set.cpp.o  -o diametr_of_set -rdynamic ../../src/libvisualization.a -lgmp -lQtOpenGL -lQtGui -lQtCore -lGLU -lGL -lSM -lICE -lX11 -lXext 
+/usr/bin/c++    -pthread -std=c++11 -Wall -pthread    CMakeFiles/diametr_of_set.dir/diametr_of_set.cpp.o  -o diametr_of_set -rdynamic ../../src/libvisualization.a -lgmp -lQtOpenGL -lQtGui -lQtCore -lGLU -lGL -lSM -lICE -lX11 -lXext 

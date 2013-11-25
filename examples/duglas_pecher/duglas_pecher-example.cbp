@@ -5,7 +5,7 @@
       <Option title="duglas_pecher-example" />
       <Option makefile_is_custom="1" />
       <Option compiler="gcc" />
-      <Option virtualFolders="CMake Files\;CMake Files\CMake\;CMake Files\CMake\Modules\;CMake Files\include\;CMake Files\src\;CMake Files\tests\;CMake Files\examples\;CMake Files\examples\viewer\;CMake Files\examples\operations\;CMake Files\examples\orientation\;CMake Files\examples\convex_hull\;CMake Files\examples\convex\;CMake Files\examples\duglas_pecher\;CMake Files\examples\new_task\;CMake Files\examples\visibility_graph\;" />
+      <Option virtualFolders="CMake Files\;CMake Files\CMake\;CMake Files\CMake\Modules\;CMake Files\include\;CMake Files\src\;CMake Files\tests\;CMake Files\examples\;CMake Files\examples\viewer\;CMake Files\examples\operations\;CMake Files\examples\orientation\;CMake Files\examples\triangulation\;CMake Files\examples\convex_hull\;CMake Files\examples\convex\;CMake Files\examples\duglas_pecher\;CMake Files\examples\new_task\;CMake Files\examples\visibility_graph\;" />
       <Build>
       <Target title="all">
          <Option working_dir="/home/bigbot/cg/examples/duglas_pecher" />
@@ -128,6 +128,12 @@
       </Unit>
       <Unit filename="/home/bigbot/cg/examples/orientation/CMakeLists.txt">
           <Option virtualFolder="CMake Files\examples\orientation\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/triangulation/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\examples\triangulation\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/triangulation/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\examples\triangulation\" />
       </Unit>
       <Unit filename="/home/bigbot/cg/examples/convex_hull/CMakeLists.txt">
           <Option virtualFolder="CMake Files\examples\convex_hull\" />
