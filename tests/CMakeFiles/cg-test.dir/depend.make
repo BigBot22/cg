@@ -116,6 +116,22 @@ tests/CMakeFiles/cg-test.dir/orientation.cpp.o: include/cg/primitives/range.h
 tests/CMakeFiles/cg-test.dir/orientation.cpp.o: include/cg/primitives/vector.h
 tests/CMakeFiles/cg-test.dir/orientation.cpp.o: include/misc/random_utils.h
 
+tests/CMakeFiles/cg-test.dir/triangulation.cpp.o: tests/triangulation.cpp
+tests/CMakeFiles/cg-test.dir/triangulation.cpp.o: include/cg/common/range.h
+tests/CMakeFiles/cg-test.dir/triangulation.cpp.o: include/cg/io/io_utils.h
+tests/CMakeFiles/cg-test.dir/triangulation.cpp.o: include/cg/io/point.h
+tests/CMakeFiles/cg-test.dir/triangulation.cpp.o: include/cg/operations/contains/contour_point.h
+tests/CMakeFiles/cg-test.dir/triangulation.cpp.o: include/cg/operations/contains/segment_point.h
+tests/CMakeFiles/cg-test.dir/triangulation.cpp.o: include/cg/operations/contains/triangle_point.h
+tests/CMakeFiles/cg-test.dir/triangulation.cpp.o: include/cg/operations/orientation.h
+tests/CMakeFiles/cg-test.dir/triangulation.cpp.o: include/cg/primitives/contour.h
+tests/CMakeFiles/cg-test.dir/triangulation.cpp.o: include/cg/primitives/point.h
+tests/CMakeFiles/cg-test.dir/triangulation.cpp.o: include/cg/primitives/range.h
+tests/CMakeFiles/cg-test.dir/triangulation.cpp.o: include/cg/primitives/segment.h
+tests/CMakeFiles/cg-test.dir/triangulation.cpp.o: include/cg/primitives/triangle.h
+tests/CMakeFiles/cg-test.dir/triangulation.cpp.o: include/cg/primitives/vector.h
+tests/CMakeFiles/cg-test.dir/triangulation.cpp.o: include/cg/triangulation/triangulation.h
+
 tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.o: tests/triangulation_delone.cpp
 tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.o: include/cg/common/range.h
 tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.o: include/cg/io/segment.h
