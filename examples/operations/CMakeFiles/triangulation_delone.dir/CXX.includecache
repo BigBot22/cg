@@ -21,6 +21,12 @@ cg/operations/triangulation_delone.h
 -
 cg/io/triangle.h
 -
+boost/random.hpp
+-
+cg/primitives/point.h
+-
+misc/random_utils.h
+-
 
 /usr/include/qt4/Qt3Support/q3cstring.h
 QtCore/qbytearray.h
@@ -1017,4 +1023,10 @@ include/cg/visualization/cg/primitives/segment.h
 include/cg/visualization/viewer_adapter.h
 viewer.h
 include/cg/visualization/viewer.h
+
+include/misc/random_utils.h
+random
+-
+string
+-
 

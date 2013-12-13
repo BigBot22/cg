@@ -186,6 +186,20 @@ segments_intersect/fast:
 .PHONY : segments_intersect/fast
 
 # Convenience name for target.
+examples/operations/CMakeFiles/summ_minkovskiy.dir/rule:
+	cd /home/bigbot/cg && $(MAKE) -f CMakeFiles/Makefile2 examples/operations/CMakeFiles/summ_minkovskiy.dir/rule
+.PHONY : examples/operations/CMakeFiles/summ_minkovskiy.dir/rule
+
+# Convenience name for target.
+summ_minkovskiy: examples/operations/CMakeFiles/summ_minkovskiy.dir/rule
+.PHONY : summ_minkovskiy
+
+# fast build rule for target.
+summ_minkovskiy/fast:
+	cd /home/bigbot/cg && $(MAKE) -f examples/operations/CMakeFiles/summ_minkovskiy.dir/build.make examples/operations/CMakeFiles/summ_minkovskiy.dir/build
+.PHONY : summ_minkovskiy/fast
+
+# Convenience name for target.
 examples/operations/CMakeFiles/triangle_contains_point.dir/rule:
 	cd /home/bigbot/cg && $(MAKE) -f CMakeFiles/Makefile2 examples/operations/CMakeFiles/triangle_contains_point.dir/rule
 .PHONY : examples/operations/CMakeFiles/triangle_contains_point.dir/rule
@@ -371,6 +385,30 @@ segments_intersect.cpp.s:
 	cd /home/bigbot/cg && $(MAKE) -f examples/operations/CMakeFiles/segments_intersect.dir/build.make examples/operations/CMakeFiles/segments_intersect.dir/segments_intersect.cpp.s
 .PHONY : segments_intersect.cpp.s
 
+summ_minkovskiy.o: summ_minkovskiy.cpp.o
+.PHONY : summ_minkovskiy.o
+
+# target to build an object file
+summ_minkovskiy.cpp.o:
+	cd /home/bigbot/cg && $(MAKE) -f examples/operations/CMakeFiles/summ_minkovskiy.dir/build.make examples/operations/CMakeFiles/summ_minkovskiy.dir/summ_minkovskiy.cpp.o
+.PHONY : summ_minkovskiy.cpp.o
+
+summ_minkovskiy.i: summ_minkovskiy.cpp.i
+.PHONY : summ_minkovskiy.i
+
+# target to preprocess a source file
+summ_minkovskiy.cpp.i:
+	cd /home/bigbot/cg && $(MAKE) -f examples/operations/CMakeFiles/summ_minkovskiy.dir/build.make examples/operations/CMakeFiles/summ_minkovskiy.dir/summ_minkovskiy.cpp.i
+.PHONY : summ_minkovskiy.cpp.i
+
+summ_minkovskiy.s: summ_minkovskiy.cpp.s
+.PHONY : summ_minkovskiy.s
+
+# target to generate assembly for a file
+summ_minkovskiy.cpp.s:
+	cd /home/bigbot/cg && $(MAKE) -f examples/operations/CMakeFiles/summ_minkovskiy.dir/build.make examples/operations/CMakeFiles/summ_minkovskiy.dir/summ_minkovskiy.cpp.s
+.PHONY : summ_minkovskiy.cpp.s
+
 triangle_contains_point.o: triangle_contains_point.cpp.o
 .PHONY : triangle_contains_point.o
 
@@ -457,6 +495,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... rectangle_intersects_segment"
 	@echo "... segments_intersect"
+	@echo "... summ_minkovskiy"
 	@echo "... triangle_contains_point"
 	@echo "... triangle_intersects_segment"
 	@echo "... triangulation_delone"
@@ -478,6 +517,9 @@ help:
 	@echo "... segments_intersect.o"
 	@echo "... segments_intersect.i"
 	@echo "... segments_intersect.s"
+	@echo "... summ_minkovskiy.o"
+	@echo "... summ_minkovskiy.i"
+	@echo "... summ_minkovskiy.s"
 	@echo "... triangle_contains_point.o"
 	@echo "... triangle_contains_point.i"
 	@echo "... triangle_contains_point.s"

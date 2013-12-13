@@ -31,6 +31,13 @@ namespace cg
          , y(0)
       {}
 
+      point_2t<Scalar> & operator += (point_2t<Scalar> const & delta)
+      {
+         x += delta.x;
+         y += delta.y;
+         return *this;
+      }
+
       point_2t<Scalar> & operator += (vector_2t<Scalar> const & delta)
       {
          x += delta.x;

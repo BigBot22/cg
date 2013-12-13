@@ -111,15 +111,18 @@ examples/visibility_graph/CMakeFiles/visibility_graph.dir/visibility_graph.cpp.o
  /usr/include/qt4/QtGui/qwindowdefs.h
  /usr/include/qt4/QtGui/qwindowdefs_win.h
  /usr/include/qt4/QtGui/qwmatrix.h
+ include/cg/common/common.h
  include/cg/common/range.h
  include/cg/convex_hull/quick_hull.h
- include/cg/duglas_pecher/duglas_pecher.h
  include/cg/io/io_utils.h
  include/cg/io/point.h
  include/cg/operations/contains/segment_point.h
  include/cg/operations/distance.h
  include/cg/operations/has_intersection/segment_segment.h
  include/cg/operations/orientation.h
+ include/cg/operations/shortest_path.h
+ include/cg/operations/visibility_graph.h
+ include/cg/operations/visibility_graph2.h
  include/cg/primitives/contour.h
  include/cg/primitives/point.h
  include/cg/primitives/range.h

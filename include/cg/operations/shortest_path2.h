@@ -15,7 +15,7 @@ using namespace std;
 namespace cg
 {
     template <class Scalar, class OutIter>
-    void shortest_path(const point_2t<Scalar> & start,const point_2t<Scalar> & finish, const std::vector<contour_2t<Scalar> > & obstacles, OutIter out) {
+    void shortest_path2(const point_2t<Scalar> & start,const point_2t<Scalar> & finish, const std::vector<contour_2t<Scalar> > & obstacles, OutIter out) {
         std::vector<segment_2t<Scalar>> ans;
         cg::get_visibility(start, finish, obstacles, std::back_inserter(ans));
 
@@ -34,12 +34,12 @@ namespace cg
         int n = dist.size();
         for (int i = 0; i < n; i++) {
             for (segment_2t<Scalar> & seg : ans) {
-                if ((dist[seg[0]] + distance(seg[0], seg[1])) < dist[seg[1]]) {
-                    dist[seg[1]] = dist[seg[0]] + distance(seg[0], seg[1]);
+                if ((dist[seg[0]] + distance_point_to_point(seg[0], seg[1])) < dist[seg[1]]) {
+                    dist[seg[1]] = dist[seg[0]] + distance_point_to_point(seg[0], seg[1]);
                     prev[seg[1]] = seg[0];
                 }
-                if ((dist[seg[1]] + distance(seg[0], seg[1])) < dist[seg[0]]) {
-                    dist[seg[0]] = dist[seg[1]] + distance(seg[0], seg[1]);
+                if ((dist[seg[1]] + distance_point_to_point(seg[0], seg[1])) < dist[seg[0]]) {
+                    dist[seg[0]] = dist[seg[1]] + distance_point_to_point(seg[0], seg[1]);
                     prev[seg[0]] = seg[1];
                 }
             }

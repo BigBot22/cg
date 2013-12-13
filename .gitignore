@@ -1,4 +1,6 @@
 *.user
+*.o
+*.kdev4
 *.autosave
 *.un~
 build

@@ -1,0 +1,1 @@
+/usr/bin/c++    -pthread -std=c++11 -Wall -pthread    CMakeFiles/summ_minkovskiy.dir/summ_minkovskiy.cpp.o  -o summ_minkovskiy -rdynamic ../../src/libvisualization.a -lgmp -lQtOpenGL -lQtGui -lQtCore -lGLU -lGL -lSM -lICE -lX11 -lXext 

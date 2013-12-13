@@ -111,6 +111,7 @@ examples/visibility_graph2/CMakeFiles/visibility_graph2.dir/visibility_graph2.cp
  /usr/include/qt4/QtGui/qwindowdefs.h
  /usr/include/qt4/QtGui/qwindowdefs_win.h
  /usr/include/qt4/QtGui/qwmatrix.h
+ include/cg/common/common.h
  include/cg/common/range.h
  include/cg/io/io_utils.h
  include/cg/io/point.h
@@ -119,6 +120,7 @@ examples/visibility_graph2/CMakeFiles/visibility_graph2.dir/visibility_graph2.cp
  include/cg/operations/distance.h
  include/cg/operations/has_intersection/segment_segment.h
  include/cg/operations/orientation.h
+ include/cg/operations/shortest_path.h
  include/cg/operations/shortest_path2.h
  include/cg/operations/visibility_graph2.h
  include/cg/primitives/contour.h

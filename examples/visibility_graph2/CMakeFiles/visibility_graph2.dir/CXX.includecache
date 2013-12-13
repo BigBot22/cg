@@ -25,6 +25,8 @@ cg/operations/visibility_graph2.h
 -
 cg/operations/shortest_path2.h
 -
+cg/operations/shortest_path.h
+-
 
 /usr/include/qt4/Qt3Support/q3cstring.h
 QtCore/qbytearray.h
@@ -898,6 +900,8 @@ QtCore/qglobal.h
 QtGui/qmatrix.h
 -
 
+include/cg/common/common.h
+
 include/cg/common/range.h
 iterator
 -
@@ -958,19 +962,21 @@ gmpxx.h
 boost/optional.hpp
 -
 
-include/cg/operations/shortest_path2.h
-cg/primitives/contour.h
+include/cg/operations/shortest_path.h
+cg/common/common.h
+-
+cg/primitives/point.h
 -
 cg/primitives/segment.h
 -
-cg/operations/has_intersection/segment_segment.h
+cg/operations/visibility_graph2.h
 -
-cg/operations/orientation.h
+cg/operations/distance.h
 -
-orientation.h
-include/cg/operations/orientation.h
+map
+-
 
-include/cg/operations/visibility_graph2.h
+include/cg/operations/shortest_path2.h
 cg/primitives/contour.h
 -
 cg/primitives/segment.h
@@ -989,6 +995,18 @@ map
 -
 cg/io/segment.h
 -
+
+include/cg/operations/visibility_graph2.h
+cg/primitives/contour.h
+-
+cg/primitives/segment.h
+-
+cg/operations/has_intersection/segment_segment.h
+-
+cg/operations/orientation.h
+-
+orientation.h
+include/cg/operations/orientation.h
 
 include/cg/primitives/contour.h
 vector

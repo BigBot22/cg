@@ -27,10 +27,8 @@ set(SOURCES
    diametr_of_set.cpp
    common.cpp
    distance.cpp
-   #visibility_graph2.cpp
+   visibility_graph.cpp
    triangulation_delone.cpp
- 
-
 )
 
 add_executable(cg-test ${SOURCES})

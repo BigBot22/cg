@@ -27,10 +27,14 @@ cg/operations/orientation.h
 -
 cg/operations/has_intersection/segment_segment.h
 -
-cg/duglas_pecher/duglas_pecher.h
+cg/operations/visibility_graph.h
+-
+cg/operations/shortest_path.h
 -
 cg/io/point.h
 /home/bigbot/cg/examples/visibility_graph/cg/io/point.h
+cg/primitives/contour.h
+-
 map
 -
 
@@ -906,6 +910,8 @@ QtCore/qglobal.h
 QtGui/qmatrix.h
 -
 
+include/cg/common/common.h
+
 include/cg/common/range.h
 iterator
 -
@@ -924,12 +930,6 @@ algorithm
 utility
 -
 functional
--
-
-include/cg/duglas_pecher/duglas_pecher.h
-cg/primitives/point.h
--
-cg/operations/distance.h
 -
 
 include/cg/io/io_utils.h
@@ -979,6 +979,42 @@ gmpxx.h
 -
 boost/optional.hpp
 -
+
+include/cg/operations/shortest_path.h
+cg/common/common.h
+-
+cg/primitives/point.h
+-
+cg/primitives/segment.h
+-
+cg/operations/visibility_graph2.h
+-
+cg/operations/distance.h
+-
+map
+-
+
+include/cg/operations/visibility_graph.h
+cg/primitives/point.h
+-
+cg/primitives/contour.h
+-
+cg/primitives/segment.h
+-
+cg/operations/has_intersection/segment_segment.h
+-
+
+include/cg/operations/visibility_graph2.h
+cg/primitives/contour.h
+-
+cg/primitives/segment.h
+-
+cg/operations/has_intersection/segment_segment.h
+-
+cg/operations/orientation.h
+-
+orientation.h
+include/cg/operations/orientation.h
 
 include/cg/primitives/contour.h
 vector

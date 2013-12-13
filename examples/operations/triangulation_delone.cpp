@@ -8,6 +8,10 @@
 #include <cg/operations/triangulation_delone.h>
 #include <cg/io/triangle.h>
 
+#include <boost/random.hpp>
+#include <cg/primitives/point.h>
+#include <misc/random_utils.h>
+
 
 using cg::point_2f;
 using cg::point_2;
@@ -18,27 +22,43 @@ struct delaunay_viewer : cg::visualization::viewer_adapter
 {
    delaunay_viewer()
    {
-      tr.add_point(point_2(-50, 50));
-      tr.add_point(point_2(-50, -50));
-      tr.add_point(point_2(50, -50));
-      tr.add_point(point_2(50, 50));
-      tr.add_point(point_2(0, 84));
-      tr.add_point(point_2(-10, -86));
+//      tr.add_point(point_2(-50, 50));
+//      tr.add_point(point_2(-50, -50));
+//      tr.add_point(point_2(50, -50));
+//      tr.add_point(point_2(50, 50));
+//      tr.add_point(point_2(0, 84));
+//      tr.add_point(point_2(-10, -86));
 
-      tr.add_point(point_2(-30, -10));
-      tr.add_point(point_2(0, 1));
-      tr.add_point(point_2(30, 0));
-      tr.add_point(point_2(60, -10));
+//      tr.add_point(point_2(-30, -10));
+//      tr.add_point(point_2(0, 1));
+//      tr.add_point(point_2(30, 0));
+//      tr.add_point(point_2(60, -10));
 
       tr.add_point(point_2(-30, 0));
       tr.add_point(point_2(30, 0));
-      tr.add_point(point_2(0, 50));
-      tr.add_point(point_2(-10, 80));
-      tr.add_point(point_2(12, 76));
+//      tr.add_point(point_2(0, 50));
+//      tr.add_point(point_2(-10, 80));
+//      tr.add_point(point_2(12, 76));
+
+
+      tr.add_point(cg::point_2(100, 100));
+      tr.add_point(cg::point_2(500, 100));
+      tr.add_point(cg::point_2(250, 200));
+
+
+      int count = 70;
+      util::uniform_random_real<double> rand(100.1, 399.1);
+      double x;
+      for (size_t l = 0; l < count; ++l)
+      {
+          rand >> x;
+          tr.add_point(cg::point_2(x, 100));
+
+          //EXPECT_TRUE( true == check_triangulation(tr.get_delaunay_triangulation()));
+      }
+
 
       make_triangulation();
-
-      tr.add_point(point_2(0, -10));
    }
 
    void draw(cg::visualization::drawer_type & drawer) const
@@ -50,6 +70,13 @@ struct delaunay_viewer : cg::visualization::viewer_adapter
          drawer.draw_line(t[0], t[1]);
          drawer.draw_line(t[0], t[2]);
          drawer.draw_line(t[2], t[1]);
+
+         drawer.set_color(Qt::yellow);
+         drawer.draw_point(t[0],5);
+         drawer.draw_point(t[1],5);
+         drawer.draw_point(t[2],5);
+         drawer.set_color(Qt::green);
+
       }
 
       drawer.set_color(Qt::red);

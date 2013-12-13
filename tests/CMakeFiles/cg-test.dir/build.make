@@ -351,9 +351,32 @@ tests/CMakeFiles/cg-test.dir/distance.cpp.o.provides: tests/CMakeFiles/cg-test.d
 
 tests/CMakeFiles/cg-test.dir/distance.cpp.o.provides.build: tests/CMakeFiles/cg-test.dir/distance.cpp.o
 
+tests/CMakeFiles/cg-test.dir/visibility_graph.cpp.o: tests/CMakeFiles/cg-test.dir/flags.make
+tests/CMakeFiles/cg-test.dir/visibility_graph.cpp.o: tests/visibility_graph.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_14)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tests/CMakeFiles/cg-test.dir/visibility_graph.cpp.o"
+	cd /home/bigbot/cg/tests && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cg-test.dir/visibility_graph.cpp.o -c /home/bigbot/cg/tests/visibility_graph.cpp
+
+tests/CMakeFiles/cg-test.dir/visibility_graph.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cg-test.dir/visibility_graph.cpp.i"
+	cd /home/bigbot/cg/tests && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/bigbot/cg/tests/visibility_graph.cpp > CMakeFiles/cg-test.dir/visibility_graph.cpp.i
+
+tests/CMakeFiles/cg-test.dir/visibility_graph.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cg-test.dir/visibility_graph.cpp.s"
+	cd /home/bigbot/cg/tests && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/bigbot/cg/tests/visibility_graph.cpp -o CMakeFiles/cg-test.dir/visibility_graph.cpp.s
+
+tests/CMakeFiles/cg-test.dir/visibility_graph.cpp.o.requires:
+.PHONY : tests/CMakeFiles/cg-test.dir/visibility_graph.cpp.o.requires
+
+tests/CMakeFiles/cg-test.dir/visibility_graph.cpp.o.provides: tests/CMakeFiles/cg-test.dir/visibility_graph.cpp.o.requires
+	$(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/visibility_graph.cpp.o.provides.build
+.PHONY : tests/CMakeFiles/cg-test.dir/visibility_graph.cpp.o.provides
+
+tests/CMakeFiles/cg-test.dir/visibility_graph.cpp.o.provides.build: tests/CMakeFiles/cg-test.dir/visibility_graph.cpp.o
+
 tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.o: tests/CMakeFiles/cg-test.dir/flags.make
 tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.o: tests/triangulation_delone.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.o"
 	cd /home/bigbot/cg/tests && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cg-test.dir/triangulation_delone.cpp.o -c /home/bigbot/cg/tests/triangulation_delone.cpp
 
@@ -389,6 +412,7 @@ cg__test_OBJECTS = \
 "CMakeFiles/cg-test.dir/diametr_of_set.cpp.o" \
 "CMakeFiles/cg-test.dir/common.cpp.o" \
 "CMakeFiles/cg-test.dir/distance.cpp.o" \
+"CMakeFiles/cg-test.dir/visibility_graph.cpp.o" \
 "CMakeFiles/cg-test.dir/triangulation_delone.cpp.o"
 
 # External object files for target cg-test
@@ -407,6 +431,7 @@ tests/cg-test: tests/CMakeFiles/cg-test.dir/new_task.cpp.o
 tests/cg-test: tests/CMakeFiles/cg-test.dir/diametr_of_set.cpp.o
 tests/cg-test: tests/CMakeFiles/cg-test.dir/common.cpp.o
 tests/cg-test: tests/CMakeFiles/cg-test.dir/distance.cpp.o
+tests/cg-test: tests/CMakeFiles/cg-test.dir/visibility_graph.cpp.o
 tests/cg-test: tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.o
 tests/cg-test: tests/CMakeFiles/cg-test.dir/build.make
 tests/cg-test: /usr/lib/libgtest.a
@@ -433,6 +458,7 @@ tests/CMakeFiles/cg-test.dir/requires: tests/CMakeFiles/cg-test.dir/new_task.cpp
 tests/CMakeFiles/cg-test.dir/requires: tests/CMakeFiles/cg-test.dir/diametr_of_set.cpp.o.requires
 tests/CMakeFiles/cg-test.dir/requires: tests/CMakeFiles/cg-test.dir/common.cpp.o.requires
 tests/CMakeFiles/cg-test.dir/requires: tests/CMakeFiles/cg-test.dir/distance.cpp.o.requires
+tests/CMakeFiles/cg-test.dir/requires: tests/CMakeFiles/cg-test.dir/visibility_graph.cpp.o.requires
 tests/CMakeFiles/cg-test.dir/requires: tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.o.requires
 .PHONY : tests/CMakeFiles/cg-test.dir/requires
 

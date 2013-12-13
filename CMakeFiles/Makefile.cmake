@@ -19,9 +19,11 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "examples/new_task/CMakeLists.txt"
   "examples/operations/CMakeLists.txt"
   "examples/orientation/CMakeLists.txt"
+  "examples/skip_list/CMakeLists.txt"
   "examples/triangulation/CMakeLists.txt"
   "examples/viewer/CMakeLists.txt"
   "examples/visibility_graph/CMakeLists.txt"
+  "examples/visibility_graph2/CMakeLists.txt"
   "include/CMakeLists.txt"
   "src/CMakeLists.txt"
   "tests/CMakeLists.txt"
@@ -81,6 +83,8 @@ SET(CMAKE_MAKEFILE_PRODUCTS
   "examples/duglas_pecher/CMakeFiles/CMakeDirectoryInformation.cmake"
   "examples/new_task/CMakeFiles/CMakeDirectoryInformation.cmake"
   "examples/visibility_graph/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "examples/skip_list/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "examples/visibility_graph2/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -96,6 +100,7 @@ SET(CMAKE_DEPEND_INFO_FILES
   "examples/operations/CMakeFiles/first_problem.dir/DependInfo.cmake"
   "examples/operations/CMakeFiles/rectangle_intersects_segment.dir/DependInfo.cmake"
   "examples/operations/CMakeFiles/segments_intersect.dir/DependInfo.cmake"
+  "examples/operations/CMakeFiles/summ_minkovskiy.dir/DependInfo.cmake"
   "examples/operations/CMakeFiles/triangle_contains_point.dir/DependInfo.cmake"
   "examples/operations/CMakeFiles/triangle_intersects_segment.dir/DependInfo.cmake"
   "examples/operations/CMakeFiles/triangulation_delone.dir/DependInfo.cmake"
@@ -107,4 +112,6 @@ SET(CMAKE_DEPEND_INFO_FILES
   "examples/duglas_pecher/CMakeFiles/duglas_pecher.dir/DependInfo.cmake"
   "examples/new_task/CMakeFiles/new_task.dir/DependInfo.cmake"
   "examples/visibility_graph/CMakeFiles/visibility_graph.dir/DependInfo.cmake"
+  "examples/skip_list/CMakeFiles/skip_list.dir/DependInfo.cmake"
+  "examples/visibility_graph2/CMakeFiles/visibility_graph2.dir/DependInfo.cmake"
   )

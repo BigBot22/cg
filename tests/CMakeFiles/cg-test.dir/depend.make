@@ -143,4 +143,17 @@ tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.o: include/cg/primitives/r
 tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.o: include/cg/primitives/segment.h
 tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.o: include/cg/primitives/triangle.h
 tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.o: include/cg/primitives/vector.h
+tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.o: include/misc/random_utils.h
+
+tests/CMakeFiles/cg-test.dir/visibility_graph.cpp.o: tests/visibility_graph.cpp
+tests/CMakeFiles/cg-test.dir/visibility_graph.cpp.o: include/cg/common/range.h
+tests/CMakeFiles/cg-test.dir/visibility_graph.cpp.o: include/cg/operations/contains/segment_point.h
+tests/CMakeFiles/cg-test.dir/visibility_graph.cpp.o: include/cg/operations/has_intersection/segment_segment.h
+tests/CMakeFiles/cg-test.dir/visibility_graph.cpp.o: include/cg/operations/orientation.h
+tests/CMakeFiles/cg-test.dir/visibility_graph.cpp.o: include/cg/operations/visibility_graph.h
+tests/CMakeFiles/cg-test.dir/visibility_graph.cpp.o: include/cg/primitives/contour.h
+tests/CMakeFiles/cg-test.dir/visibility_graph.cpp.o: include/cg/primitives/point.h
+tests/CMakeFiles/cg-test.dir/visibility_graph.cpp.o: include/cg/primitives/range.h
+tests/CMakeFiles/cg-test.dir/visibility_graph.cpp.o: include/cg/primitives/segment.h
+tests/CMakeFiles/cg-test.dir/visibility_graph.cpp.o: include/cg/primitives/vector.h
 

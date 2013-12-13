@@ -79,7 +79,7 @@ namespace cg
          vertexes.push_back(Vertex<Scalar>(new vertex<Scalar>(true)));
       }
 
-      std::pair<std::vector<int>, std::pair<Edge<Scalar>, Edge<Scalar>>> get_face(point_2t<Scalar> const & _p) {
+      std::pair<std::vector<int>, std::pair<Edge<Scalar>, Edge<Scalar>>> get_faces(point_2t<Scalar> const & _p) {
          std::vector<int> out_faces;
          std::pair<Edge<Scalar>, Edge<Scalar>> min_max_edges;
 
@@ -101,6 +101,7 @@ namespace cg
                   flag = false;
                   break;
                }
+
                cur_edge = cur_edge->next;
             }
 
@@ -134,6 +135,7 @@ namespace cg
             if (flag) {
 
                out_faces.push_back(i);
+               //return res;
             }
 
          }
@@ -171,7 +173,7 @@ namespace cg
          }
 
 
-         auto get_face_out = get_face(_p);
+         auto get_face_out = get_faces(_p);
 
          auto id = get_face_out.first;
          if (id.empty()) {

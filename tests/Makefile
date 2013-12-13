@@ -465,6 +465,30 @@ triangulation_delone.cpp.s:
 	cd /home/bigbot/cg && $(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.s
 .PHONY : triangulation_delone.cpp.s
 
+visibility_graph.o: visibility_graph.cpp.o
+.PHONY : visibility_graph.o
+
+# target to build an object file
+visibility_graph.cpp.o:
+	cd /home/bigbot/cg && $(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/visibility_graph.cpp.o
+.PHONY : visibility_graph.cpp.o
+
+visibility_graph.i: visibility_graph.cpp.i
+.PHONY : visibility_graph.i
+
+# target to preprocess a source file
+visibility_graph.cpp.i:
+	cd /home/bigbot/cg && $(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/visibility_graph.cpp.i
+.PHONY : visibility_graph.cpp.i
+
+visibility_graph.s: visibility_graph.cpp.s
+.PHONY : visibility_graph.s
+
+# target to generate assembly for a file
+visibility_graph.cpp.s:
+	cd /home/bigbot/cg && $(MAKE) -f tests/CMakeFiles/cg-test.dir/build.make tests/CMakeFiles/cg-test.dir/visibility_graph.cpp.s
+.PHONY : visibility_graph.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -517,6 +541,9 @@ help:
 	@echo "... triangulation_delone.o"
 	@echo "... triangulation_delone.i"
 	@echo "... triangulation_delone.s"
+	@echo "... visibility_graph.o"
+	@echo "... visibility_graph.i"
+	@echo "... visibility_graph.s"
 .PHONY : help
 
 

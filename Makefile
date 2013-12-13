@@ -245,6 +245,19 @@ segments_intersect/fast:
 .PHONY : segments_intersect/fast
 
 #=============================================================================
+# Target rules for targets named summ_minkovskiy
+
+# Build rule for target.
+summ_minkovskiy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 summ_minkovskiy
+.PHONY : summ_minkovskiy
+
+# fast build rule for target.
+summ_minkovskiy/fast:
+	$(MAKE) -f examples/operations/CMakeFiles/summ_minkovskiy.dir/build.make examples/operations/CMakeFiles/summ_minkovskiy.dir/build
+.PHONY : summ_minkovskiy/fast
+
+#=============================================================================
 # Target rules for targets named triangle_contains_point
 
 # Build rule for target.
@@ -387,6 +400,32 @@ visibility_graph/fast:
 	$(MAKE) -f examples/visibility_graph/CMakeFiles/visibility_graph.dir/build.make examples/visibility_graph/CMakeFiles/visibility_graph.dir/build
 .PHONY : visibility_graph/fast
 
+#=============================================================================
+# Target rules for targets named skip_list
+
+# Build rule for target.
+skip_list: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 skip_list
+.PHONY : skip_list
+
+# fast build rule for target.
+skip_list/fast:
+	$(MAKE) -f examples/skip_list/CMakeFiles/skip_list.dir/build.make examples/skip_list/CMakeFiles/skip_list.dir/build
+.PHONY : skip_list/fast
+
+#=============================================================================
+# Target rules for targets named visibility_graph2
+
+# Build rule for target.
+visibility_graph2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 visibility_graph2
+.PHONY : visibility_graph2
+
+# fast build rule for target.
+visibility_graph2/fast:
+	$(MAKE) -f examples/visibility_graph2/CMakeFiles/visibility_graph2.dir/build.make examples/visibility_graph2/CMakeFiles/visibility_graph2.dir/build
+.PHONY : visibility_graph2/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -406,6 +445,7 @@ help:
 	@echo "... first_problem"
 	@echo "... rectangle_intersects_segment"
 	@echo "... segments_intersect"
+	@echo "... summ_minkovskiy"
 	@echo "... triangle_contains_point"
 	@echo "... triangle_intersects_segment"
 	@echo "... triangulation_delone"
@@ -417,6 +457,8 @@ help:
 	@echo "... duglas_pecher"
 	@echo "... new_task"
 	@echo "... visibility_graph"
+	@echo "... skip_list"
+	@echo "... visibility_graph2"
 .PHONY : help
 
 

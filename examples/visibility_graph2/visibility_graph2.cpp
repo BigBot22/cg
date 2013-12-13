@@ -11,6 +11,8 @@
 #include <cg/primitives/point.h>
 #include <cg/operations/visibility_graph2.h>
 #include <cg/operations/shortest_path2.h>
+#include <cg/operations/shortest_path.h>
+
 
 using cg::point_2f;
 using cg::point_2;
@@ -48,10 +50,12 @@ struct visibility_graph_viewer : cg::visualization::viewer_adapter
       std::vector<cg::segment_2> ans;
 
       std::vector<cg::segment_2> shortest_path;
+      std::vector<cg::segment_2> shortest_path_my;
       //std::vector<cg::contour_2> obstacles;
 
       cg::get_visibility(start, finish, obstacles, std::back_inserter(ans));
       cg::shortest_path(start, finish, obstacles, std::back_inserter(shortest_path));
+      //cg::shortest_path_my(start, finish, obstacles, std::back_inserter(shortest_path_my));
 
       drawer.set_color(Qt::green);
       for (const cg::segment_2 & seg : ans) {
@@ -80,6 +84,11 @@ struct visibility_graph_viewer : cg::visualization::viewer_adapter
 
       drawer.set_color(Qt::blue);
       for (const cg::segment_2 & seg : shortest_path) {
+          drawer.draw_line(seg[0], seg[1]);
+      }
+
+      drawer.set_color(Qt::yellow);
+      for (const cg::segment_2 & seg : shortest_path_my) {
           drawer.draw_line(seg[0], seg[1]);
       }
    }

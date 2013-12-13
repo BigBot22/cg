@@ -18,6 +18,7 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/bigbot/cg/tests/orientation.cpp" "/home/bigbot/cg/tests/CMakeFiles/cg-test.dir/orientation.cpp.o"
   "/home/bigbot/cg/tests/triangulation.cpp" "/home/bigbot/cg/tests/CMakeFiles/cg-test.dir/triangulation.cpp.o"
   "/home/bigbot/cg/tests/triangulation_delone.cpp" "/home/bigbot/cg/tests/CMakeFiles/cg-test.dir/triangulation_delone.cpp.o"
+  "/home/bigbot/cg/tests/visibility_graph.cpp" "/home/bigbot/cg/tests/CMakeFiles/cg-test.dir/visibility_graph.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

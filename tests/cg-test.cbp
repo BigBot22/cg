@@ -5,7 +5,7 @@
       <Option title="cg-test" />
       <Option makefile_is_custom="1" />
       <Option compiler="gcc" />
-      <Option virtualFolders="CMake Files\;CMake Files\CMake\;CMake Files\CMake\Modules\;CMake Files\include\;CMake Files\src\;CMake Files\tests\;CMake Files\examples\;CMake Files\examples\viewer\;CMake Files\examples\operations\;CMake Files\examples\orientation\;CMake Files\examples\triangulation\;CMake Files\examples\convex_hull\;CMake Files\examples\convex\;CMake Files\examples\duglas_pecher\;CMake Files\examples\new_task\;CMake Files\examples\visibility_graph\;" />
+      <Option virtualFolders="CMake Files\;CMake Files\CMake\;CMake Files\CMake\Modules\;CMake Files\include\;CMake Files\src\;CMake Files\tests\;CMake Files\examples\;CMake Files\examples\viewer\;CMake Files\examples\operations\;CMake Files\examples\orientation\;CMake Files\examples\triangulation\;CMake Files\examples\convex_hull\;CMake Files\examples\convex\;CMake Files\examples\duglas_pecher\;CMake Files\examples\new_task\;CMake Files\examples\visibility_graph\;CMake Files\examples\skip_list\;CMake Files\examples\visibility_graph2\;" />
       <Build>
       <Target title="all">
          <Option working_dir="/home/bigbot/cg/tests" />
@@ -120,6 +120,8 @@
       </Unit>
       <Unit filename="/home/bigbot/cg/tests/triangulation_delone.cpp">
       </Unit>
+      <Unit filename="/home/bigbot/cg/tests/visibility_graph.cpp">
+      </Unit>
       <Unit filename="/home/bigbot/cg/tests/random_utils.h">
       </Unit>
       <Unit filename="/home/bigbot/cg/CMakeLists.txt">
@@ -202,6 +204,18 @@
       </Unit>
       <Unit filename="/home/bigbot/cg/examples/visibility_graph/CMakeLists.txt">
           <Option virtualFolder="CMake Files\examples\visibility_graph\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/skip_list/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\examples\skip_list\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/skip_list/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\examples\skip_list\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/visibility_graph2/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\examples\visibility_graph2\" />
+      </Unit>
+      <Unit filename="/home/bigbot/cg/examples/visibility_graph2/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\examples\visibility_graph2\" />
       </Unit>
    </Project>
 </CodeBlocks_project_file>

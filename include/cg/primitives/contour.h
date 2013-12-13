@@ -69,6 +69,17 @@ namespace cg
          return pts_[idx];
       }
 
+      bool operator == (contour_2t<Scalar> cont)
+      {
+         if (this->size() != cont.size()) return false;
+
+         for (int i = 0; i < cont.size(); ++i) {
+            if (operator [](i) != cont[i]) return false;
+         }
+
+         return true;
+      }
+
    private:
       friend struct contour_builder_type;
 

@@ -110,6 +110,7 @@ examples/visibility_graph2/CMakeFiles/visibility_graph2.dir/visibility_graph2.cp
 examples/visibility_graph2/CMakeFiles/visibility_graph2.dir/visibility_graph2.cpp.o: /usr/include/qt4/QtGui/qwindowdefs.h
 examples/visibility_graph2/CMakeFiles/visibility_graph2.dir/visibility_graph2.cpp.o: /usr/include/qt4/QtGui/qwindowdefs_win.h
 examples/visibility_graph2/CMakeFiles/visibility_graph2.dir/visibility_graph2.cpp.o: /usr/include/qt4/QtGui/qwmatrix.h
+examples/visibility_graph2/CMakeFiles/visibility_graph2.dir/visibility_graph2.cpp.o: include/cg/common/common.h
 examples/visibility_graph2/CMakeFiles/visibility_graph2.dir/visibility_graph2.cpp.o: include/cg/common/range.h
 examples/visibility_graph2/CMakeFiles/visibility_graph2.dir/visibility_graph2.cpp.o: include/cg/io/io_utils.h
 examples/visibility_graph2/CMakeFiles/visibility_graph2.dir/visibility_graph2.cpp.o: include/cg/io/point.h
@@ -118,6 +119,7 @@ examples/visibility_graph2/CMakeFiles/visibility_graph2.dir/visibility_graph2.cp
 examples/visibility_graph2/CMakeFiles/visibility_graph2.dir/visibility_graph2.cpp.o: include/cg/operations/distance.h
 examples/visibility_graph2/CMakeFiles/visibility_graph2.dir/visibility_graph2.cpp.o: include/cg/operations/has_intersection/segment_segment.h
 examples/visibility_graph2/CMakeFiles/visibility_graph2.dir/visibility_graph2.cpp.o: include/cg/operations/orientation.h
+examples/visibility_graph2/CMakeFiles/visibility_graph2.dir/visibility_graph2.cpp.o: include/cg/operations/shortest_path.h
 examples/visibility_graph2/CMakeFiles/visibility_graph2.dir/visibility_graph2.cpp.o: include/cg/operations/shortest_path2.h
 examples/visibility_graph2/CMakeFiles/visibility_graph2.dir/visibility_graph2.cpp.o: include/cg/operations/visibility_graph2.h
 examples/visibility_graph2/CMakeFiles/visibility_graph2.dir/visibility_graph2.cpp.o: include/cg/primitives/contour.h

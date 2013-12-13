@@ -28,3 +28,6 @@ target_link_libraries(diametr_of_set visualization ${GMP_LIBRARIES})
 
 add_executable(triangulation_delone triangulation_delone.cpp)
 target_link_libraries(triangulation_delone visualization ${GMP_LIBRARIES})
+
+add_executable(summ_minkovskiy summ_minkovskiy.cpp)
+target_link_libraries(summ_minkovskiy visualization ${GMP_LIBRARIES})

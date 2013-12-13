@@ -14,9 +14,12 @@
 
 #include <cg/operations/has_intersection/segment_segment.h>
 
-#include <cg/duglas_pecher/duglas_pecher.h>
+#include <cg/operations/visibility_graph.h>
+
+#include <cg/operations/shortest_path.h>
 
 #include "cg/io/point.h"
+#include <cg/primitives/contour.h>
 #include <map>
 
 using cg::point_2;
@@ -29,8 +32,6 @@ struct ccw_contour_convex_viewer : cg::visualization::viewer_adapter
    {
       //in_building_ = true;
       in_building_abst = false;
-      graph.resize(0);
-      s_path.resize(0);
 
       start.x = -250;
       start.y = 0;
@@ -45,36 +46,41 @@ struct ccw_contour_convex_viewer : cg::visualization::viewer_adapter
 
       drawer.set_color(Qt::blue);
 
-      for (size_t i = 1; i < graph.size(); i++, i++)
+      for (size_t i = 0; i < graph.size(); ++i)
       {
 
-         drawer.draw_line(graph[i - 1], graph[i]);
+         drawer.draw_line(graph[i][0], graph[i][1]);
 
       }
 
       drawer.set_color(Qt::yellow);
 
-      for (size_t i = 0; i < set_of_points_.size(); ++i)
+      for (cg::contour_2 cont : obstecals)
       {
-         if (abst_num < i + 1)
-         {
-            drawer.set_color(Qt::white);
-         }
 
-         for (size_t j = 1; j < set_of_points_[i].size(); ++j)
+         for (size_t i = 0; i < cont.size(); ++i)
          {
-            drawer.draw_line(set_of_points_[i][j - 1], set_of_points_[i][j]);
+            drawer.draw_line(cont[i], cont[i < cont.size() - 1 ? i +  1 : 0]);
          }
 
       }
 
 
+      if (in_building_abst)
+      {
+         drawer.set_color(Qt::white);
+
+         for (int i = 1; i < cont.size(); ++i) {
+            drawer.draw_line(cont[i - 1], cont[i]);
+         }
+      }
+
 
 //      drawer.set_color(Qt::green);
-//      for (size_t i = 1; i < s_path.size(); ++i)
+//      for (cg::segment_2 seg : s_path)
 //      {
 
-//         drawer.draw_line(s_path[i - 1], s_path[i]);
+//         drawer.draw_line(seg[0], seg[1]);
 
 //      }
 
@@ -93,45 +99,48 @@ struct ccw_contour_convex_viewer : cg::visualization::viewer_adapter
                         //<< "eps:" << eps << cg::visualization::endl;
 
 
-      for (size_t i = 0; i < points_.size(); ++i)
-      {
-         p.global_stream((point_2f)points_[i] + vector_2f(5, 0)) << i;
-      }
+//      for (size_t i = 0; i < points_.size(); ++i)
+//      {
+//         p.global_stream((point_2f)points_[i] + vector_2f(5, 0)) << i;
+//      }
    }
 
    bool on_double_click(const point_2f & p)
    {
-      set_of_points_.clear();
-      points_.clear();
+      obstecals.clear();
       in_building_abst = false;
       abst_num = 0;
       graph.clear();
-      s_path.clear();
+      //s_path.clear();
       return true;
    }
 
+   cg::point_2 a;
+   cg::point_2 b;
+   cg::contour_2 cont;
    bool on_press(const point_2f & p)
    {
       if (!in_building_abst)
       {
          in_building_abst = true;
 
-         points_.clear();
-         points_.push_back(p);
-         set_of_points_.push_back(points_);
+         cg::contour_2 tmp;
+         cont = tmp;
+         cont.add_point(p);
+         //obstecals.push_back(points_);
       }
       else
       {
-         point_2 b = set_of_points_[set_of_points_.size() - 1][0];
-         if (fabs(p.x - b.x) < 15 && fabs(p.y - b.y) < 15)
+         point_2 b = cont[cont.size() - 1];
+         if (fabs(p.x - b.x) < 30 && fabs(p.y - b.y) < 30)
          {
             in_building_abst = false;
             abst_num++;
-            set_of_points_[set_of_points_.size() - 1].push_back(b);
+            obstecals.push_back(cont);
          }
          else
          {
-            set_of_points_[set_of_points_.size() - 1].push_back(p);
+            cont.add_point(p);
          }
 
       }
@@ -185,200 +194,27 @@ struct ccw_contour_convex_viewer : cg::visualization::viewer_adapter
       return true;
    }
 
-   bool no_intersect(point_2 a1, point_2 b1)
-   {
-      for (size_t i = 0; i < set_of_points_.size(); ++i)
-      {
-         for (size_t j = 1; j < set_of_points_[i].size(); ++j)
-         {
-            point_2 a = set_of_points_[i][j];
-            point_2 b = set_of_points_[i][j - 1];
-
-            assert(a != b);
-            assert(a1 != b1);
-
-            if(a1 != a && a1 != b && b1 != b && b1 != a)
-            {
-               if( cg::has_intersection(cg::segment_2(a1, b1), cg::segment_2(a, b)))
-               {
-                  return false;
-               }
-            }
-         }
-      }
-
-      return true;
-   }
-
-   bool is_tangent(cg::segment_2 seg, point_2 c)
-   {
-      return (cg::orientation(seg[0], seg[1], c) == cg::CG_RIGHT) ? true : false;
-   }
-
-void visibility_graph(std::vector<std::vector<point_2>> set_of_points_, point_2 start, point_2 finish, std::vector<point_2> &graph)
-{
-   graph.clear();
-
-   std::vector<point_2> tmp;
-   tmp.push_back(start);
-   tmp.push_back(point_2(start.x - 0.1, start.y - 0.1));
-
-   set_of_points_.push_back(tmp);
-
-   tmp.clear();
-   tmp.push_back(finish);
-   tmp.push_back(point_2(finish.x + 0.1, finish.y + 0.1));
-
-
-   set_of_points_.push_back(tmp);
-
-   //graph.shrink_to_fit();
-   for (size_t i = 0; i < set_of_points_.size() - 1; ++i)
-   {
-      for (size_t j = 0; j < set_of_points_[i].size() - 1; ++j)
-      {
-
-         point_2 a = set_of_points_[i][j];
-
-         for (size_t k = i + 1 ; k < set_of_points_.size(); ++k)
-         {
-            for (size_t z = 0; z < set_of_points_[k].size() - 1; ++z)
-            {
-               point_2 b = set_of_points_[k][z];
-
-               //
-               if (a == b) continue;
-               //assert(a != b);
-               if(no_intersect(a, b) == true )
-               {
-
-                  point_2 a_next = set_of_points_[i][j + 1];
-
-                  point_2 a_prev;
-                  if(j == 0) a_prev = set_of_points_[i][set_of_points_[i].size() - 2];
-                  else a_prev = set_of_points_[i][j - 1];
-
-                  point_2 b_next = set_of_points_[k][z + 1];
-
-                  point_2 b_prev;
-                  if(z == 0) b_prev = set_of_points_[k][set_of_points_[k].size() - 2];
-                  else b_prev = set_of_points_[k][z - 1];
-
-
-                  if ( ((cg::orientation(a_prev, a, b) == cg::CG_LEFT) || (cg::orientation(a_next, a, b) == cg::CG_RIGHT)) )
-                  if ( ((cg::orientation(b_prev, b, a) == cg::CG_LEFT) || (cg::orientation(b_next, b, a) == cg::CG_RIGHT)) )
-                  {
-                     graph.push_back(a);
-                     graph.push_back(b);
-                  }
-               }
-            }
-         }
-      }
-   }
-
-   set_of_points_.pop_back();
-   set_of_points_.pop_back();
-}
-
-struct inf {
-   int dist;
-   point_2 parent;
-};
-
-void shortest_path(std::vector<std::vector<point_2>> set_of_points_, point_2 start, point_2 finish, std::vector<point_2> v_graph, std::vector<point_2> & s_path)
-{
-   s_path.clear();
-   s_path.resize(0);
-   for(size_t i = 0; i < set_of_points_.size(); ++i)
-   {
-      for(size_t j = 0; j < set_of_points_[i].size() - 1; ++j)
-      {
-         point_2 b = set_of_points_[i][j];
-         point_2 e = set_of_points_[i][j + 1];
-         v_graph.push_back(b);
-         v_graph.push_back(e);
-      }
-   }
-
-   std::map<point_2, inf> set;
-
-   point_2 null_point;
-   null_point.x = -1000;
-   null_point.y = -1000;
-   for(size_t i = 0; i < v_graph.size(); ++i)
-   {
-      set[v_graph[i]].dist = 100000000;
-      set[v_graph[i]].parent = null_point;
-   }
-
-
-   set[start].dist = 0;
-
-   size_t n = set.size();
-//   for (size_t i = 0; i < n; ++i)
-//   {
-//      for (size_t j = 0; j < set.size() - 1; ++j)
-//      {
-//         if(set[v_graph[j]].dist + distance_point_to_point(v_graph[j], v_graph[j + 1]) < set[v_graph[j + 1]].dist)
-//         {
-//            set[v_graph[j + 1]].dist = set[v_graph[j]].dist + distance_point_to_point(v_graph[j], v_graph[j + 1]);
-//            set[v_graph[j + 1]].parent = v_graph[j];
-//         }
-
-//         if(set[v_graph[j + 1]].dist + distance_point_to_point(v_graph[j + 1], v_graph[j]) < set[v_graph[j]].dist)
-//         {
-//            set[v_graph[j]].dist = set[v_graph[j + 1]].dist + distance_point_to_point(v_graph[j + 1], v_graph[j]);
-//            set[v_graph[j]].parent = v_graph[j + 1];
-//         }
-
-//      }
-//   }
-
-//   point_2 point = finish;
-//   bool no_path = false;
-
-//   while(point != start)
-//   {
-//      s_path.push_back(point);
-//      if(set[point].parent != null_point)
-//         point = set[point].parent;
-//      else
-//         no_path = true;
-//   }
-//   s_path.push_back(start);
-
-
-//   if(no_path)
-//   {
-//      s_path.clear();
-//   }
-
-
-}
-
 private:
    //bool in_building_;
    bool in_building_abst;
-   std::vector<point_2> points_;
-   std::vector<std::vector<point_2>> set_of_points_;
-   std::vector<point_2> graph;
+   //std::vector<cg::point_2> points_;
+   std::vector<cg::contour_2> obstecals;
+   std::vector<cg::segment_2> graph;
    //boost::optional<int> current_vertex_;
    size_t abst_num = 0;
-   std::vector<point_2> s_path;
+   cg::segment_2 s_path;
    cg::point_2 start;
    cg::point_2 finish;
 
 
    void update_points()
    {
+      graph.clear();
+      //cg::get_visibility( start, finish, obstecals, std::back_inserter(graph));
 
+      visibility_graph(obstecals, start, finish, std::back_inserter(graph));
 
-      visibility_graph(set_of_points_, start, finish, graph);
-      printf("OK");
-      shortest_path(set_of_points_, start, finish, graph, s_path);
-      printf("OK 2");
-
+      //shortest_path(obstecals, start, finish, graph, std::back_inserter(s_path));
    }
 
 };

@@ -1,0 +1,1 @@
+/usr/bin/c++    -pthread -std=c++11 -Wall -pthread    CMakeFiles/skip_list.dir/skip_list.cpp.o  -o skip_list -rdynamic ../../src/libvisualization.a -lgmp -lQtOpenGL -lQtGui -lQtCore -lGLU -lGL -lSM -lICE -lX11 -lXext 
