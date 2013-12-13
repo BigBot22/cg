@@ -113,7 +113,7 @@ struct minkowski_viewer : cg::visualization::viewer_adapter
       switch (itr){
       case 1:
 
-         p = point_2f(0.0, 0.0);
+         //p = point_2f(0.0, 0.0);
          break;
 
       case 2:

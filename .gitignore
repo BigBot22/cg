@@ -6,7 +6,8 @@
 *~
 *.un~
 *.dir
+*.includecache
 build/
-CMakeFiles/
+CMakeFiles
 Makefile
 .DS_Store
