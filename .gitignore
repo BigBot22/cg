@@ -1,7 +1,11 @@
 *.user
-*.o
+*.[oa]
+*.cbp
 *.kdev4
 *.autosave
+*~
 *.un~
-build
+build/
+CMakeFiles/
+Makefile
 .DS_Store
