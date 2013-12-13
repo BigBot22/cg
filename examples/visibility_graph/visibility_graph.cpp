@@ -30,7 +30,6 @@ struct ccw_contour_convex_viewer : cg::visualization::viewer_adapter
 {
    ccw_contour_convex_viewer()
    {
-      //in_building_ = true;
       in_building_abst = false;
 
       start.x = -250;
@@ -46,43 +45,37 @@ struct ccw_contour_convex_viewer : cg::visualization::viewer_adapter
 
       drawer.set_color(Qt::blue);
 
-      for (size_t i = 0; i < graph.size(); ++i)
-      {
-
-         drawer.draw_line(graph[i][0], graph[i][1]);
-
+      for (cg::segment_2 seg : graph) {
+         drawer.draw_line(seg[0], seg[1]);
       }
 
       drawer.set_color(Qt::yellow);
 
-      for (cg::contour_2 cont : obstecals)
-      {
-
-         for (size_t i = 0; i < cont.size(); ++i)
-         {
+      for (cg::contour_2 cont : obstecals){
+         for (size_t i = 0; i < cont.size(); ++i) {
             drawer.draw_line(cont[i], cont[i < cont.size() - 1 ? i +  1 : 0]);
          }
-
       }
 
 
       if (in_building_abst)
       {
-         drawer.set_color(Qt::white);
+         drawer.set_color(Qt::yellow);
+         drawer.draw_point(cont[0], 3);
 
-         for (int i = 1; i < cont.size(); ++i) {
-            drawer.draw_line(cont[i - 1], cont[i]);
+         for (int i = 0; i < cont.size() - 1; ++i) {
+            drawer.draw_line(cont[i], cont[i < cont.size() - 1 ? i +  1 : 0]);
          }
+
+         drawer.set_color(Qt::white);
+         drawer.draw_line(cont[cont.size() - 1], cont[0]);
       }
 
+      drawer.set_color(Qt::green);
 
-//      drawer.set_color(Qt::green);
-//      for (cg::segment_2 seg : s_path)
-//      {
-
-//         drawer.draw_line(seg[0], seg[1]);
-
-//      }
+      for (cg::segment_2 seg : s_path) {
+         drawer.draw_line(seg[0], seg[1]);
+      }
 
       drawer.set_color(Qt::red);
       drawer.draw_point(start, 5);
@@ -115,8 +108,8 @@ struct ccw_contour_convex_viewer : cg::visualization::viewer_adapter
       return true;
    }
 
-   cg::point_2 a;
-   cg::point_2 b;
+   //cg::point_2 a;
+   //cg::point_2 b;
    cg::contour_2 cont;
    bool on_press(const point_2f & p)
    {
@@ -127,12 +120,12 @@ struct ccw_contour_convex_viewer : cg::visualization::viewer_adapter
          cg::contour_2 tmp;
          cont = tmp;
          cont.add_point(p);
-         //obstecals.push_back(points_);
+
       }
       else
       {
-         point_2 b = cont[cont.size() - 1];
-         if (fabs(p.x - b.x) < 30 && fabs(p.y - b.y) < 30)
+         point_2 b = cont[0];
+         if (fabs(p.x - b.x) < 20 && fabs(p.y - b.y) < 20)
          {
             in_building_abst = false;
             abst_num++;
@@ -195,26 +188,24 @@ struct ccw_contour_convex_viewer : cg::visualization::viewer_adapter
    }
 
 private:
-   //bool in_building_;
+
    bool in_building_abst;
-   //std::vector<cg::point_2> points_;
    std::vector<cg::contour_2> obstecals;
    std::vector<cg::segment_2> graph;
-   //boost::optional<int> current_vertex_;
+   std::vector<cg::segment_2> s_path;
    size_t abst_num = 0;
-   cg::segment_2 s_path;
    cg::point_2 start;
    cg::point_2 finish;
-
 
    void update_points()
    {
       graph.clear();
       //cg::get_visibility( start, finish, obstecals, std::back_inserter(graph));
 
-      visibility_graph(obstecals, start, finish, std::back_inserter(graph));
+      cg::visibility_graph(obstecals, start, finish, std::back_inserter(graph));
 
-      //shortest_path(obstecals, start, finish, graph, std::back_inserter(s_path));
+      s_path.clear();
+      cg::shortest_path(start, finish, obstecals, std::back_inserter(s_path));
    }
 
 };

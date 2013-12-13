@@ -12,7 +12,7 @@ using namespace std;
 namespace cg
 {
    template<class Scalar, class OutIter>
-   void shortest_path(const point_2t<Scalar> & start , const point_2t<Scalar> & end, const vector<contour_2t<Scalar>> & obst, OutIter out) {
+   void shortest_path(const point_2t<Scalar> start , const point_2t<Scalar> end, const vector<contour_2t<Scalar>> & obst, OutIter out) {
 
          map<point_2t<Scalar>, int> dist;
          map<point_2t<Scalar>, point_2t<Scalar>> parent;
