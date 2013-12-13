@@ -5,6 +5,7 @@
 *.autosave
 *~
 *.un~
+*.dir
 build/
 CMakeFiles/
 Makefile
