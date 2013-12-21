@@ -31,15 +31,34 @@ struct minkowski_viewer : cg::visualization::viewer_adapter
    minkowski_viewer()
    {
       in_building_ = true;
-//      contour & cont = conts[cur_contour];
-//      cont.push_back(point_2(10,10));
-//      cont.push_back(point_2(100,10));
-//      cont.push_back(point_2(100,100));
-//      cont.push_back(point_2(10,100));
-//      cont.push_back(point_2(10,10));
-//      cur_contour++;
-
       center_moving = false;
+
+      contour & cont = conts[0];
+      cont.push_back(point_2(10,10));
+      cont.push_back(point_2(100,10));
+      cont.push_back(point_2(100,100));
+      cont.push_back(point_2(10,100));
+
+      contour & cont2 = conts[1];
+      cont2.push_back(point_2(-10,-10));
+      cont2.push_back(point_2(0,-10));
+      cont2.push_back(point_2(0,0));
+      cont2.push_back(point_2(-10,0));
+
+      cur_contour = 2;
+      in_building_ = false;
+      //center_moving = true;
+
+      center = cg::point_2(0, 0);
+
+      for (cg::point_2 & p : conts[1]) center += p;
+
+      center = cg::point_2(center.x / conts[1].size(), center.y / conts[1].size());
+
+      reversed.clear();
+      for (cg::point_2 & p : conts[1]) reversed.push_back(cg::point_2(-(p.x - center.x), -(p.y - center.y)));
+      if (!cg::counterclockwise(reversed)) std::reverse(reversed.begin(), reversed.end());
+
    }
 
    void draw(cg::visualization::drawer_type & drawer) const
@@ -86,6 +105,15 @@ struct minkowski_viewer : cg::visualization::viewer_adapter
              drawer.draw_point(result[i], 3);
              drawer.set_color(Qt::blue);
           }
+
+//          drawer.set_color(Qt::yellow);
+//          for (size_t i = 0; i < reversed.size(); i++)
+//          {
+//             size_t j = (i + 1) % reversed.size();
+//             cg::point_2 p1 = reversed[i], p2 = reversed[j];
+//             drawer.draw_line(p1, p2);
+//
+//          }
       }
    }
 
@@ -106,20 +134,8 @@ struct minkowski_viewer : cg::visualization::viewer_adapter
      return true;
    }
 
-   int itr = 0;
-
    bool on_press(const point_2f & p)
    {
-      switch (itr){
-      case 1:
-//
-         //p = point_2f(0.0, 0.0);
-         break;
-
-      case 2:
-         break;
-      }
-
       if (in_building_)
       {
          contour & cont = conts[cur_contour];

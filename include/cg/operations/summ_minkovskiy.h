@@ -11,6 +11,8 @@
 #include <cg/operations/orientation.h>
 #include <cg/operations/contains/segment_point.h>
 
+#include <iostream>
+
 namespace cg
 {
 
@@ -43,35 +45,39 @@ namespace cg
             }
 
 
-            vector_2t<Scalar> delta(robot_it_next->x - robot_it->x, robot_it_next->y - robot_it->y);
-
-            point_2t<Scalar> new_obst_point(obst_it_next->x + delta.x, obst_it_next->y + delta.y);
-
 
             point_2t<Scalar> point(obst_it->x + robot_it->x, obst_it->y + robot_it->y);
 
             if (ans.size() > 1 ) {
-               if ( cg::contains({ans[ans.size() - 1], ans[ans.size() - 2]}, point)) {
+               if (orientation(ans[ans.size() - 1], ans[ans.size() - 2], point) == CG_COLLINEAR) {
                   ans.pop_back();
-                  //ans.emplace_back(point);
                   ans.push_back(point);
                } else {
-
                   ans.push_back(point);
                }
             } else {
                ans.push_back(point);
             }
 
+            printf(" %.2f %.2f\n", ans.back().x, ans.back().y);
 
+            Scalar delta_x = robot_it_next->x - robot_it->x;
+            Scalar delta_y = robot_it_next->y - robot_it->y;
+
+            point_2t<Scalar> new_obst_point(obst_it_next->x + delta_x, obst_it_next->y + delta_y);
 
             if (orientation(*obst_it, *obst_it_next, new_obst_point) == CG_LEFT) {
                break;
             } else {
                robot_it = robot_it_next;
             }
+
          }
          obst_it = obst_it_next;
+      }
+
+      if (ans.size() > 1 && cg::contains(segment_2t<Scalar>(ans[ans.size() - 2], ans[0]), ans[ans.size() - 1])) {
+         ans.pop_back();
       }
 
       return ans;
