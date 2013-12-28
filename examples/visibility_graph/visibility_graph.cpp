@@ -105,7 +105,7 @@ struct ccw_contour_convex_viewer : cg::visualization::viewer_adapter
       in_building_abst = false;
       abst_num = 0;
       graph.clear();
-      //s_path.clear();
+      s_path.clear();
       return true;
    }
 
