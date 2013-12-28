@@ -45,6 +45,37 @@ namespace cg
       }
    }
 
+   template<class Scalar>
+   bool is_inside(point_2t<Scalar> a, point_2t<Scalar> b, contour_2t<Scalar> cont) {
+
+      size_t f_ind;
+      size_t s_ind;
+
+      for (size_t i = 0; i < cont.size(); ++i ) {
+         if (cont[i] == a) {
+            f_ind = i;
+         }
+      }
+
+      for (size_t i = 0; i < cont.size(); ++i ) {
+         if (cont[i] == b) {
+            s_ind = i;
+         }
+      }
+
+      if (s_ind < f_ind ) {
+         std::swap(f_ind, s_ind);
+      }
+
+
+      if ((cg::orientation(cont[f_ind], cont[f_ind < cont.size() - 1 ? f_ind + 1 : 0 ], cont[s_ind]) == CG_RIGHT)
+          && (cg::orientation(cont[s_ind > 0 ? s_ind - 1 : cont.size() - 1], cont[s_ind], cont[f_ind]) == CG_RIGHT)) {
+         return false;
+      } else {
+         return true;
+      }
+   }
+
    template<class Scalar, class OutIter>
    void visibility_graph(const std::vector<contour_2t<Scalar>>  obst, const point_2t<Scalar> & start, const point_2t<Scalar> & end, OutIter out) {
 
@@ -58,13 +89,10 @@ namespace cg
 
             for (contour_2t<Scalar> cont2 : obst) {
 
-               if ( cont1 == cont2) continue;
+               //if ( cont1 == cont2) continue;
 
                for (size_t j = 0; j < cont2.size(); ++j) {
                   point_2t<Scalar> b = cont2[j];
-
-
-
 
                   int i_next = i < (cont1.size() - 1) ? i + 1 : 0;
                   int i_prev = i > 0 ? i - 1 : cont1.size() - 1;
@@ -88,12 +116,18 @@ namespace cg
                   if(no_intersect(segment_2t<Scalar>(a, b), obst) == true) {
 
 
-
-                     if ( ((cg::orientation(a_prev, a, b) == cg::CG_LEFT) || (cg::orientation(a_next, a, b) == cg::CG_RIGHT)) ) {
-                        if ( ((cg::orientation(b_prev, b, a) == cg::CG_LEFT) || (cg::orientation(b_next, b, a) == cg::CG_RIGHT)) ) {
-                           *(out++) = segment_2t<Scalar>(a, b);
+                     if ( ((cg::orientation(a_prev, a, b) != cg::CG_RIGHT) || (cg::orientation(a_next, a, b) != cg::CG_LEFT)) ) {
+                        if ( ((cg::orientation(b_prev, b, a) != cg::CG_RIGHT) || (cg::orientation(b_next, b, a) != cg::CG_LEFT)) ) {
+                           if (cont1 == cont2) {
+                              if (!is_inside(a, b, cont1) && (a_next != b && a_prev != b)) {
+                                 *(out++) = segment_2t<Scalar>(a, b);
+                              }
+                           } else {
+                              *(out++) = segment_2t<Scalar>(a, b);
+                           }
                         }
                      }
+
                   }
 
 

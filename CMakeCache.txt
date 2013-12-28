@@ -1038,6 +1038,12 @@ triangulation-example_BINARY_DIR:STATIC=/home/bigbot/cg/examples/triangulation
 triangulation-example_SOURCE_DIR:STATIC=/home/bigbot/cg/examples/triangulation
 
 //Value Computed by CMake
+triangulation_delone2_BINARY_DIR:STATIC=/home/bigbot/cg/examples/triangulation_delone
+
+//Value Computed by CMake
+triangulation_delone2_SOURCE_DIR:STATIC=/home/bigbot/cg/examples/triangulation_delone
+
+//Value Computed by CMake
 viewer-example_BINARY_DIR:STATIC=/home/bigbot/cg/examples/viewer
 
 //Value Computed by CMake
@@ -1185,7 +1191,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=16
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=17
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

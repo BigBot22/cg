@@ -4,7 +4,7 @@
 #include <cg/common/common.h>
 #include <cg/primitives/point.h>
 #include <cg/primitives/segment.h>
-#include <cg/operations/visibility_graph2.h>
+#include <cg/operations/visibility_graph.h>
 #include <cg/operations/distance.h>
 #include <map>
 
@@ -19,11 +19,22 @@ namespace cg
          vector<segment_2t<Scalar>> v_graph;
          const float INF = 100000000;
 
-         cg::get_visibility(start, end, obst, std::back_inserter(v_graph));
+         cg::visibility_graph(obst, start, end, std::back_inserter(v_graph));
 
          for (segment_2t<Scalar> seg : v_graph) {
             dist[seg[0]] = INF;
             dist[seg[1]] = INF;
+         }
+
+         for (contour_2t<Scalar> cont : obst) {
+            for (size_t i = 0; i < cont.size(); ++i) {
+               if (i == (cont.size() - 1)) {
+                  v_graph.push_back(segment_2t<Scalar>(cont[i],cont[0]));
+               } else {
+                  v_graph.push_back(segment_2t<Scalar>(cont[i], cont[i + 1]));
+               }
+               dist[cont[i]] = INF;
+            }
          }
 
          dist[start] = 0;
@@ -36,7 +47,7 @@ namespace cg
 
                float cur_dist = cg::distance_point_to_point(a, b);
 
-               // do it twise
+               // do it in each derections
                for (int i = 0; i < 2; ++i) {
                   if (dist[b] > dist[a] + cur_dist) {
                      dist[b] = dist[a] + cur_dist;

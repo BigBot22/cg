@@ -123,7 +123,7 @@ src/preinstall:
 src/CMakeFiles/visualization.dir/all:
 	$(MAKE) -f src/CMakeFiles/visualization.dir/build.make src/CMakeFiles/visualization.dir/depend
 	$(MAKE) -f src/CMakeFiles/visualization.dir/build.make src/CMakeFiles/visualization.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  37 38 39 40 41
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  38 39 40 41 42
 	@echo "Built target visualization"
 .PHONY : src/CMakeFiles/visualization.dir/all
 
@@ -248,6 +248,7 @@ examples/all: examples/new_task/all
 examples/all: examples/visibility_graph/all
 examples/all: examples/skip_list/all
 examples/all: examples/visibility_graph2/all
+examples/all: examples/triangulation_delone/all
 .PHONY : examples/all
 
 # Convenience name for "clean" pass in the directory.
@@ -262,6 +263,7 @@ examples/clean: examples/new_task/clean
 examples/clean: examples/visibility_graph/clean
 examples/clean: examples/skip_list/clean
 examples/clean: examples/visibility_graph2/clean
+examples/clean: examples/triangulation_delone/clean
 .PHONY : examples/clean
 
 # Convenience name for "preinstall" pass in the directory.
@@ -276,6 +278,7 @@ examples/preinstall: examples/new_task/preinstall
 examples/preinstall: examples/visibility_graph/preinstall
 examples/preinstall: examples/skip_list/preinstall
 examples/preinstall: examples/visibility_graph2/preinstall
+examples/preinstall: examples/triangulation_delone/preinstall
 .PHONY : examples/preinstall
 
 #=============================================================================
@@ -300,7 +303,7 @@ examples/viewer/preinstall:
 examples/viewer/CMakeFiles/viewer-example.dir/all: src/CMakeFiles/visualization.dir/all
 	$(MAKE) -f examples/viewer/CMakeFiles/viewer-example.dir/build.make examples/viewer/CMakeFiles/viewer-example.dir/depend
 	$(MAKE) -f examples/viewer/CMakeFiles/viewer-example.dir/build.make examples/viewer/CMakeFiles/viewer-example.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  34
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  35
 	@echo "Built target viewer-example"
 .PHONY : examples/viewer/CMakeFiles/viewer-example.dir/all
 
@@ -1070,7 +1073,7 @@ examples/visibility_graph/preinstall:
 examples/visibility_graph/CMakeFiles/visibility_graph.dir/all: src/CMakeFiles/visualization.dir/all
 	$(MAKE) -f examples/visibility_graph/CMakeFiles/visibility_graph.dir/build.make examples/visibility_graph/CMakeFiles/visibility_graph.dir/depend
 	$(MAKE) -f examples/visibility_graph/CMakeFiles/visibility_graph.dir/build.make examples/visibility_graph/CMakeFiles/visibility_graph.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  35
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  36
 	@echo "Built target visibility_graph"
 .PHONY : examples/visibility_graph/CMakeFiles/visibility_graph.dir/all
 
@@ -1170,7 +1173,7 @@ examples/visibility_graph2/preinstall:
 examples/visibility_graph2/CMakeFiles/visibility_graph2.dir/all: src/CMakeFiles/visualization.dir/all
 	$(MAKE) -f examples/visibility_graph2/CMakeFiles/visibility_graph2.dir/build.make examples/visibility_graph2/CMakeFiles/visibility_graph2.dir/depend
 	$(MAKE) -f examples/visibility_graph2/CMakeFiles/visibility_graph2.dir/build.make examples/visibility_graph2/CMakeFiles/visibility_graph2.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  36
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  37
 	@echo "Built target visibility_graph2"
 .PHONY : examples/visibility_graph2/CMakeFiles/visibility_graph2.dir/all
 
@@ -1196,6 +1199,56 @@ examples/visibility_graph2/CMakeFiles/visibility_graph2.dir/clean:
 
 # clean rule for target.
 clean: examples/visibility_graph2/CMakeFiles/visibility_graph2.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory examples/triangulation_delone
+
+# Convenience name for "all" pass in the directory.
+examples/triangulation_delone/all: examples/triangulation_delone/CMakeFiles/triangulation_delone2.dir/all
+.PHONY : examples/triangulation_delone/all
+
+# Convenience name for "clean" pass in the directory.
+examples/triangulation_delone/clean: examples/triangulation_delone/CMakeFiles/triangulation_delone2.dir/clean
+.PHONY : examples/triangulation_delone/clean
+
+# Convenience name for "preinstall" pass in the directory.
+examples/triangulation_delone/preinstall:
+.PHONY : examples/triangulation_delone/preinstall
+
+#=============================================================================
+# Target rules for target examples/triangulation_delone/CMakeFiles/triangulation_delone2.dir
+
+# All Build rule for target.
+examples/triangulation_delone/CMakeFiles/triangulation_delone2.dir/all: src/CMakeFiles/visualization.dir/all
+	$(MAKE) -f examples/triangulation_delone/CMakeFiles/triangulation_delone2.dir/build.make examples/triangulation_delone/CMakeFiles/triangulation_delone2.dir/depend
+	$(MAKE) -f examples/triangulation_delone/CMakeFiles/triangulation_delone2.dir/build.make examples/triangulation_delone/CMakeFiles/triangulation_delone2.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bigbot/cg/CMakeFiles  34
+	@echo "Built target triangulation_delone2"
+.PHONY : examples/triangulation_delone/CMakeFiles/triangulation_delone2.dir/all
+
+# Include target in all.
+all: examples/triangulation_delone/CMakeFiles/triangulation_delone2.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+examples/triangulation_delone/CMakeFiles/triangulation_delone2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bigbot/cg/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 examples/triangulation_delone/CMakeFiles/triangulation_delone2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bigbot/cg/CMakeFiles 0
+.PHONY : examples/triangulation_delone/CMakeFiles/triangulation_delone2.dir/rule
+
+# Convenience name for target.
+triangulation_delone2: examples/triangulation_delone/CMakeFiles/triangulation_delone2.dir/rule
+.PHONY : triangulation_delone2
+
+# clean rule for target.
+examples/triangulation_delone/CMakeFiles/triangulation_delone2.dir/clean:
+	$(MAKE) -f examples/triangulation_delone/CMakeFiles/triangulation_delone2.dir/build.make examples/triangulation_delone/CMakeFiles/triangulation_delone2.dir/clean
+.PHONY : examples/triangulation_delone/CMakeFiles/triangulation_delone2.dir/clean
+
+# clean rule for target.
+clean: examples/triangulation_delone/CMakeFiles/triangulation_delone2.dir/clean
 .PHONY : clean
 
 #=============================================================================

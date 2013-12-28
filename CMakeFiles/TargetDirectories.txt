@@ -18,6 +18,7 @@
 /home/bigbot/cg/examples/operations/CMakeFiles/triangle_intersects_segment.dir
 /home/bigbot/cg/examples/triangulation/CMakeFiles/triangulation.dir
 /home/bigbot/cg/examples/operations/CMakeFiles/triangulation_delone.dir
+/home/bigbot/cg/examples/triangulation_delone/CMakeFiles/triangulation_delone2.dir
 /home/bigbot/cg/examples/viewer/CMakeFiles/viewer-example.dir
 /home/bigbot/cg/examples/visibility_graph/CMakeFiles/visibility_graph.dir
 /home/bigbot/cg/examples/visibility_graph2/CMakeFiles/visibility_graph2.dir

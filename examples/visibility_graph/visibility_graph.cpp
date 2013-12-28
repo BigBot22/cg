@@ -47,6 +47,7 @@ struct ccw_contour_convex_viewer : cg::visualization::viewer_adapter
 
       for (cg::segment_2 seg : graph) {
          drawer.draw_line(seg[0], seg[1]);
+         //drawer.draw_line(cg::point_2(seg[0].x + 1, seg[0].y + 1), cg::point_2(seg[1].x + 1, seg[1].y + 1));
       }
 
       drawer.set_color(Qt::yellow);
