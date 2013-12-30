@@ -21,13 +21,13 @@ namespace cg
 
             if((seg1[0] != seg2[0] && seg1[0] != seg2[1] && seg1[1] != seg2[0] && seg1[1] != seg2[1] ) && cg::has_intersection(seg1, seg2)) {
 
-               printf("FALSE\n");
+               //printf("FALSE\n");
                return false;
             }
          }
       }
 
-      printf("TRUE\n");
+      //printf("TRUE\n");
       return true;
    }
 
